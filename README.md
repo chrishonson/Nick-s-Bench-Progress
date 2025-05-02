@@ -7,6 +7,14 @@
 # AWS Developer–Associate Fast-Track Plan  
 *(Workdays-only, starts May 2, preserves nights & weekends)*  
 
+## Visual Calendar
+
+| Week | Mon | Tue | Wed | Thu | Fri |
+|------|-----|-----|-----|-----|-----|
+| May 1-3 | | | | | • Read AWS Exam Guide<br>• Watch freeCodeCamp course<br>• Create Gap List |
+| May 6-10 | • Complete IAM, VPC, S3 modules<br>• Export lab badge | • Read Lambda Go runtime docs<br>• Deploy Hello Go API<br>• Push code to GitHub | • Watch DynamoDB workshop<br>• Implement CRUD in Go<br>• Take half-length quiz | • CodePipeline tutorial<br>• AWS SAM redeploy<br>• Commit pipeline templates | • Whizlabs practice test<br>• Review sample questions<br>• Post score report |
+| May 13-17 | • EventBridge tutorial<br>• Add SQS/SNS fan-out | • Read AWS KMS sections<br>• IAM best practices<br>• Flash-card drill | • Tutorials Dojo Exam<br>• Score analysis<br>• Record weak domains | • Run system test<br>• Final review<br>• Prepare exam checklist | **EXAM DAY**<br>• Sit AWS DVA-C02 exam<br>• Write reflection<br>• Plan next steps |
+
 ## Guiding Principles  
 - **3 focused bench-hours per workday** (≈ 1.5 h AM + 1.5 h PM) keeps total weekly hours < 45 and avoids burnout.  
 - **Pomodoro 25 / 5 cadence** → sustained concentration without fatigue.  
