@@ -63,7 +63,6 @@
 - [ ] 2. Review the **official AWS sample questions** PDF.  [oai_citation:10‡Amazon Web Services, Inc.](https://aws.amazon.com/certification/certified-developer-associate/?utm_source=chatgpt.com)  
 - [ ] 3. Post your score report + remediation list.
 
-> **Weekend OFF – family time**
 
 ---
 
