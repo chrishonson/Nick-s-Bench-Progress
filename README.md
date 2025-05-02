@@ -2,7 +2,7 @@
 
 ## Progress: 1/27 tasks completed
 <!-- Progress bar visual representation -->
-![Progress](https://progress-bar.xyz/3/?scale=100&width=500&color=2EA043&suffix=%25)
+![Progress](https://progress-bar.xyz/4/?scale=100&width=500&color=2EA043&suffix=%25)
 
 # AWS Developer–Associate Fast-Track Plan  
 *(Workdays-only, starts May 2, preserves nights & weekends)*  
@@ -24,17 +24,22 @@
 
 ---
 
-## Fri May 2  
-- [✅] 1. **Read the AWS Developer–Associate Exam Guide** — PDF download.  [oai_citation:0‡AWS Static](https://d1.awsstatic.com/training-and-certification/docs-dev-associate/AWS-Certified-Developer-Associate_Exam-Guide.pdf?utm_source=chatgpt.com)  
-- [ ] 2. **Watch 60 min of the freeCodeCamp crash-course** (1.25× speed).  [oai_citation:1‡YouTube](https://www.youtube.com/watch?v=RrKRN9zRBWs&utm_source=chatgpt.com)  
-- [ ] 3. Create a **"Gap List"** page in this repo noting weak domains.
+## Fri May 2  
+- [✅] 1. **Read the AWS Developer – Associate Exam Guide** — PDF download.  [oai_citation:0‡Amazon Web Services, Inc.](https://aws.amazon.com/certification/certified-developer-associate/?utm_source=chatgpt.com)  
+- [✅] 2. **Udemy kick‑off 20 of 490 completed
+- [✅] 3. Create a **Gap List** page in this repo noting weak domains.
+
+Notes: IAM-Identity and Access Management is a global service
+Gaps: Since I prevously was taking the course for practitioner, there is overlap, but not the 
+depth required for my role. The developer content already feels much more apropriate. 
+Projected course days remaining: 24 days. Expecting following days to pick up the pace
+since I started the courses mid day. 
 
 ---
 
-## Mon May 5  
-- [ ] 1. **Complete IAM, VPC and S3 modules** in _AWS Cloud Practitioner Essentials_ (Skill Builder).  [oai_citation:2‡Amazon Web Services, Inc.](https://aws.amazon.com/partners/training/digital-courses/?utm_source=chatgpt.com)  
-- [ ] 2. Export the **hands-on lab badge** and attach it to your bench log.
-
+## Mon May 5  
+- [ ] 1. **Udemy Sections 3–5 (≈ 2 h):** IAM deep dive, VPC fundamentals, and S3 hands‑on labs.  [oai_citation:4‡Udemy](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/?amp%3Baff_code=Ewh3Y1lWQH8FQR93MkBPbG1RGXFfW1h8B14ZeU5TQ3YBRxFzWj5XMRM%3D&amp%3Bpmtag=CAREERS24LEARN15&amp%3Butm_campaign=careers24octlaunch&amp%3Butm_medium=web&srsltid=AfmBOopJHmYDoDXiZOs7rx9Wcrtz7cn0W8gAQOU_EZVDRsQW5kdqJkRL&utm_source=chatgpt.com) [oai_citation:5‡Udemy](https://www.udemy.com/topic/aws-certified-developer-associate/?srsltid=AfmBOooPoa8GWqufWIXc_v0wYU6PpCl8hsy6lAVR2QOTfsfLHuolv8Wh&utm_source=chatgpt.com)  
+- [ ] 2. Export the S3 & IAM mini‑lab screenshots from the Udemy course and attach them to your bench log.
 ---
 
 ## Tue May 6  
