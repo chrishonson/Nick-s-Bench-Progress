@@ -29,9 +29,11 @@
 - [✅] 2. **Udemy kick‑off 20 of 490 completed
 - [✅] 3. Create a **Gap List** page in this repo noting weak domains.
 
-Notes: IAM-Identity and Access Management is a global service
+Notes: IAM-Identity and Access Management is a global service 
+
 Gaps: Since I prevously was taking the course for practitioner, there is overlap, but not the 
 depth required for my role. The developer content already feels much more apropriate. 
+
 Projected course days remaining: 24 days. Expecting following days to pick up the pace
 since I started the courses mid day. 
 
