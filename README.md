@@ -2,7 +2,7 @@
 
 ## Progress: 0/27 tasks completed (0%)
 <!-- Progress bar visual representation -->
-![Progress](https://progress-bar.dev/0/?scale=100&width=300&color=2EA043&suffix=%)
+![Progress](https://progress-bar.xyz/0/?scale=100&width=300&color=2EA043&suffix=%)
 
 # AWS Developer–Associate Fast-Track Plan  
 *(Workdays-only, starts May 2, preserves nights & weekends)*  
