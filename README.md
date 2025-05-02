@@ -1,8 +1,8 @@
 # Nick's Bench Progress
 
-## Progress: 0/27 tasks completed (0%)
+## Progress: 1/27 tasks completed
 <!-- Progress bar visual representation -->
-![Progress](https://progress-bar.xyz/0/?scale=100&width=500&color=2EA043&suffix=%)
+![Progress](https://progress-bar.xyz/3/?scale=100&width=500&color=2EA043&suffix=%)
 
 # AWS Developer–Associate Fast-Track Plan  
 *(Workdays-only, starts May 2, preserves nights & weekends)*  
@@ -25,7 +25,7 @@
 ---
 
 ## Fri May 2  
-- [ ] 1. **Read the AWS Developer–Associate Exam Guide** — PDF download.  [oai_citation:0‡AWS Static](https://d1.awsstatic.com/training-and-certification/docs-dev-associate/AWS-Certified-Developer-Associate_Exam-Guide.pdf?utm_source=chatgpt.com)  
+- [✅] 1. **Read the AWS Developer–Associate Exam Guide** — PDF download.  [oai_citation:0‡AWS Static](https://d1.awsstatic.com/training-and-certification/docs-dev-associate/AWS-Certified-Developer-Associate_Exam-Guide.pdf?utm_source=chatgpt.com)  
 - [ ] 2. **Watch 60 min of the freeCodeCamp crash-course** (1.25× speed).  [oai_citation:1‡YouTube](https://www.youtube.com/watch?v=RrKRN9zRBWs&utm_source=chatgpt.com)  
 - [ ] 3. Create a **"Gap List"** page in this repo noting weak domains.
 
