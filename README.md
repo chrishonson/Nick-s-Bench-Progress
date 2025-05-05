@@ -11,10 +11,10 @@
 
 | Week | Mon | Tue | Wed | Thu | Fri |
 |------|-----|-----|-----|-----|-----|
-| May<br>1-3 | | | | | • Read AWS Exam Guide<br>• Watch freeCodeCamp course<br>• Create Gap List |
-| May<br>6-10 | *Vacation Day* | • Complete IAM, VPC, S3 modules<br>• Export lab badge | • Read Lambda Go runtime docs<br>• Deploy Hello Go API<br>• Push code to GitHub | • Watch DynamoDB workshop<br>• Implement CRUD in Go<br>• Take half-length quiz | • CodePipeline tutorial<br>• AWS SAM redeploy<br>• Commit pipeline templates |
-| May<br>13-17 | • Whizlabs practice test<br>• Review sample questions<br>• Post score report | • EventBridge tutorial<br>• Add SQS/SNS fan-out | • Read AWS KMS sections<br>• IAM best practices<br>• Flash-card drill | • Tutorials Dojo Exam<br>• Score analysis<br>• Record weak domains | • Run system test<br>• Final review<br>• Prepare exam checklist |
-| May<br>20-24 | **EXAM DAY**<br>• Sit AWS DVA-C02 exam<br>• Write reflection<br>• Plan next steps | | | | |
+| May<br>1-3 | | | | | • Read AWS Exam Guide<br>• Udemy kick-off<br>• Create Gap List |
+| May<br>6-10 | *Vacation Day* | • Udemy Section 4 (IAM/CLI)<br>• Udemy Section 6 (EC2 Storage)<br>• Key takeaways | • Read Lambda Go docs<br>• Deploy "Hello Go" API<br>• Push to GitHub<br>• Udemy Section 10 (VPC) | • Watch DynamoDB video<br>• Implement Go CRUD<br>• Half-length quiz | • CodePipeline tutorial<br>• AWS SAM redeploy<br>• Commit templates |
+| May<br>13-17 | • Whizlabs practice test<br>• Review sample questions<br>• Post score report | • EventBridge tutorial<br>• Add SQS/SNS fan-out | • Read AWS KMS sections<br>• IAM best practices<br>• Flash-card drill | • Tutorials Dojo Exam<br>• Score analysis | • Run system test<br>• Final review<br>• Prepare checklist |
+| May<br>19-24 | **EXAM DAY**<br>• Sit AWS DVA-C02 exam<br>• Write reflection<br>• Plan next steps | | | | |
 
 ## Guiding Principles  
 - **3 focused bench-hours per workday** (≈ 1.5 h AM + 1.5 h PM) keeps total weekly hours < 45 and avoids burnout.  
@@ -45,23 +45,25 @@ since I started the courses mid day.
 
 ---
 
-## Tue May 6  
-- [ ] 1. **Udemy Sections 3–5 (≈ 2 h):** IAM deep dive, VPC fundamentals, and S3 hands‑on labs.  [oai_citation:4‡Udemy](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/?amp%3Baff_code=Ewh3Y1lWQH8FQR93MkBPbG1RGXFfW1h8B14ZeU5TQ3YBRxFzWj5XMRM%3D&amp%3Bpmtag=CAREERS24LEARN15&amp%3Butm_campaign=careers24octlaunch&amp%3Butm_medium=web&srsltid=AfmBOopJHmYDoDXiZOs7rx9Wcrtz7cn0W8gAQOU_EZVDRsQW5kdqJkRL&utm_source=chatgpt.com) [oai_citation:5‡Udemy](https://www.udemy.com/topic/aws-certified-developer-associate/?srsltid=AfmBOooPoa8GWqufWIXc_v0wYU6PpCl8hsy6lAVR2QOTfsfLHuolv8Wh&utm_source=chatgpt.com)  
-- [ ] 2. Export the S3 & IAM mini‑lab screenshots from the Udemy course and attach them to your bench log.
+## Tue May 6 
+- [ ] 1.Udemy Section 4 – IAM & CLI 1 h 28 m 
+- [ ] 2.  Udemy Section 6 – EC2 Storage 1 h 5 m
+- [ ] 3. Complete the section quizzes and jot **key takeaways** for IAM and S3 in your bench log. 
 
 ---
 
 ## Wed May 7  
-- [ ] 1. **Read the Lambda Go runtime docs**; scaffold a local handler.  [oai_citation:3‡AWS Documentation](https://docs.aws.amazon.com/lambda/latest/dg/lambda-golang.html?utm_source=chatgpt.com)  
-- [ ] 2. Follow this Medium guide to **deploy a "Hello Go" API (API Gateway + Lambda)**.  [oai_citation:4‡Medium](https://medium.com/%40hrshh17softdev/serverless-rest-apis-in-go-using-aws-api-gateway-lambda-dynamodb-cd04d938c421?utm_source=chatgpt.com)  
+- [ ] 1. **Read the Lambda Go runtime docs** 15m [oai_citation:3‡AWS Documentation](https://docs.aws.amazon.com/lambda/latest/dg/lambda-golang.html?utm_source=chatgpt.com)  
+- [ ] 2. Follow this Medium guide to **deploy a "Hello Go" API (API Gateway + Lambda) 50m **.  [oai_citation:4‡Medium](https://medium.com/%40hrshh17softdev/serverless-rest-apis-in-go-using-aws-api-gateway-lambda-dynamodb-cd04d938c421?utm_source=chatgpt.com)  
 - [ ] 3. Push working code + endpoint URL to GitHub, link it in Confluence.
+- [ ] 4. Udemy Section 10 – VPC Fundamentals 1 h 34 m 
 
 ---
 
 ## Thu May 8  
-- [ ] 1. **Watch "Getting Started with Amazon DynamoDB"** (YouTube workshop).  [oai_citation:5‡YouTube](https://www.youtube.com/watch?v=2k2GINpO308&utm_source=chatgpt.com)  
-- [ ] 2. **Implement CRUD in Go** using AWS SDK v2 examples.  [oai_citation:6‡AWS Documentation](https://docs.aws.amazon.com/code-library/latest/ug/go_2_dynamodb_code_examples.html?utm_source=chatgpt.com)  
-- [ ] 3. Take the 22-question half-length quiz; aim ≥ 70 %. Record your score.
+- [ ] 1. **Watch "Getting Started with Amazon DynamoDB"** 43m (YouTube workshop).  [oai_citation:5‡YouTube](https://www.youtube.com/watch?v=2k2GINpO308&utm_source=chatgpt.com)  
+- [ ] 2. **Implement CRUD in Go** using AWS SDK v2 examples. 1h 20m  [oai_citation:6‡AWS Documentation](https://docs.aws.amazon.com/code-library/latest/ug/go_2_dynamodb_code_examples.html?utm_source=chatgpt.com)  
+- [ ] 3. Take the 22-question half-length quiz; aim ≥ 70 %. Record your score. 15m
 
 ---
 
