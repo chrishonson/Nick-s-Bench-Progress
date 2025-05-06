@@ -1,12 +1,12 @@
 # Nick's Bench Progress
 
-## Progress: 5/34 tasks completed
+## Progress: 7/34 tasks completed
 <!-- Progress bar visual representation -->
-![Progress](https://progress-bar.xyz/15/?scale=100&width=500&color=2EA043&suffix=%25)
+![Progress](https://progress-bar.xyz/20/?scale=100&width=500&color=2EA043&suffix=%25)
 
 ## Progress: Udemy Ultimate AWS Certified Developer Associate 2025 DVA-C02
 <!-- Progress bar visual representation -->
-![Progress](https://progress-bar.xyz/8/?scale=100&width=500&color=2EA043&suffix=%25)
+![Progress](https://progress-bar.xyz/10/?scale=100&width=500&color=2EA043&suffix=%25)
 
 
 # AWS Developer–Associate Fast-Track Plan  
@@ -50,23 +50,26 @@ since I started the courses mid day.
 ---
 
 ## Tue May 6 
-- [✅] 1.Udemy Section 4 – IAM & CLI 1 h 28 m 
+- [✅] 1. Udemy Section 4 – IAM & CLI 1 h 28 m 
 - [✅] 2. Udemy Section 5 - EC2 Storage fundamentals. 2x speed review 
-- [ ] 3.  Udemy Section 6 – EC2 Storage 1 h 5 m
-- [ ] 4. Complete the section quizzes and jot **key takeaways** for IAM and EC2 in your bench log. 
+- [✅] 3. Udemy Section 6 – EC2 Storage 1 h 5 m
+- [✅] 4. Complete the section quizzes and jot **key takeaways** for IAM and EC2 in your bench log. 
 
 Key terms:
 
-- Subnet: basically just a contiguous range of IP addresses that 
-- VPC: Virtual private cloud
-- Security groups: allow applying security rules in groups 
+- Subnet: A contiguous range of IP addresses within a VPC
+- VPC: Virtual Private Cloud - Isolated network environment in AWS
+- Security groups: Virtual firewall that controls inbound and outbound traffic for AWS resources
 - IAM: Identity and Access Management - AWS service for managing user access and permissions
 - CLI: Command Line Interface - Tool for interacting with AWS services via command line
 - EC2: Elastic Compute Cloud - Virtual servers in the cloud
 - S3: Simple Storage Service - Object storage service for storing and retrieving data
-- Clasic ports to know: 22 SSH and secure ftp, 21 ftp, 80 is HTTP, 443 is HTTPS, 3389 is RDP remote desktop for windows
-- IPAM IP Address Manager. Helps to plan, track and manage IP addresses for workloads and on-prem networks
-
+- Classic ports to know: 22 SSH and secure FTP, 21 FTP, 80 HTTP, 443 HTTPS, 3389 RDP (Remote Desktop Protocol for Windows)
+- IPAM: IP Address Manager - Helps to plan, track and manage IP addresses for workloads and on-prem networks
+- Local EC2 Instance Store: High performance temporary block-level storage
+- IOPS: Input/Output Operations Per Second - Measure of storage performance
+- EBS: Elastic Block Storage - Persistent block storage volumes for EC2 instances
+- EFS: Elastic File System - Scalable, fully managed NFS file system
 ---
 
 ## Wed May 7  
