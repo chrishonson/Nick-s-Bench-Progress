@@ -1,8 +1,13 @@
 # Nick's Bench Progress
 
-## Progress: 1/27 tasks completed
+## Progress: 5/34 tasks completed
 <!-- Progress bar visual representation -->
-![Progress](https://progress-bar.xyz/4/?scale=100&width=500&color=2EA043&suffix=%25)
+![Progress](https://progress-bar.xyz/15/?scale=100&width=500&color=2EA043&suffix=%25)
+
+## Progress: Udemy Ultimate AWS Certified Developer Associate 2025 DVA-C02
+<!-- Progress bar visual representation -->
+![Progress](https://progress-bar.xyz/8/?scale=100&width=500&color=2EA043&suffix=%25)
+
 
 # AWS Developer–Associate Fast-Track Plan  
 *(Workdays-only, starts May 2, preserves nights & weekends)*  
@@ -17,11 +22,10 @@
 | May<br>19-24 | **EXAM DAY**<br>• Sit AWS DVA-C02 exam<br>• Write reflection<br>• Plan next steps | | | | |
 
 ## Guiding Principles  
-- **3 focused bench-hours per workday** (≈ 1.5 h AM + 1.5 h PM) keeps total weekly hours < 45 and avoids burnout.  
 - **Pomodoro 25 / 5 cadence** → sustained concentration without fatigue.  
 - **Visible progress** → log a short note or screenshot at day's end in this doc.  
 - **Spaced repetition, not cramming** → review flash-cards after every module.  
-- **Soft stop 4 p.m.** → evenings + weekends are family time.
+- **Soft stop 4:30 p.m.** → evenings + weekends are family time.
 
 ---
 
@@ -41,14 +45,27 @@ since I started the courses mid day.
 ---
 
 ## Mon May 5  
-*Vacation Day*
+*Vacation Day (Volunteered) *
 
 ---
 
 ## Tue May 6 
-- [ ] 1.Udemy Section 4 – IAM & CLI 1 h 28 m 
-- [ ] 2.  Udemy Section 6 – EC2 Storage 1 h 5 m
-- [ ] 3. Complete the section quizzes and jot **key takeaways** for IAM and S3 in your bench log. 
+- [✅] 1.Udemy Section 4 – IAM & CLI 1 h 28 m 
+- [✅] 2. Udemy Section 5 - EC2 Storage fundamentals. 2x speed review 
+- [ ] 3.  Udemy Section 6 – EC2 Storage 1 h 5 m
+- [ ] 4. Complete the section quizzes and jot **key takeaways** for IAM and EC2 in your bench log. 
+
+Key terms:
+
+- Subnet: basically just a contiguous range of IP addresses that 
+- VPC: Virtual private cloud
+- Security groups: allow applying security rules in groups 
+- IAM: Identity and Access Management - AWS service for managing user access and permissions
+- CLI: Command Line Interface - Tool for interacting with AWS services via command line
+- EC2: Elastic Compute Cloud - Virtual servers in the cloud
+- S3: Simple Storage Service - Object storage service for storing and retrieving data
+- Clasic ports to know: 22 SSH and secure ftp, 21 ftp, 80 is HTTP, 443 is HTTPS, 3389 is RDP remote desktop for windows
+- IPAM IP Address Manager. Helps to plan, track and manage IP addresses for workloads and on-prem networks
 
 ---
 
