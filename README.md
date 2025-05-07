@@ -69,6 +69,30 @@ Key terms:
 - Local EC2 Instance Store: High performance temporary block-level storage
 - IOPS: Input/Output Operations Per Second - Measure of storage performance
 - EBS: Elastic Block Storage - Persistent block storage volumes for EC2 instances
+    - gp2 General Purpose SSD (older generation)
+        - Baseline of 3 IOPS/GiB, up to 16,000 IOPS per volume
+        - Volume size 1 GiB to 16 TiB
+        - Burst up to 3,000 IOPS
+        - Good for boot volumes, dev/test environments
+    - gp3 General Purpose SSD (current generation)
+        - Baseline 3,000 IOPS and 125 MiB/s throughput
+        - Can increase up to 16,000 IOPS and 1,000 MiB/s throughput
+        - Independent scaling of IOPS and throughput
+        - 20% cheaper than gp2
+    - io1/io2 Provisioned IOPS SSD
+        - Highest performance SSD volume
+        - Up to 64,000 IOPS per volume
+        - io2 is more durable and more IOPS per GiB
+    - st1 Throughput Optimized HDD
+        - Low-cost HDD volume
+        - Baseline throughput of 40 MB/s per TB
+        - Burst up to 250 MB/s per TB
+        - Good for big data, data warehouses, log processing
+    - sc1 Cold HDD
+        - Lowest cost HDD volume
+        - Base 12 MB/s per TB
+        - Burst up to 80 MB/s per TB
+        - Good for infrequently accessed data
 - EFS: Elastic File System - Scalable, fully managed NFS file system
 ---
 
