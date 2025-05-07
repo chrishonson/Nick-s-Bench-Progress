@@ -9,7 +9,7 @@
 ![Progress](https://progress-bar.xyz/10/?scale=100&width=500&color=2EA043&suffix=%25)
 
 
-# AWS Developer–Associate Fast-Track Plan  
+# AWS Developer–Associate 90% pass probability plan  
 *(Workdays-only, starts May 2, preserves nights & weekends)*  
 
 ## Visual Calendar
@@ -19,7 +19,8 @@
 | May<br>1-3 | | | | | • Read AWS Exam Guide<br>• Udemy kick-off<br>• Create Gap List |
 | May<br>6-10 | *Vacation Day* | • Udemy Section 4 (IAM/CLI)<br>• Udemy Section 6 (EC2 Storage)<br>• Key takeaways | • Read Lambda Go docs<br>• Deploy "Hello Go" API<br>• Push to GitHub<br>• Udemy Section 10 (VPC) | • Watch DynamoDB video<br>• Implement Go CRUD<br>• Half-length quiz | • CodePipeline tutorial<br>• AWS SAM redeploy<br>• Commit templates |
 | May<br>13-17 | • Whizlabs practice test<br>• Review sample questions<br>• Post score report | • EventBridge tutorial<br>• Add SQS/SNS fan-out | • Read AWS KMS sections<br>• IAM best practices<br>• Flash-card drill | • Tutorials Dojo Exam<br>• Score analysis | • Run system test<br>• Final review<br>• Prepare checklist |
-| May<br>19-24 | **EXAM DAY**<br>• Sit AWS DVA-C02 exam<br>• Write reflection<br>• Plan next steps | | | | |
+| May<br>19‑23 | • Tutorials Dojo Practice Exam #1 (65 Q, 130 m)<br>• Review answers & update Gap List | • Whizlabs Full‑length Exam #2 (65 Q, 130 m)<br>• Deep review & note‑taking | • Re‑watch weak‑topic lectures<br>• Lab: CodeBuild + CodeDeploy mini‑pipeline | • AWS Official Sample 20 Q — aim ≥ 90 %<br>• Quick labs on SQS/SNS/KMS | • 100‑Q mixed quiz (TD)<br>• Final cheat‑sheet consolidation<br>• Pearson Vue system test |
+| May<br>26‑30 | **EXAM DAY**<br>• Sit AWS DVA‑C02 exam<br>• Write reflection<br>• Plan next steps |  |  |  |  |
 
 ## Guiding Principles  
 - **Pomodoro 25 / 5 cadence** → sustained concentration without fatigue.  
@@ -96,69 +97,75 @@ Key terms:
 - EFS: Elastic File System - Scalable, fully managed NFS file system
 ---
 
-## Wed May 7  
-- [ ] 1. **Read the Lambda Go runtime docs** 15m [oai_citation:3‡AWS Documentation](https://docs.aws.amazon.com/lambda/latest/dg/lambda-golang.html?utm_source=chatgpt.com)  
-- [ ] 2. Follow this Medium guide to **deploy a "Hello Go" API (API Gateway + Lambda) 50m **.  [oai_citation:4‡Medium](https://medium.com/%40hrshh17softdev/serverless-rest-apis-in-go-using-aws-api-gateway-lambda-dynamodb-cd04d938c421?utm_source=chatgpt.com)  
-- [ ] 3. Push working code + endpoint URL to GitHub, link it in Confluence.
-- [ ] 4. Udemy Section 10 – VPC Fundamentals 1 h 34 m 
+## Wed May 7  —  ✳ Deep‑study + Lab  
+- ✳ **Udemy Section 10 – VPC Fundamentals** (≈ 2.3 h)  
+- **Read Lambda Go runtime docs** (≈ 15 m) — [oai_citation:3‡AWS Documentation](https://docs.aws.amazon.com/lambda/latest/dg/lambda-golang.html?utm_source=chatgpt.com)  
+- **Deploy "Hello Go" API (API Gateway + Lambda)** (≈ 50 m) — [oai_citation:4‡Medium](https://medium.com/%40hrshh17softdev/serverless-rest-apis-in-go-using-aws-api-gateway-lambda-dynamodb-cd04d938c421?utm_source=chatgpt.com)  
+- Push working code + endpoint URL to GitHub and link it in Confluence.
 
----
+## Thu May 8  —  ✳ + ⏩  
+- ✳ **Udemy Section 11 – Amazon S3 Intro** (≈ 2.1 h)  
+- ⏩ **Udemy Section 8 – Elastic Beanstalk** (≈ 0.8 h)  
+- [✅] ⏩ **Udemy Section 7 – ELB & Auto‑Scaling** (≈ 1.2 h)  
 
-## Thu May 8  
-- [ ] 1. **Watch "Getting Started with Amazon DynamoDB"** 43m (YouTube workshop).  [oai_citation:5‡YouTube](https://www.youtube.com/watch?v=2k2GINpO308&utm_source=chatgpt.com)  
-- [ ] 2. **Implement CRUD in Go** using AWS SDK v2 examples. 1h 20m  [oai_citation:6‡AWS Documentation](https://docs.aws.amazon.com/code-library/latest/ug/go_2_dynamodb_code_examples.html?utm_source=chatgpt.com)  
-- [ ] 3. Take the 22-question half-length quiz; aim ≥ 70 %. Record your score. 15m
+## Fri May 9  —  ✳ + ⏩  
+- ✳ **Udemy Section 12 – DynamoDB & Databases** (≈ 2.6 h)  
+- ⏩ **Udemy Section 9 – ECS / Docker & ECR** (≈ 1.2 h)  
+- **Watch "Getting Started with Amazon DynamoDB"** (≈ 43 m) — [oai_citation:5‡YouTube](https://www.youtube.com/watch?v=2k2GINpO308&utm_source=chatgpt.com)  
+- **Implement CRUD in Go (AWS SDK v2)** (≈ 1 h 20 m) — [oai_citation:6‡AWS Documentation](https://docs.aws.amazon.com/code-library/latest/ug/go_2_dynamodb_code_examples.html?utm_source=chatgpt.com)  
+- **Take the 22‑question DynamoDB quiz; aim ≥ 70 %** (≈ 15 m)
 
----
+## Mon May 12  —  ✳ + ⏩  
+- ✳ **Udemy Section 13 – SQS / SNS Messaging** (≈ 2.0 h)  
+- ⏩ **Udemy Section 16 – Step Functions** (≈ 0.75 h)  
+- **Amazon EventBridge hands‑on tutorial; trigger Lambda** (≈ 1 h) — [oai_citation:11‡AWS Documentation](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-tutorial.html?utm_source=chatgpt.com)
 
-## Fri May 9  
-- [ ] 1. Walk through the **CodePipeline blue-green deployment tutorial**.  [oai_citation:7‡AWS Documentation](https://docs.aws.amazon.com/codepipeline/latest/userguide/action-reference-ECSbluegreen.html?utm_source=chatgpt.com)  
-- [ ] 2. Use the **AWS SAM "Getting Started" guide** to redeploy yesterday's Lambda.  [oai_citation:8‡AWS Documentation](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-getting-started.html?utm_source=chatgpt.com)  
-- [ ] 3. Commit pipeline YAML and SAM template to GitHub.
+## Tue May 13  —  ✳ Focus Day  
+- ✳ **Udemy Section 14 – AWS Lambda Deep Dive** (≈ 3.1 h)  
+- **Re‑deploy Lambda via AWS SAM** (≈ 0.5 h) — [oai_citation:8‡AWS Documentation](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-getting-started.html?utm_source=chatgpt.com)
 
----
+## Wed May 14  —  ✳ + ⏩  
+- ✳ **Udemy Section 15 – API Gateway** (≈ 2.0 h)  
+- ⏩ **Udemy Section 19 – Monitoring & X‑Ray** (≈ 0.8 h)  
+- **Review CloudWatch logs for Hello‑Go API** (≈ 0.3 h)
 
-## Mon May 12  
-- [ ] 1. Sit the **Whizlabs free Developer-Associate practice test** in timed mode.  [oai_citation:9‡Whizlabs](https://www.whizlabs.com/aws-developer-associate/?utm_source=chatgpt.com)  
-- [ ] 2. Review the **official AWS sample questions** PDF.  [oai_citation:10‡Amazon Web Services, Inc.](https://aws.amazon.com/certification/certified-developer-associate/?utm_source=chatgpt.com)  
-- [ ] 3. Post your score report + remediation list.
+## Thu May 15  —  ✳ Double Deployment  
+- ✳ **Udemy Section 17 – Developer Tools (CI/CD)** (≈ 2.3 h)  
+- ✳ **Udemy Section 18 – SAM & CloudFormation** (≈ 1.8 h)  
+- **Commit updated pipeline YAML & SAM templates** (≈ 0.3 h)
 
----
+## Fri May 16  —  ✳ Security + Practice  
+- ✳ **Udemy Section 20 – KMS, Encryption & Secrets** (≈ 1.6 h)  
+- **Whizlabs 20‑Q + AWS sample 15‑Q** (≈ 1.0 h) — [oai_citation:9‡Whizlabs](https://www.whizlabs.com/aws-developer-associate/?utm_source=chatgpt.com)  
+- **Flash‑card review of weak areas** (≈ 0.5 h)
 
-## Tue May 13  
-- [ ] 1. Complete the **Amazon EventBridge hands-on tutorial**; wire a rule to trigger your Lambda.  [oai_citation:11‡AWS Documentation](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-tutorial.html?utm_source=chatgpt.com)  
-- [ ] 2. Add SQS or SNS to fan-out events; upload an architecture diagram.
+## Mon May 19 — Practice Exam  
+- [ ] Tutorials Dojo Practice Exam #1 (65 Q, 130 m)  
+- [ ] Deep review of each missed question  
+- [ ] Update Gap List & flash‑card deck  
 
----
+## Tue May 20 — Practice Exam  
+- [ ] Whizlabs Full‑length Exam #2 (65 Q, 130 m)  
+- [ ] Categorise errors by service domain  
+- [ ] Re‑watch related Udemy lessons  
 
-## Wed May 14  
-- [ ] 1. Read the key sections on **AWS KMS (CMKs vs. AWS-managed keys)**.  [oai_citation:12‡AWS Documentation](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html?utm_source=chatgpt.com)  
-- [ ] 2. Re-read **IAM security best practices** and turn key points into flash-cards.  [oai_citation:13‡AWS Documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html?utm_source=chatgpt.com)  
-- [ ] 3. Drill flash-cards for 20 min (spaced repetition).
+## Wed May 21 — Weak‑Topic Workshop  
+- [ ] Re‑watch VPC, KMS, and Elastic Beanstalk deep dives  
+- [ ] Lab: build CI/CD demo with CodeBuild + CodeDeploy  
+- [ ] Retake failed quiz questions  
 
----
+## Thu May 22 — Confidence Builder  
+- [ ] AWS Official Sample Questions (20 Q) — target ≥ 90 %  
+- [ ] Quick labs: SQS queue fan‑out, SNS filtering, KMS envelope encryption  
+- [ ] Flash‑card speed‑run  
 
-## Thu May 15  
-- [ ] 1. Purchase (with stipend) and take **Tutorials Dojo Practice Exam Set #2** in exam mode.  [oai_citation:14‡Tutorials Dojo](https://tutorialsdojo.com/courses/aws-certified-developer-associate-practice-exams/?utm_source=chatgpt.com)  
-- [ ] 2. Aim for ≥ 75 %. If < 65 %, flag for a reschedule decision.  
-- [ ] 3. Record score + weak-domain analytics.
-
----
-
-## Fri May 16  
-- [ ] 1. Run the **Pearson VUE OnVUE system-test** to verify webcam, bandwidth, room setup.  [oai_citation:15‡Pearson VUE](https://www.pearsonvue.com/us/en/test-takers/onvue-online-proctoring.html?utm_source=chatgpt.com)  
-- [ ] 2. Light review: skim notes, gap list, and flash-cards.  
-- [ ] 3. Prepare the readiness checklist (ID, clean desk, allowed items).
-
----
-
-## Mon May 19 — **EXAM DAY**  
-- [ ] 1. **Sit the AWS DVA-C02 exam** (morning slot).  
-- [ ] 2. Afternoon: write a reflection—what went well, what to improve—and post pass/fail summary.  
-- [ ] 3. Close the sprint: plan next-week kickoff for the Go-migration spike.
+## Fri May 23 — Final Review  
+- [ ] 100‑question mixed quiz (Tutorials Dojo) — target ≥ 85 %  
+- [ ] Consolidate last‑minute cheat‑sheet  
+- [ ] Pearson Vue system test & logistics check  
 
 ## Contingency  
-If any full practice score < 65 % by May 14, reschedule the exam to the week of May 20 (APN voucher reschedule is free).
+*If any full‑length practice score is below 70 % by **May 22**, reschedule the exam to the week of **June 2** (voucher reschedule is free).*  
 
 ## Burnout Safeguards  
 - 5-min walk + hydration every two Pomodoros.  
@@ -170,4 +177,3 @@ If any full practice score < 65 % by May 14, reschedule the exam to the week of 
 - Begin drafting the **"Kunai Serverless Starter Kit"** repo & Terraform scripts.
 
 ---
-*Document last updated: May 5 2025*
