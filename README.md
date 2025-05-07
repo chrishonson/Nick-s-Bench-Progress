@@ -1,12 +1,12 @@
 # Nick's Bench Progress
 
-## Progress: 7/34 tasks completed
+## Progress: 9/47 tasks completed
 <!-- Progress bar visual representation -->
-![Progress](https://progress-bar.xyz/20/?scale=100&width=500&color=2EA043&suffix=%25)
+![Progress](https://progress-bar.xyz/19/?scale=100&width=500&color=2EA043&suffix=%25)
 
 ## Progress: Udemy Ultimate AWS Certified Developer Associate 2025 DVA-C02
 <!-- Progress bar visual representation -->
-![Progress](https://progress-bar.xyz/10/?scale=100&width=500&color=2EA043&suffix=%25)
+![Progress](https://progress-bar.xyz/15/?scale=100&width=500&color=2EA043&suffix=%25)
 
 
 # AWS Developer–Associate 90% pass probability plan  
@@ -98,71 +98,71 @@ Key terms:
 ---
 
 ## Wed May 7  —  ✳ Deep‑study + Lab  
-- ✳ **Udemy Section 10 – VPC Fundamentals** (≈ 2.3 h)  
-- **Read Lambda Go runtime docs** (≈ 15 m) — [oai_citation:3‡AWS Documentation](https://docs.aws.amazon.com/lambda/latest/dg/lambda-golang.html?utm_source=chatgpt.com)  
-- **Deploy "Hello Go" API (API Gateway + Lambda)** (≈ 50 m) — [oai_citation:4‡Medium](https://medium.com/%40hrshh17softdev/serverless-rest-apis-in-go-using-aws-api-gateway-lambda-dynamodb-cd04d938c421?utm_source=chatgpt.com)  
-- Push working code + endpoint URL to GitHub and link it in Confluence.
+- [✅] 1. ✳ **Udemy Section 10 – VPC Fundamentals** (≈ 0.6 h)  
+- [ ] 2. **Read Lambda Go runtime docs** (≈ 15 m) — [oai_citation:3‡AWS Documentation](https://docs.aws.amazon.com/lambda/latest/dg/lambda-golang.html?utm_source=chatgpt.com)  
+- [ ] 3. **Deploy "Hello Go" API (API Gateway + Lambda)** (≈ 50 m) — [oai_citation:4‡Medium](https://medium.com/%40hrshh17softdev/serverless-rest-apis-in-go-using-aws-api-gateway-lambda-dynamodb-cd04d938c421?utm_source=chatgpt.com)  
+- [ ] 4. Push working code + endpoint URL to GitHub and link it in Confluence.
 
 ## Thu May 8  —  ✳ + ⏩  
-- ✳ **Udemy Section 11 – Amazon S3 Intro** (≈ 2.1 h)  
-- ⏩ **Udemy Section 8 – Elastic Beanstalk** (≈ 0.8 h)  
-- [✅] ⏩ **Udemy Section 7 – ELB & Auto‑Scaling** (≈ 1.2 h)  
+- [ ] 1. ✳ **Udemy Section 11 – Amazon S3 Intro** (≈ 2.1 h)  
+- [ ] 2. ⏩ **Udemy Section 8 – AWS Fundamentals: RDS + Aurora + ElastiCache** (≈ 0.8 h)  
+- [✅] 3. ⏩ **Udemy Section 7 – ELB & Auto‑Scaling** (≈ 1.2 h)  
 
 ## Fri May 9  —  ✳ + ⏩  
-- ✳ **Udemy Section 12 – DynamoDB & Databases** (≈ 2.6 h)  
-- ⏩ **Udemy Section 9 – ECS / Docker & ECR** (≈ 1.2 h)  
-- **Watch "Getting Started with Amazon DynamoDB"** (≈ 43 m) — [oai_citation:5‡YouTube](https://www.youtube.com/watch?v=2k2GINpO308&utm_source=chatgpt.com)  
-- **Implement CRUD in Go (AWS SDK v2)** (≈ 1 h 20 m) — [oai_citation:6‡AWS Documentation](https://docs.aws.amazon.com/code-library/latest/ug/go_2_dynamodb_code_examples.html?utm_source=chatgpt.com)  
-- **Take the 22‑question DynamoDB quiz; aim ≥ 70 %** (≈ 15 m)
+- [ ] 1. ✳ **Udemy Section 12 – DynamoDB & Databases** (≈ 2.6 h)  
+- [ ] 2. ⏩ **Udemy Section 9 – ECS / Docker & ECR** (≈ 1.2 h)  
+- [ ] 3. **Watch "Getting Started with Amazon DynamoDB"** (≈ 43 m) — [oai_citation:5‡YouTube](https://www.youtube.com/watch?v=2k2GINpO308&utm_source=chatgpt.com)  
+- [ ] 4. **Implement CRUD in Go (AWS SDK v2)** (≈ 1 h 20 m) — [oai_citation:6‡AWS Documentation](https://docs.aws.amazon.com/code-library/latest/ug/go_2_dynamodb_code_examples.html?utm_source=chatgpt.com)  
+- [ ] 5. **Take the 22‑question DynamoDB quiz; aim ≥ 70 %** (≈ 15 m)
 
 ## Mon May 12  —  ✳ + ⏩  
-- ✳ **Udemy Section 13 – SQS / SNS Messaging** (≈ 2.0 h)  
-- ⏩ **Udemy Section 16 – Step Functions** (≈ 0.75 h)  
-- **Amazon EventBridge hands‑on tutorial; trigger Lambda** (≈ 1 h) — [oai_citation:11‡AWS Documentation](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-tutorial.html?utm_source=chatgpt.com)
+- [ ] 1. ✳ **Udemy Section 13 – SQS / SNS Messaging** (≈ 2.0 h)  
+- [ ] 2. ⏩ **Udemy Section 16 – Step Functions** (≈ 0.75 h)  
+- [ ] 3. **Amazon EventBridge hands‑on tutorial; trigger Lambda** (≈ 1 h) — [oai_citation:11‡AWS Documentation](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-tutorial.html?utm_source=chatgpt.com)
 
 ## Tue May 13  —  ✳ Focus Day  
-- ✳ **Udemy Section 14 – AWS Lambda Deep Dive** (≈ 3.1 h)  
-- **Re‑deploy Lambda via AWS SAM** (≈ 0.5 h) — [oai_citation:8‡AWS Documentation](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-getting-started.html?utm_source=chatgpt.com)
+- [ ] 1. ✳ **Udemy Section 14 – AWS Lambda Deep Dive** (≈ 3.1 h)  
+- [ ] 2. **Re‑deploy Lambda via AWS SAM** (≈ 0.5 h) — [oai_citation:8‡AWS Documentation](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-getting-started.html?utm_source=chatgpt.com)
 
 ## Wed May 14  —  ✳ + ⏩  
-- ✳ **Udemy Section 15 – API Gateway** (≈ 2.0 h)  
-- ⏩ **Udemy Section 19 – Monitoring & X‑Ray** (≈ 0.8 h)  
-- **Review CloudWatch logs for Hello‑Go API** (≈ 0.3 h)
+- [ ] 1. ✳ **Udemy Section 15 – API Gateway** (≈ 2.0 h)  
+- [ ] 2. ⏩ **Udemy Section 19 – Monitoring & X‑Ray** (≈ 0.8 h)  
+- [ ] 3. **Review CloudWatch logs for Hello‑Go API** (≈ 0.3 h)
 
 ## Thu May 15  —  ✳ Double Deployment  
-- ✳ **Udemy Section 17 – Developer Tools (CI/CD)** (≈ 2.3 h)  
-- ✳ **Udemy Section 18 – SAM & CloudFormation** (≈ 1.8 h)  
-- **Commit updated pipeline YAML & SAM templates** (≈ 0.3 h)
+- [ ] 1. ✳ **Udemy Section 17 – Developer Tools (CI/CD)** (≈ 2.3 h)  
+- [ ] 2. ✳ **Udemy Section 18 – SAM & CloudFormation** (≈ 1.8 h)  
+- [ ] 3. **Commit updated pipeline YAML & SAM templates** (≈ 0.3 h)
 
 ## Fri May 16  —  ✳ Security + Practice  
-- ✳ **Udemy Section 20 – KMS, Encryption & Secrets** (≈ 1.6 h)  
-- **Whizlabs 20‑Q + AWS sample 15‑Q** (≈ 1.0 h) — [oai_citation:9‡Whizlabs](https://www.whizlabs.com/aws-developer-associate/?utm_source=chatgpt.com)  
-- **Flash‑card review of weak areas** (≈ 0.5 h)
+- [ ] 1. ✳ **Udemy Section 20 – KMS, Encryption & Secrets** (≈ 1.6 h)  
+- [ ] 2. **Whizlabs 20‑Q + AWS sample 15‑Q** (≈ 1.0 h) — [oai_citation:9‡Whizlabs](https://www.whizlabs.com/aws-developer-associate/?utm_source=chatgpt.com)  
+- [ ] 3. **Flash‑card review of weak areas** (≈ 0.5 h)
 
 ## Mon May 19 — Practice Exam  
-- [ ] Tutorials Dojo Practice Exam #1 (65 Q, 130 m)  
-- [ ] Deep review of each missed question  
-- [ ] Update Gap List & flash‑card deck  
+- [ ] 1. Tutorials Dojo Practice Exam #1 (65 Q, 130 m)  
+- [ ] 2. Deep review of each missed question  
+- [ ] 3. Update Gap List & flash‑card deck  
 
 ## Tue May 20 — Practice Exam  
-- [ ] Whizlabs Full‑length Exam #2 (65 Q, 130 m)  
-- [ ] Categorise errors by service domain  
-- [ ] Re‑watch related Udemy lessons  
+- [ ] 1. Whizlabs Full‑length Exam #2 (65 Q, 130 m)  
+- [ ] 2. Categorise errors by service domain  
+- [ ] 3. Re‑watch related Udemy lessons  
 
 ## Wed May 21 — Weak‑Topic Workshop  
-- [ ] Re‑watch VPC, KMS, and Elastic Beanstalk deep dives  
-- [ ] Lab: build CI/CD demo with CodeBuild + CodeDeploy  
-- [ ] Retake failed quiz questions  
+- [ ] 1. Re‑watch VPC, KMS, and Elastic Beanstalk deep dives  
+- [ ] 2. Lab: build CI/CD demo with CodeBuild + CodeDeploy  
+- [ ] 3. Retake failed quiz questions  
 
 ## Thu May 22 — Confidence Builder  
-- [ ] AWS Official Sample Questions (20 Q) — target ≥ 90 %  
-- [ ] Quick labs: SQS queue fan‑out, SNS filtering, KMS envelope encryption  
-- [ ] Flash‑card speed‑run  
+- [ ] 1. AWS Official Sample Questions (20 Q) — target ≥ 90 %  
+- [ ] 2. Quick labs: SQS queue fan‑out, SNS filtering, KMS envelope encryption  
+- [ ] 3. Flash‑card speed‑run  
 
 ## Fri May 23 — Final Review  
-- [ ] 100‑question mixed quiz (Tutorials Dojo) — target ≥ 85 %  
-- [ ] Consolidate last‑minute cheat‑sheet  
-- [ ] Pearson Vue system test & logistics check  
+- [ ] 1. 100‑question mixed quiz (Tutorials Dojo) — target ≥ 85 %  
+- [ ] 2. Consolidate last‑minute cheat‑sheet  
+- [ ] 3. Pearson Vue system test & logistics check  
 
 ## Contingency  
 *If any full‑length practice score is below 70 % by **May 22**, reschedule the exam to the week of **June 2** (voucher reschedule is free).*  
