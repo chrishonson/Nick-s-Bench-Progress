@@ -9,7 +9,7 @@
 ![Progress](https://progress-bar.xyz/15/?scale=100&width=500&color=2EA043&suffix=%25)
 
 ## Burndown Chart
-![Burndown Chart](https://quickchart.io/chart?w=600&h=350&c={type:%27line%27,data:{labels:[%27Start%27,%27May%202%27,%27May%206%27,%27May%207%27,%27May%208%27,%27May%209%27,%27May%2012%27,%27May%2013%27,%27May%2014%27,%27May%2015%27,%27May%2016%27,%27May%2019%27,%27May%2020%27,%27May%2021%27,%27May%2022%27,%27May%2023%27],datasets:[{label:%27Ideal%27,data:[47,44,41,38,34,31,28,25,22,19,16,13,9,6,3,0],fill:false,borderColor:%27rgb(75,192,192)%27,tension:0.1,pointRadius:2},{label:%27Actual%27,data:[47,44,40,39,38,38,38,38,38,38,38,38,38,38,38,38],fill:false,borderColor:%27rgb(255,99,132)%27,tension:0.1,pointRadius:2}]},options:{title:{display:true,text:%27Task%20Burndown%20(47%20tasks,%2015%20Workdays%20to%20May%2023)%27},scales:{yAxes:[{ticks:{beginAtZero:true,suggestedMax:50},scaleLabel:{display:true,labelString:%27Tasks%20Remaining%27}}],xAxes:[{scaleLabel:{display:true,labelString:%27Date%20(Workdays)%27}}]}}})
+![Burndown Chart](https://quickchart.io/chart?w=600&h=350&c={type:%27line%27,data:{labels:[%27Start%27,%27May%202%27,%27May%203%27,%27May%204%27,%27May%205%27,%27May%206%27,%27May%207%27,%27May%208%27,%27May%209%27,%27May%2010%27,%27May%2011%27,%27May%2012%27,%27May%2013%27,%27May%2014%27,%27May%2015%27,%27May%2016%27,%27May%2017%27,%27May%2018%27,%27May%2019%27,%27May%2020%27,%27May%2021%27,%27May%2022%27,%27May%2023%27],datasets:[{label:%27Ideal%27,data:[47,44,41,41,41,41,38,34,31,28,28,28,25,22,19,16,13,13,13,9,6,3,0],fill:false,borderColor:%27rgb(75,192,192)%27,tension:0.1,pointRadius:2},{label:%27Actual%27,data:[47,44,null,null,null,40,39,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],fill:false,borderColor:%27rgb(255,99,132)%27,tension:0.1,pointRadius:2}]},options:{title:{display:true,text:%27Task%20Burndown%20(47%20tasks,%2015%20Workdays%20to%20May%2023)%27},scales:{yAxes:[{ticks:{beginAtZero:true,suggestedMax:50},scaleLabel:{display:true,labelString:%27Tasks%20Remaining%27}}],xAxes:[{scaleLabel:{display:true,labelString:%27Date%20(Workdays)%27}}]}}})
 
 # AWS Developer–Associate 90% Pass Probability Plan  
 *(Workdays-only, starts May 2, preserves nights & weekends)*  
@@ -102,13 +102,15 @@ Key terms:
 ## Wed May 7  —  ✳ Deep-study + Lab  
 - [✅] 1. ✳ **Udemy Section 10 – VPC Fundamentals** (≈ 0.6 h)  
 - [ ] 2. **Read Lambda Go runtime docs** (≈ 15 m) — [oai_citation:3‡AWS Documentation](https://docs.aws.amazon.com/lambda/latest/dg/lambda-golang.html?utm_source=chatgpt.com)  
-- [ ] 3. **Deploy "Hello Go" API (API Gateway + Lambda)** (≈ 50 m) — [oai_citation:4‡Medium](https://medium.com/%40hrshh17softdev/serverless-rest-apis-in-go-using-aws-api-gateway-lambda-dynamodb-cd04d938c421?utm_source=chatgpt.com)  
-- [ ] 4. Push working code + endpoint URL to GitHub and link it in Confluence.
 
 ## Thu May 8  —  ✳ + ⏩  
 - [ ] 1. ✳ **Udemy Section 11 – Amazon S3 Intro** (≈ 2.1 h)  
 - [ ] 2. ⏩ **Udemy Section 8 – AWS Fundamentals: RDS + Aurora + ElastiCache** (≈ 0.8 h)  
 - [✅] 3. ⏩ **Udemy Section 7 – ELB & Auto-Scaling** (≈ 1.2 h)  
+- [ ] 4. **Read Lambda Go runtime docs** (≈ 15 m) — [oai_citation:3‡AWS Documentation](https://docs.aws.amazon.com/lambda/latest/dg/lambda-golang.html?utm_source=chatgpt.com)  
+- [ ] 5. **Deploy "Hello Go" API (API Gateway + Lambda)** (≈ 50 m) — [oai_citation:4‡Medium](https://medium.com/%40hrshh17softdev/serverless-rest-apis-in-go-using-aws-api-gateway-lambda-dynamodb-cd04d938c421?utm_source=chatgpt.com)  
+- [ ] 6. **Re-deploy Lambda via AWS SAM** (≈ 0.5 h) — [oai_citation:8‡AWS Documentation](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-getting-started.html?utm_source=chatgpt.com)  
+- [ ] 7. Push working code + endpoint URL to GitHub and link it in Confluence.
 
 ## Fri May 9  —  ✳ + ⏩  
 - [ ] 1. ✳ **Udemy Section 12 – DynamoDB & Databases** (≈ 2.6 h)  
