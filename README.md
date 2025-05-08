@@ -102,6 +102,8 @@ Key terms:
 ## Wed May 7  —  ✳ + ⏩
 - [✅] 1. ✳ **Udemy Section 10 – VPC Fundamentals** (≈ 0.6 h)
 - [✅] 2. ⏩ **Udemy Section 7 – ELB & Auto-Scaling** (≈ 1.2 h)  
+Created VPC anki cards
+
 
 ## Thu May 8  —  ✳ + ⏩  
 - [ ] 1. ✳ **Udemy Section 11 – Amazon S3 Intro** (≈ 2.1 h)  
