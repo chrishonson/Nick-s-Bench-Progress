@@ -19,17 +19,33 @@
 | Week | Mon | Tue | Wed | Thu | Fri |
 |------|-----|-----|-----|-----|-----|
 | May<br>1-3 | | | | | ✅ Read AWS Exam Guide<br>✅ Udemy kick-off<br>✅ Create Gap List |
-| May<br>6-10 | *Vacation Day* | ✅ Udemy Section 4 (IAM/CLI)<br>✅ Udemy Section 6 (EC2 Storage)<br>✅ Key takeaways | ✅ Udemy Sec 10 (VPC)<br>✅ Udemy Sec 7 (ELB/ASG) | ✅ Udemy Sec 11 (S3)<br>✅ Udemy Sec 8 (RDS/Aurora/ElastiCache) | ✅ Udemy Sec 9 (Route 53)<br>⏳ Udemy Sec 14 (Lambda Deep Dive)<br>• Watch DynamoDB Video<br>• Implement Go CRUD<br>• DynamoDB Quiz |
-| May<br>13-17 | • Read Lambda Go docs<br>• Deploy "Hello Go" API<br>• AWS SAM redeploy<br>• Push to GitHub<br>• Udemy Sec 12 (DynamoDB)<br>• EventBridge Tutorial | • Udemy Sec 13 (SQS/SNS)<br>• Udemy Sec 15 (CloudFront)<br>• AWS SAM redeploy | • Udemy Sec 23 (API GW)<br>• Udemy Sec 19 (Monitor/X-Ray)<br>• Review CloudWatch Logs | • Udemy Sec 17 (Dev Tools CI/CD)<br>• Udemy Sec 18 (SAM/CFN)<br>• Commit Templates | • Udemy Sec 20 (KMS)<br>• Udemy Sec 21 (ECS/ECR)<br>• Whizlabs + AWS Quiz<br>• Flash-card review |
-| May<br>19‑23 | • Tutorials Dojo Practice Exam #1 (65 Q, 130 m)<br>• Review answers & update Gap List | • Whizlabs Full-length Exam #2 (65 Q, 130 m)<br>• Deep review & note-taking | • Re-watch weak-topic lectures<br>• Lab: CodeBuild + CodeDeploy mini-pipeline | • AWS Official Sample 20 Q — aim ≥ 90 %<br>• Quick labs on SQS/SNS/KMS | • 100-Q mixed quiz (TD)<br>• Final cheat-sheet consolidation<br>• Pearson Vue system test |
-| May<br>26‑30 | **EXAM DAY**<br>• Sit AWS DVA-C02 exam<br>• Write reflection<br>• Plan next steps |  |  |  |  |
+| May<br>6-10 | *Vacation Day* | ✅ Udemy Section 4 (IAM/CLI)<br>✅ Udemy Section 6 (EC2 Storage)<br>✅ Key takeaways | ✅ Udemy Sec 10 (VPC)<br>✅ Udemy Sec 7 (ELB/ASG) | ✅ Udemy Sec 11 (S3)<br>✅ Udemy Sec 8 (RDS/Aurora/ElastiCache) | ✅ Udemy Sec 9 (Route 53)<br>⏳ Udemy Sec 14 (Lambda Deep Dive)<br>• Watch DynamoDB Video |
+| May<br>12-17 | • Read Lambda Go docs<br>• Deploy "Hello Go" API (Part 1)<br>• Review Lambda concepts | • Complete "Hello Go" API<br>• AWS SAM setup<br>• Udemy Sec 12 (DynamoDB) | • Udemy Sec 13 (SQS/SNS)<br>• Udemy Sec 15 (CloudFront)<br>• API testing & debugging | • Udemy Sec 23 (API GW)<br>• Udemy Sec 19 (Monitor/X-Ray)<br>• CloudWatch Logs review | • Udemy Sec 17 (Dev Tools CI/CD)<br>• Udemy Sec 18 (SAM/CFN)<br>• Commit working templates |
+| May<br>19‑24 | • Tutorials Dojo Practice Exam #1 (65 Q)<br>• Review answers (2h)<br>• Update Gap List | • Focus on weak areas<br>• Udemy Sec 20 (KMS)<br>• Udemy Sec 21 (ECS/ECR) | • Whizlabs Exam #2 (65 Q)<br>• Deep review & note-taking<br>• Flash-card update | • Re-watch weak-topic lectures<br>• Lab: CodeBuild pipeline<br>• Quick labs on SQS/SNS | • AWS Official Sample (20 Q)<br>• Review all weak areas<br>• Update study materials |
+| May<br>26‑31 | • Final practice exam (100 Q)<br>• Comprehensive review<br>• Update cheat sheets | • Focus on top 3 weak areas<br>• Quick labs review<br>• Flash-card final run | • Pearson Vue system test<br>• Final exam prep<br>• Rest & review | • Light review only<br>• Early night | **EXAM DAY**<br>• AWS DVA-C02 exam<br>• Write reflection<br>• Plan next steps |
 
 ## Guiding Principles  
 - **Pomodoro 25 / 5 cadence** → sustained concentration without fatigue.  
 - **Visible progress** → log a short note or screenshot at day's end in this doc.  
 - **Spaced repetition, not cramming** → review flash-cards after every module.  
 - **Soft stop 4:30 p.m.** → evenings + weekends are family time.
-- **Using Ankidroid app, can review flash cards during spare cycles on weekends
+- **Using Ankidroid app** → review flash cards during spare cycles on weekends
+- **Buffer time** → 30-min buffer after hands-on sessions for troubleshooting
+- **Daily review** → 15-min review of previous day's concepts
+
+## Contingency  
+*If any full-length practice score is below 75% by **May 28**, reschedule the exam to the week of **June 3** (voucher reschedule is free).*  
+
+## Burnout Safeguards  
+- 5-min walk + hydration every two Pomodoros.  
+- Box-breathing if anxiety spikes.  
+- Friday Loom recap instead of late-night catch-up coding.
+- Light review only on May 29 (exam eve)
+- No new content after May 28
+
+## After the Exam  
+- Migrate first two IoT Cloud Functions from JavaScript to Go during the week of June 3.  
+- Begin drafting the **"Kunai Serverless Starter Kit"** repo & Terraform scripts.
 
 ---
 
@@ -124,58 +140,198 @@ Supports DNS record types
 - CNAME maps a hostname to another hostname
 - NS name servers for the hosted zone. Controls how traffic is routed for a domain
 
-## Tue May 13  —    
-- [ ] 1. **Read Lambda Go runtime docs** (≈ 15 m) — [oai_citation:3‡AWS Documentation](https://docs.aws.amazon.com/lambda/latest/dg/lambda-golang.html?utm_source=chatgpt.com)  
-- [ ] 2. **Deploy "Hello Go" API (API Gateway + Lambda)** (≈ 50 m) — [oai_citation:4‡Medium](https://medium.com/%40hrshh17softdev/serverless-rest-apis-in-go-using-aws-api-gateway-lambda-dynamodb-cd04d938c421?utm_source=chatgpt.com)  
-- [ ] 3. ⏩ **Udemy Section 15 – CloudFront** (≈ 0.5 h speed‑run)
+## Tue May 13  —  Hands-on Focus  
+- [ ] 1. **Read Lambda Go runtime docs** (≈ 30 m) — [oai_citation:3‡AWS Documentation](https://docs.aws.amazon.com/lambda/latest/dg/lambda-golang.html?utm_source=chatgpt.com)  
+- [ ] 2. **Deploy "Hello Go" API (Part 1)** (≈ 2.0 h)  
+   - Set up Go environment
+   - Create basic Lambda function
+   - Test locally
+   - Buffer time for troubleshooting
+- [ ] 3. **Review Lambda concepts** (≈ 30 m)
+   - Cold starts
+   - Memory allocation
+   - Timeout settings
+   - Environment variables
 
-## Wed May 14  —  ✳ + ⏩  
-- [ ] 1. ✳ **Udemy Section 23 – API Gateway** (≈ 1.7 h)  
-- [ ] 2. ⏩ **Udemy Section 19 – Monitoring & X-Ray** (≈ 0.8 h)  
-- [ ] 3. **Review CloudWatch logs for Hello-Go API** (≈ 0.3 h)
-- [ ] 4. ✳ **Udemy Section 28 – Other Serverless: Step Functions, SQS, SNS & AppSync** (≈ 2.0 h deep-study)
-- [ ] 5. **Re-deploy Lambda via AWS SAM** (≈ 0.5 h) — [oai_citation:8‡AWS Documentation](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-getting-started.html?utm_source=chatgpt.com)
-- [ ] 6. ✳ **Udemy Section 22 – AWS Serverless: DynamoDB** (≈ 2.0 h video → 2.6 h deep-study)
+## Wed May 14  —  API Completion  
+- [ ] 1. **Complete "Hello Go" API** (≈ 2.0 h)
+   - Add API Gateway integration
+   - Implement error handling
+   - Add logging
+   - Buffer time for debugging
+- [ ] 2. **AWS SAM setup** (≈ 1.0 h)
+   - Create SAM template
+   - Configure local testing
+   - Set up deployment pipeline
+- [ ] 3. **Udemy Section 12 – DynamoDB** (≈ 2.0 h)
+   - Deep dive into DynamoDB concepts
+   - Create Anki cards for key terms
 
-## Thu May 15  —  ✳ Double Deployment  
-- [ ] 1. ✳ **Udemy Section 17 – Developer Tools (CI/CD)** (≈ 2.3 h)  
-- [ ] 2. ✳ **Udemy Section 18 – SAM & CloudFormation** (≈ 1.8 h)  
-- [ ] 3. **Re-deploy Lambda via AWS SAM** (≈ 0.5 h) — [oai_citation:8‡AWS Documentation](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-getting-started.html?utm_source=chatgpt.com)  
-- [ ] 4. Push working code + endpoint URL to GitHub and link it in Confluence.
-- [ ] 5. **Commit updated pipeline YAML & SAM templates** (≈ 0.3 h)
+## Thu May 15  —  Serverless & Testing  
+- [ ] 1. **Udemy Section 13 – SQS/SNS** (≈ 1.5 h)
+   - Message queuing concepts
+   - Pub/sub patterns
+   - Create Anki cards
+- [ ] 2. **Udemy Section 15 – CloudFront** (≈ 1.0 h)
+   - CDN fundamentals
+   - Edge locations
+   - Cache behaviors
+- [ ] 3. **API Testing & Debugging** (≈ 1.5 h)
+   - Test all endpoints
+   - Review CloudWatch logs
+   - Fix any issues
+   - Buffer time for troubleshooting
 
-## Fri May 16  —  ✳ Security + Practice  
-- [ ] 1. ✳ **Udemy Section 20 – KMS, Encryption & Secrets** (≈ 1.6 h)  
-- [ ] 2. ⏩ **Udemy Section 21 – ECS / Docker & ECR** (≈ 1.2 h)
-- [ ] 3. **Whizlabs 20-Q + AWS sample 15-Q** (≈ 1.0 h) — [oai_citation:9‡Whizlabs](https://www.whizlabs.com/aws-developer-associate/?utm_source=chatgpt.com)  
-- [ ] 4. **Flash-card review of weak areas** (≈ 0.5 h)
+## Fri May 16  —  API & Monitoring  
+- [ ] 1. **Udemy Section 23 – API Gateway** (≈ 1.7 h)
+   - REST vs HTTP APIs
+   - Integration types
+   - Authorization
+- [ ] 2. **Udemy Section 19 – Monitoring & X-Ray** (≈ 1.0 h)
+   - CloudWatch metrics
+   - X-Ray tracing
+   - Log insights
+- [ ] 3. **CloudWatch Logs Review** (≈ 1.0 h)
+   - Analyze API performance
+   - Set up alarms
+   - Create dashboards
 
-## Mon May 19— Practice Exam  
-- [ ] 1. Tutorials Dojo Practice Exam #1 (65 Q, 130 m)  
-- [ ] 2. Deep review of each missed question  
-- [ ] 3. Update Gap List & flash-card deck  
-- [ ] 4. **Amazon EventBridge hands-on tutorial; trigger Lambda** (≈ 1 h) — [oai_citation:11‡AWS Documentation](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-tutorial.html?utm_source=chatgpt.com)
+## Mon May 19  —  CI/CD & Templates  
+- [ ] 1. **Udemy Section 17 – Developer Tools** (≈ 1.5 h)
+   - CodeBuild
+   - CodeDeploy
+   - CodePipeline
+- [ ] 2. **Udemy Section 18 – SAM & CloudFormation** (≈ 1.5 h)
+   - Template structure
+   - Best practices
+   - Common patterns
+- [ ] 3. **Commit Working Templates** (≈ 1.0 h)
+   - Review and clean up code
+   - Document setup steps
+   - Push to GitHub
 
+## Tue May 20  —  Practice & Review  
+- [ ] 1. **Tutorials Dojo Practice Exam #1** (65 Q, 130 m)
+   - Take exam in exam conditions
+   - Mark unsure questions
+- [ ] 2. **Review Answers** (≈ 2.0 h)
+   - Document incorrect answers
+   - Research weak areas
+   - Update Gap List
+- [ ] 3. **Update Study Materials** (≈ 1.0 h)
+   - Add new Anki cards
+   - Update cheat sheets
+   - Review weak areas
 
-## Tue May 20— Practice Exam  
-- [ ] 1. Whizlabs Full-length Exam #2 (65 Q, 130 m)  
-- [ ] 2. Categorise errors by service domain  
-- [ ] 3. Re-watch related Udemy lessons  
+## Wed May 21  —  Focus Areas  
+- [ ] 1. **Focus on Weak Areas** (≈ 2.0 h)
+   - Review practice exam results
+   - Re-watch relevant lectures
+   - Complete targeted exercises
+- [ ] 2. **Udemy Section 20 – KMS** (≈ 1.5 h)
+   - Encryption concepts
+   - Key management
+   - Best practices
+- [ ] 3. **Udemy Section 21 – ECS/ECR** (≈ 1.5 h)
+   - Container concepts
+   - ECS clusters
+   - ECR repositories
 
-## Wed May 21— Weak-Topic Workshop  
-- [ ] 1. Re-watch VPC, KMS, and Elastic Beanstalk deep dives  
-- [ ] 2. Lab: build CI/CD demo with CodeBuild + CodeDeploy  
-- [ ] 3. Retake failed quiz questions  
+## Thu May 22  —  Practice & Review  
+- [ ] 1. **Whizlabs Exam #2** (65 Q, 130 m)
+   - Take exam in exam conditions
+   - Focus on time management
+- [ ] 2. **Deep Review & Note-taking** (≈ 2.0 h)
+   - Compare with first exam
+   - Identify patterns in mistakes
+   - Update study strategy
+- [ ] 3. **Flash-card Update** (≈ 1.0 h)
+   - Add new cards from exam
+   - Review weak areas
+   - Practice recall
 
-## Thu May 22— Confidence Builder  
-- [ ] 1. AWS Official Sample Questions (20 Q) — target ≥ 90 %  
-- [ ] 2. Quick labs: SQS queue fan-out, SNS filtering, KMS envelope encryption  
-- [ ] 3. Flash-card speed-run  
+## Fri May 23  —  Hands-on Review  
+- [ ] 1. **Re-watch Weak-topic Lectures** (≈ 2.0 h)
+   - Focus on most challenging areas
+   - Take detailed notes
+   - Create summary diagrams
+- [ ] 2. **Lab: CodeBuild Pipeline** (≈ 1.5 h)
+   - Set up CI/CD pipeline
+   - Test deployment
+   - Document process
+- [ ] 3. **Quick Labs Review** (≈ 1.5 h)
+   - SQS queue fan-out
+   - SNS filtering
+   - KMS envelope encryption
 
-## Fri May 23— Final Review  
-- [ ] 1. 100-question mixed quiz (Tutorials Dojo) — target ≥ 85 %  
-- [ ] 2. Consolidate last-minute cheat-sheet  
-- [ ] 3. Pearson Vue system test & logistics check  
+## Mon May 26  —  Final Practice  
+- [ ] 1. **AWS Official Sample** (20 Q, 40 m)
+   - Take in exam conditions
+   - Aim for ≥ 90%
+- [ ] 2. **Review All Weak Areas** (≈ 2.0 h)
+   - Focus on top 3 challenging topics
+   - Practice questions
+   - Review documentation
+- [ ] 3. **Update Study Materials** (≈ 1.0 h)
+   - Finalize cheat sheets
+   - Update Anki deck
+   - Review exam tips
+
+## Tue May 27  —  Final Review  
+- [ ] 1. **Final Practice Exam** (100 Q, 180 m)
+   - Full-length simulation
+   - Strict timing
+   - Mark all unsure questions
+- [ ] 2. **Comprehensive Review** (≈ 2.0 h)
+   - Analyze all practice exams
+   - Finalize weak areas
+   - Update study materials
+- [ ] 3. **Update Cheat Sheets** (≈ 1.0 h)
+   - Consolidate all notes
+   - Create quick reference
+   - Review exam strategies
+
+## Wed May 28  —  Focus Areas  
+- [ ] 1. **Focus on Top 3 Weak Areas** (≈ 2.0 h)
+   - Deep dive into concepts
+   - Practice questions
+   - Review documentation
+- [ ] 2. **Quick Labs Review** (≈ 1.5 h)
+   - Run through key scenarios
+   - Verify understanding
+   - Document solutions
+- [ ] 3. **Flash-card Final Run** (≈ 1.0 h)
+   - Review all cards
+   - Focus on weak areas
+   - Practice recall
+
+## Thu May 29  —  Exam Prep  
+- [ ] 1. **Pearson Vue System Test** (≈ 30 m)
+   - Verify system requirements
+   - Test webcam
+   - Check internet connection
+- [ ] 2. **Final Exam Prep** (≈ 1.0 h)
+   - Review exam rules
+   - Check required documents
+   - Plan exam day schedule
+- [ ] 3. **Rest & Light Review** (≈ 1.0 h)
+   - Quick review of key concepts
+   - No new content
+   - Early night
+
+## Fri May 30  —  EXAM DAY  
+- [ ] 1. **AWS DVA-C02 Exam** (180 m)
+   - Arrive early
+   - Follow exam rules
+   - Use all available time
+- [ ] 2. **Write Reflection** (≈ 1.0 h)
+   - Document exam experience
+   - Note challenging areas
+   - Plan next steps
+- [ ] 3. **Plan Next Steps** (≈ 1.0 h)
+   - Review results
+   - Update certification plan
+   - Begin post-exam projects
 
 ## Contingency  
 *If any full-length practice score is below 70 % by **May 22**, reschedule the exam to the week of **June 2** (voucher reschedule is free).*  
