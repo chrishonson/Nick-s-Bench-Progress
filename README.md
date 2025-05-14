@@ -6,10 +6,10 @@
 
 ## Progress: Udemy Ultimate AWS Certified Developer Associate 2025 DVA-C02
 <!-- Progress bar visual representation -->
-![Progress](https://progress-bar.xyz/27/?scale=100&width=500&color=2EA043&suffix=%25)
+![Progress](https://progress-bar.xyz/36/?scale=100&width=500&color=2EA043&suffix=%25)
 
 ## Burndown Chart
-![Burndown Chart](https://quickchart.io/chart?w=600&h=350&c={type:%27line%27,data:{labels:[%27Start%27,%27May%202%27,%27May%203%27,%27May%204%27,%27May%205%27,%27May%206%27,%27May%207%27,%27May%208%27,%27May%209%27,%27May%2010%27,%27May%2011%27,%27May%2012%27,%27May%2013%27,%27May%2014%27,%27May%2015%27,%27May%2016%27,%27May%2017%27,%27May%2018%27,%27May%2019%27,%27May%2020%27,%27May%2021%27,%27May%2022%27,%27May%2023%27],datasets:[{label:%27Ideal%27,data:[47,44,41,41,41,41,38,34,31,28,28,28,25,22,19,16,13,13,13,9,6,3,0],fill:false,borderColor:%27rgb(75,192,192)%27,tension:0.1,pointRadius:2},{label:%27Actual%27,data:[47,44,44,44,44,40,38,36,35,34,34,34,null,null,null,null,null,null,null,null,null,null,null],fill:false,borderColor:%27rgb(255,99,132)%27,tension:0.1,pointRadius:2}]},options:{title:{display:true,text:%27Task%20Burndown%20(47%20tasks,%2015%20Workdays%20to%20May%2023)%27},scales:{yAxes:[{ticks:{beginAtZero:true,suggestedMax:50},scaleLabel:{display:true,labelString:%27Tasks%20Remaining%27}}],xAxes:[{scaleLabel:{display:true,labelString:%27Date%20(Workdays)%27}}]}}})
+![Burndown Chart](https://quickchart.io/chart?w=800&h=400&c={type:%27line%27,data:{labels:[%27Start%27,%27May%202%27,%27May%203%27,%27May%204%27,%27May%205%27,%27May%206%27,%27May%207%27,%27May%208%27,%27May%209%27,%27May%2010%27,%27May%2011%27,%27May%2012%27,%27May%2013%27,%27May%2014%27,%27May%2015%27,%27May%2016%27,%27May%2017%27,%27May%2018%27,%27May%2019%27,%27May%2020%27,%27May%2021%27,%27May%2022%27,%27May%2023%27,%27May%2024%27,%27May%2025%27,%27May%2026%27,%27May%2027%27,%27May%2028%27,%27May%2029%27,%27May%2030%27],datasets:[{label:%27Ideal%27,data:[58,55,55,55,55,52,49,46,43,40,40,40,37,34,31,28,25,25,25,22,19,16,13,10,10,10,7,4,1,0],fill:false,borderColor:%27rgb(75,192,192)%27,tension:0.1,pointRadius:2},{label:%27Actual%27,data:[58,55,55,55,55,51,49,47,47,47,47,47,46,44,42,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],fill:false,borderColor:%27rgb(255,99,132)%27,tension:0.1,pointRadius:2}]},options:{title:{display:true,text:%27Task%20Burndown%20(58%20tasks,%2019%20Workdays%20to%20May%2030)%27},scales:{yAxes:[{ticks:{beginAtZero:true,suggestedMax:60},scaleLabel:{display:true,labelString:%27Tasks%20Remaining%27}}],xAxes:[{scaleLabel:{display:true,labelString:%27Date%27}}]}}})
 
 # AWS Developer–Associate 90% Pass Probability Plan  
 *(Workdays-only, starts May 2, preserves nights & weekends)*  
@@ -130,7 +130,7 @@ Created VPC anki cards
 - [in progress] 1. ✳ **Udemy Section 21 – AWS Lambda Deep Dive** (≈ 3.1 h)
 
 ## Mon May 12  —  ✳ + ⏩  
-- [✅] 1. ⏩ **Udemy Section 9 – Route 53 DNS & Routing** (≈ 1.5 h speed‑run)
+- [✅] 1. ⏩ **Udemy Section 9 – Route 53 DNS & Routing** (≈ 1.5 h speed-run)
 
 Notes:
 Supports DNS record types 
@@ -163,18 +163,18 @@ Supports DNS record types
    - Memory allocation
    - Timeout settings
    - Environment variables
-- [ ] 5. ✳ **Udemy Section 22 – AWS Serverless: DynamoDB** (≈ 2.6 h deep‑study)
+- [ ] 5. ✳ **Udemy Section 22 – AWS Serverless: DynamoDB** (≈ 2.6 h deep-study)
    - Deep dive into DynamoDB concepts
    - Create Anki cards for key terms
 - [✅] 6. ⏩ Udemy Section 13 – Advanced Amazon S3  (0.4 h)
 - [✅] 7. ✳  Udemy Section 14 – Amazon S3 Security       (1.0 h) 
 
 ## Thu May 15  —  Serverless & Testing  
-- [ ] 1. ✳ **Udemy Section 28 – Step Functions & AppSync** (≈ 2 h deep‑study)
+- [ ] 1. ✳ **Udemy Section 28 – Step Functions & AppSync** (≈ 2 h deep-study)
    - Message queuing concepts
    - Pub/sub patterns
    - Create Anki cards
-- [ ] 2. ⏩ **Udemy Section 15 – CloudFront** (≈ 0.5 h speed‑run)
+- [ ] 2. ⏩ **Udemy Section 15 – CloudFront** (≈ 0.5 h speed-run)
    - CDN fundamentals
    - Edge locations
    - Cache behaviors
@@ -185,11 +185,11 @@ Supports DNS record types
    - Buffer time for troubleshooting
 
 ## Fri May 16  —  API & Monitoring  
-- [ ] 1. ✳ **Udemy Section 23 – API Gateway** (≈ 1.7 h deep‑study)
+- [ ] 1. ✳ **Udemy Section 23 – API Gateway** (≈ 1.7 h deep-study)
    - REST vs HTTP APIs
    - Integration types
    - Authorization
-- [ ] 2. ⏩ **Udemy Section 20 – Monitoring & X-Ray** (≈ 1.0 h speed‑run)
+- [ ] 2. ⏩ **Udemy Section 20 – Monitoring & X-Ray** (≈ 1.0 h speed-run)
    - CloudWatch metrics
    - X-Ray tracing
    - Log insights
@@ -230,7 +230,7 @@ Supports DNS record types
    - Review practice exam results
    - Re-watch relevant lectures
    - Complete targeted exercises
-- [ ] 2. ✳ **Udemy Section 30 – KMS & Encryption** (≈ 1.5 h deep‑study)
+- [ ] 2. ✳ **Udemy Section 30 – KMS & Encryption** (≈ 1.5 h deep-study)
    - Encryption concepts
    - Key management
    - Best practices
@@ -306,7 +306,7 @@ Supports DNS record types
    - Review all cards
    - Focus on weak areas
    - Practice recall
-50
+
 ## Thu May 29  —  Exam Prep  
 - [ ] 1. **Pearson Vue System Test** (≈ 30 m)
    - Verify system requirements
