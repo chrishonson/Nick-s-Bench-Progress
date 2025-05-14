@@ -1,8 +1,8 @@
 # Nick's Bench Progress
 
-## Progress: 12/47 tasks completed
+## Progress: 12/58 tasks completed
 <!-- Progress bar visual representation -->
-![Progress](https://progress-bar.xyz/25/?scale=100&width=500&color=2EA043&suffix=%25)
+![Progress](https://progress-bar.xyz/27/?scale=100&width=500&color=2EA043&suffix=%25)
 
 ## Progress: Udemy Ultimate AWS Certified Developer Associate 2025 DVA-C02
 <!-- Progress bar visual representation -->
@@ -20,7 +20,7 @@
 |------|-----|-----|-----|-----|-----|
 | May<br>1-3 | | | | | ✅ Read AWS Exam Guide<br>✅ Udemy kick-off<br>✅ Create Gap List |
 | May<br>6-10 | *Vacation Day* | ✅ Udemy Section 4 (IAM/CLI)<br>✅ Udemy Section 6 (EC2 Storage)<br>✅ Key takeaways | ✅ Udemy Sec 10 (VPC)<br>✅ Udemy Sec 7 (ELB/ASG) | ✅ Udemy Sec 11 (S3)<br>✅ Udemy Sec 8 (RDS/Aurora/ElastiCache) | ✅ Udemy Sec 9 (Route 53)<br>⏳ Udemy Sec 14 (Lambda Deep Dive)<br>• Watch DynamoDB Video |
-| May<br>12-17 | • Read Lambda Go docs<br>• Deploy "Hello Go" API (Part 1)<br>• Review Lambda concepts | • Complete "Hello Go" API<br>• AWS SAM setup<br>• Udemy Sec 12 (DynamoDB) | • Udemy Sec 13 (SQS/SNS)<br>• Udemy Sec 15 (CloudFront)<br>• API testing & debugging | • Udemy Sec 23 (API GW)<br>• Udemy Sec 19 (Monitor/X-Ray)<br>• CloudWatch Logs review | • Udemy Sec 17 (Dev Tools CI/CD)<br>• Udemy Sec 18 (SAM/CFN)<br>• Commit working templates |
+| May<br>12-17 | • Read Lambda Go docs<br>• Deploy "Hello Go" API (Part 1)<br>• Review Lambda concepts | • Complete "Hello Go" API<br>• AWS SAM setup<br>• Udemy Sec 12 (DynamoDB) | • Udemy Sec 19 (SQS/SNS)<br>• Udemy Sec 15 (CloudFront)<br>• API testing & debugging | • Udemy Sec 23 (API GW)<br>• Udemy Sec 20 (Monitor/X-Ray)<br>• CloudWatch Logs review | • Udemy Sec 17 (Dev Tools CI/CD)<br>• Udemy Sec 18 (SAM/CFN)<br>• Commit working templates |
 | May<br>19‑24 | • Tutorials Dojo Practice Exam #1 (65 Q)<br>• Review answers (2h)<br>• Update Gap List | • Focus on weak areas<br>• Udemy Sec 20 (KMS)<br>• Udemy Sec 21 (ECS/ECR) | • Whizlabs Exam #2 (65 Q)<br>• Deep review & note-taking<br>• Flash-card update | • Re-watch weak-topic lectures<br>• Lab: CodeBuild pipeline<br>• Quick labs on SQS/SNS | • AWS Official Sample (20 Q)<br>• Review all weak areas<br>• Update study materials |
 | May<br>26‑31 | • Final practice exam (100 Q)<br>• Comprehensive review<br>• Update cheat sheets | • Focus on top 3 weak areas<br>• Quick labs review<br>• Flash-card final run | • Pearson Vue system test<br>• Final exam prep<br>• Rest & review | • Light review only<br>• Early night | **EXAM DAY**<br>• AWS DVA-C02 exam<br>• Write reflection<br>• Plan next steps |
 
@@ -126,12 +126,11 @@ Created VPC anki cards
 - [✅] 1. ✳ **Udemy Section 11 – Amazon S3 Intro** (≈ 2.1 h)  
 - [✅] 2. ⏩ **Udemy Section 8 – AWS Fundamentals: RDS + Aurora + ElastiCache** (≈ 0.8 h)  
 
-
 ## Fri May 9  —  ✳ + ⏩
 - [in progress] 1. ✳ **Udemy Section 21 – AWS Lambda Deep Dive** (≈ 3.1 h)
 
 ## Mon May 12  —  ✳ + ⏩  
-- [✅] 1. **Section 9 - Route 53
+- [✅] 1. ⏩ **Udemy Section 9 – Route 53 DNS & Routing** (≈ 1.5 h speed‑run)
 
 Notes:
 Supports DNS record types 
@@ -141,17 +140,8 @@ Supports DNS record types
 - NS name servers for the hosted zone. Controls how traffic is routed for a domain
 
 ## Tue May 13  —  Hands-on Focus  
-- [ ] 1. **Read Lambda Go runtime docs** (≈ 30 m) — [oai_citation:3‡AWS Documentation](https://docs.aws.amazon.com/lambda/latest/dg/lambda-golang.html?utm_source=chatgpt.com)  
-- [ ] 2. **Deploy "Hello Go" API (Part 1)** (≈ 2.0 h)  
-   - Set up Go environment
-   - Create basic Lambda function
-   - Test locally
-   - Buffer time for troubleshooting
-- [ ] 3. **Review Lambda concepts** (≈ 30 m)
-   - Cold starts
-   - Memory allocation
-   - Timeout settings
-   - Environment variables
+- [✅] 1. **Read Lambda Go runtime docs** (≈ 30 m) — [oai_citation:3‡AWS Documentation](https://docs.aws.amazon.com/lambda/latest/dg/lambda-golang.html?utm_source=chatgpt.com)  
+- [✅] 2. ** AWS Integration & Messaging: SQS, SNS & Kinesis 
 
 ## Wed May 14  —  API Completion  
 - [ ] 1. **Complete "Hello Go" API** (≈ 2.0 h)
@@ -163,16 +153,28 @@ Supports DNS record types
    - Create SAM template
    - Configure local testing
    - Set up deployment pipeline
-- [ ] 3. **Udemy Section 12 – DynamoDB** (≈ 2.0 h)
+- [ ] 3. **Deploy "Hello Go" API (Part 1)** (≈ 2.0 h)  
+   - Set up Go environment
+   - Create basic Lambda function
+   - Test locally
+   - Buffer time for troubleshooting
+- [ ] 4. **Review Lambda concepts** (≈ 30 m)
+   - Cold starts
+   - Memory allocation
+   - Timeout settings
+   - Environment variables
+- [ ] 5. ✳ **Udemy Section 22 – AWS Serverless: DynamoDB** (≈ 2.6 h deep‑study)
    - Deep dive into DynamoDB concepts
    - Create Anki cards for key terms
+- [✅] 6. ⏩ Udemy Section 13 – Advanced Amazon S3  (0.4 h)
+- [✅] 7. ✳  Udemy Section 14 – Amazon S3 Security       (1.0 h) 
 
 ## Thu May 15  —  Serverless & Testing  
-- [ ] 1. **Udemy Section 13 – SQS/SNS** (≈ 1.5 h)
+- [ ] 1. ✳ **Udemy Section 28 – Step Functions & AppSync** (≈ 2 h deep‑study)
    - Message queuing concepts
    - Pub/sub patterns
    - Create Anki cards
-- [ ] 2. **Udemy Section 15 – CloudFront** (≈ 1.0 h)
+- [ ] 2. ⏩ **Udemy Section 15 – CloudFront** (≈ 0.5 h speed‑run)
    - CDN fundamentals
    - Edge locations
    - Cache behaviors
@@ -183,11 +185,11 @@ Supports DNS record types
    - Buffer time for troubleshooting
 
 ## Fri May 16  —  API & Monitoring  
-- [ ] 1. **Udemy Section 23 – API Gateway** (≈ 1.7 h)
+- [ ] 1. ✳ **Udemy Section 23 – API Gateway** (≈ 1.7 h deep‑study)
    - REST vs HTTP APIs
    - Integration types
    - Authorization
-- [ ] 2. **Udemy Section 19 – Monitoring & X-Ray** (≈ 1.0 h)
+- [ ] 2. ⏩ **Udemy Section 20 – Monitoring & X-Ray** (≈ 1.0 h speed‑run)
    - CloudWatch metrics
    - X-Ray tracing
    - Log insights
@@ -228,11 +230,11 @@ Supports DNS record types
    - Review practice exam results
    - Re-watch relevant lectures
    - Complete targeted exercises
-- [ ] 2. **Udemy Section 20 – KMS** (≈ 1.5 h)
+- [ ] 2. ✳ **Udemy Section 30 – KMS & Encryption** (≈ 1.5 h deep‑study)
    - Encryption concepts
    - Key management
    - Best practices
-- [ ] 3. **Udemy Section 21 – ECS/ECR** (≈ 1.5 h)
+- [ ] 3. **Udemy Section ? – ECS/ECR** (≈ 1.5 h)
    - Container concepts
    - ECS clusters
    - ECR repositories
@@ -304,7 +306,7 @@ Supports DNS record types
    - Review all cards
    - Focus on weak areas
    - Practice recall
-
+50
 ## Thu May 29  —  Exam Prep  
 - [ ] 1. **Pearson Vue System Test** (≈ 30 m)
    - Verify system requirements
