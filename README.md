@@ -14,15 +14,6 @@
 # AWS Developer–Associate 90% Pass Probability Plan  
 *(Workdays-only, starts May 2, preserves nights & weekends)*  
 
-## Visual Calendar
-
-| Week | Mon | Tue | Wed | Thu | Fri |
-|------|-----|-----|-----|-----|-----|
-| May<br>1-3 | | | | | ✅ Read AWS Exam Guide<br>✅ Udemy kick-off<br>✅ Create Gap List |
-| May<br>6-10 | *Vacation Day* | ✅ Udemy Section 4 (IAM/CLI)<br>✅ Udemy Section 6 (EC2 Storage)<br>✅ Key takeaways | ✅ Udemy Sec 10 (VPC)<br>✅ Udemy Sec 7 (ELB/ASG) | ✅ Udemy Sec 11 (S3)<br>✅ Udemy Sec 8 (RDS/Aurora/ElastiCache) | ✅ Udemy Sec 9 (Route 53)<br>⏳ Udemy Sec 14 (Lambda Deep Dive)<br>• Watch DynamoDB Video |
-| May<br>12-17 | • Read Lambda Go docs<br>• Deploy "Hello Go" API (Part 1)<br>• Review Lambda concepts | • Complete "Hello Go" API<br>• AWS SAM setup<br>• Udemy Sec 12 (DynamoDB) | • Udemy Sec 19 (SQS/SNS)<br>• Udemy Sec 15 (CloudFront)<br>• API testing & debugging | • Udemy Sec 23 (API GW)<br>• Udemy Sec 20 (Monitor/X-Ray)<br>• CloudWatch Logs review | • Udemy Sec 17 (Dev Tools CI/CD)<br>• Udemy Sec 18 (SAM/CFN)<br>• Commit working templates |
-| May<br>19‑24 | • Tutorials Dojo Practice Exam #1 (65 Q)<br>• Review answers (2h)<br>• Update Gap List | • Focus on weak areas<br>• Udemy Sec 20 (KMS)<br>• Udemy Sec 21 (ECS/ECR) | • Whizlabs Exam #2 (65 Q)<br>• Deep review & note-taking<br>• Flash-card update | • Re-watch weak-topic lectures<br>• Lab: CodeBuild pipeline<br>• Quick labs on SQS/SNS | • AWS Official Sample (20 Q)<br>• Review all weak areas<br>• Update study materials |
-| May<br>26‑31 | • Final practice exam (100 Q)<br>• Comprehensive review<br>• Update cheat sheets | • Focus on top 3 weak areas<br>• Quick labs review<br>• Flash-card final run | • Pearson Vue system test<br>• Final exam prep<br>• Rest & review | • Light review only<br>• Early night | **EXAM DAY**<br>• AWS DVA-C02 exam<br>• Write reflection<br>• Plan next steps |
 
 ## Guiding Principles  
 - **Pomodoro 25 / 5 cadence** → sustained concentration without fatigue.  
@@ -347,4 +338,125 @@ Supports DNS record types
 - Migrate first two IoT Cloud Functions from JavaScript to Go during the week of May 19.  
 - Begin drafting the **"Kunai Serverless Starter Kit"** repo & Terraform scripts.
 
----
+
+
+```mermaid
+graph TD
+    subgraph "AWS Account"
+        Lambda[AWS Lambda Function]
+
+        subgraph VPCNetwork["Your VPC Private Network"]
+            direction LR
+            subgraph PrivateSubnet["Private Subnet"]
+                Lambda_ENI[Lambda ENI Private IP]
+                DB[Database Private IP]
+            end
+            NAT[NAT Gateway Optional for Internet]
+        end
+
+        Internet([Internet External APIs])
+    end
+
+    Lambda -->|Uses| Lambda_ENI
+    Lambda_ENI -->|Private Connection| DB
+    Lambda_ENI -->|If needed| NAT
+    NAT --> Internet
+
+    style Lambda fill:#FF9900,stroke:#333,stroke-width:2px
+    style Lambda_ENI fill:#FFD700,stroke:#333,stroke-width:2px
+    style DB fill:#ADD8E6,stroke:#333,stroke-width:2px
+    style NAT fill:#90EE90,stroke:#333,stroke-width:2px
+    style VPCNetwork fill:#f0f8ff,stroke:#ccc,stroke-width:2px
+    style PrivateSubnet fill:#e6e6fa,stroke:#ccc,stroke-width:1px
+
+```
+```mermaid
+
+graph TD
+    subgraph AWS_Cloud ["AWS Cloud"]
+        subgraph Lambda_Service_Env [Lambda Service Environment]
+            Lambda["AWS Lambda Function (Execution Role)"]
+            SG_Lambda[SG: Lambda ENIs]
+        end
+
+        subgraph VPC_Network ["User's VPC"]
+            direction LR
+
+            subgraph AZ_A ["Availability Zone A"]
+                direction TB
+                PVT_SUBNET_A[Private Subnet A]
+                ENI_A["Lambda ENI 1 (Private IP)"]
+                RDS_A["RDS Instance (Private IP)"]
+                SG_DB[SG: RDS]
+
+                PVT_SUBNET_A --> ENI_A
+                ENI_A -->|Access via Private IP| RDS_A
+                RDS_A -.-> SG_DB
+                ENI_A -.-> SG_Lambda
+            end
+
+            subgraph AZ_B ["Availability Zone B"]
+                direction TB
+                PVT_SUBNET_B[Private Subnet B]
+                ENI_B["Lambda ENI 2 (Private IP)"]
+                EC_B["ElastiCache Node (Private IP)"]
+                SG_CACHE[SG: ElastiCache]
+
+                PVT_SUBNET_B --> ENI_B
+                ENI_B -->|Access via Private IP| EC_B
+                EC_B -.-> SG_CACHE
+                ENI_B -.-> SG_Lambda
+            end
+
+            subgraph Public_Subnet_Zone ["Public Subnet(s)"]
+                 direction TB
+                 PUB_SUBNET_C[Public Subnet C]
+                 NAT_GW["NAT Gateway (Elastic IP)"]
+                 IGW[Internet Gateway]
+                 PUB_SUBNET_C --> NAT_GW
+                 NAT_GW --> IGW
+            end
+
+            S3_VPCE[S3 VPC Gateway Endpoint]
+
+            %% Routing
+            PVT_SUBNET_A -->|Route to Internet via| NAT_GW
+            PVT_SUBNET_B -->|Route to Internet via| NAT_GW
+            PVT_SUBNET_A -->|Route to S3 via| S3_VPCE
+            PVT_SUBNET_B -->|Route to S3 via| S3_VPCE
+            IGW --> Internet(["Internet/External APIs"])
+            S3_VPCE --> S3[Amazon S3 Service]
+
+        end
+
+        Lambda -->|Configured for VPC| ENI_A
+        Lambda -->|Configured for VPC| ENI_B
+    end
+
+    %% Styling
+    style AWS_Cloud fill:#f9f9f9,stroke:#333,stroke-width:2px
+    style Lambda_Service_Env fill:#fff0e6,stroke:#333,stroke-width:1px
+    style VPC_Network fill:#e6f3ff,stroke:#333,stroke-width:1px
+    style AZ_A fill:#d4e1f5,stroke:#333,stroke-width:1px
+    style AZ_B fill:#d4e1f5,stroke:#333,stroke-width:1px
+    style Public_Subnet_Zone fill:#fde2e2,stroke:#333,stroke-width:1px
+
+    style PVT_SUBNET_A fill:#d9ead3,stroke:#333
+    style PVT_SUBNET_B fill:#d9ead3,stroke:#333
+    style PUB_SUBNET_C fill:#fce5cd,stroke:#333
+
+    style Lambda fill:#ffcc99
+    style ENI_A fill:#c9daf8
+    style ENI_B fill:#c9daf8
+    style RDS_A fill:#b4a7d6
+    style EC_B fill:#b4a7d6
+    style NAT_GW fill:#fff2cc
+    style IGW fill:#e6b8af
+    style Internet fill:#d9d9d9
+    style S3_VPCE fill:#d0e0e3
+    style S3 fill:#a2c4c9
+
+    style SG_DB fill:#f4cccc
+    style SG_CACHE fill:#f4cccc
+    style SG_Lambda fill:#f4cccc
+```
