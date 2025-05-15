@@ -339,7 +339,7 @@ Supports DNS record types
 - Begin drafting the **"Kunai Serverless Starter Kit"** repo & Terraform scripts.
 
 
-
+## Simple Example Lambda Arch
 ```mermaid
 graph TD
     subgraph "AWS Account"
@@ -370,6 +370,8 @@ graph TD
     style PrivateSubnet fill:#e6e6fa,stroke:#ccc,stroke-width:1px
 
 ```
+
+## More Complete Example Lambda Arch
 ```mermaid
 
 graph TD
@@ -384,12 +386,12 @@ graph TD
 
             subgraph AZ_A ["Availability Zone A"]
                 direction TB
-                PVT_SUBNET_A[Private Subnet A]
-                ENI_A["Lambda ENI 1 (Private IP)"]
-                RDS_A["RDS Instance (Private IP)"]
+                subgraph PVT_SUBNET_A ["Private Subnet A"]
+                    ENI_A["Lambda ENI 1 (Private IP)"]
+                    RDS_A["RDS Instance (Private IP)"]
+                end
                 SG_DB[SG: RDS]
 
-                PVT_SUBNET_A --> ENI_A
                 ENI_A -->|Access via Private IP| RDS_A
                 RDS_A -.-> SG_DB
                 ENI_A -.-> SG_Lambda
@@ -397,12 +399,12 @@ graph TD
 
             subgraph AZ_B ["Availability Zone B"]
                 direction TB
-                PVT_SUBNET_B[Private Subnet B]
-                ENI_B["Lambda ENI 2 (Private IP)"]
-                EC_B["ElastiCache Node (Private IP)"]
+                subgraph PVT_SUBNET_B ["Private Subnet B"]
+                    ENI_B["Lambda ENI 2 (Private IP)"]
+                    EC_B["ElastiCache Node (Private IP)"]
+                end
                 SG_CACHE[SG: ElastiCache]
 
-                PVT_SUBNET_B --> ENI_B
                 ENI_B -->|Access via Private IP| EC_B
                 EC_B -.-> SG_CACHE
                 ENI_B -.-> SG_Lambda
@@ -410,13 +412,12 @@ graph TD
 
             subgraph Public_Subnet_Zone ["Public Subnet(s)"]
                  direction TB
-                 PUB_SUBNET_C[Public Subnet C]
-                 NAT_GW["NAT Gateway (Elastic IP)"]
-                 IGW[Internet Gateway]
-                 PUB_SUBNET_C --> NAT_GW
-                 NAT_GW --> IGW
+                 subgraph PUB_SUBNET_C ["Public Subnet C"]
+                    NAT_GW["NAT Gateway (Elastic IP)"]
+                 end
             end
 
+            IGW[Internet Gateway]
             S3_VPCE[S3 VPC Gateway Endpoint]
 
             %% Routing
@@ -424,6 +425,7 @@ graph TD
             PVT_SUBNET_B -->|Route to Internet via| NAT_GW
             PVT_SUBNET_A -->|Route to S3 via| S3_VPCE
             PVT_SUBNET_B -->|Route to S3 via| S3_VPCE
+            NAT_GW --> IGW
             IGW --> Internet(["Internet/External APIs"])
             S3_VPCE --> S3[Amazon S3 Service]
 
@@ -460,3 +462,26 @@ graph TD
     style SG_CACHE fill:#f4cccc
     style SG_Lambda fill:#f4cccc
 ```
+
+### 1. Route Table for Private Subnets (PVT_SUBNET_A and PVT_SUBNET_B)
+
+These subnets house your Lambda ENIs (ENI_A, ENI_B), the RDS instance (RDS_A), and the ElastiCache node (EC_B). They need to:
+Access other resources within the VPC.
+Reach the internet via the NAT Gateway.
+Access Amazon S3 via the S3 VPC Gateway Endpoint.
+The route table associated with PVT_SUBNET_A and PVT_SUBNET_B would have the following entries:
+| Destination | Target | Purpose |
+| :----------------- | :------------------------------------- | :---------------------------------------------------------------------- |
+| 10.0.0.0/16 | local | Enables communication with all resources within the VPC. |
+| 0.0.0.0/0 | nat-xxxxxxxx (ID of your NAT Gateway NAT_GW) | Routes all other outbound traffic (to the internet) to the NAT Gateway. |
+| pl-yyyyyyyy (S3 Prefix List) | vpce-zzzzzzzz (ID of your S3 VPC Endpoint S3_VPCE) | Routes traffic destined for Amazon S3 to the S3 VPC Gateway Endpoint. |
+- pl-yyyyyyyy: This is an AWS-managed prefix list ID that represents the IP address ranges for Amazon S3 in that specific AWS Region.
+
+### 2. Route Table for the Public Subnet (PUB_SUBNET_C)
+
+This subnet is "public" because it has a direct route to the Internet Gateway (IGW). The NAT Gateway (NAT_GW) itself resides in this subnet and uses this route table to send traffic to the internet.
+The route table associated with PUB_SUBNET_C would have:
+| Destination | Target | Purpose |
+| :-------------- | :----------------------------------- | :--------------------------------------------------------------------------- |
+| 10.0.0.0/16 | local | Enables communication with all resources within the VPC. |
+| 0.0.0.0/0 | igw-aaaaaaaa (ID of your Internet Gateway IGW) | Routes all other outbound traffic directly to the Internet Gateway. |
