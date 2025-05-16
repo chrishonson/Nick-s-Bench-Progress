@@ -156,11 +156,6 @@ Supports DNS record types
   - Deploy via SAM CLI → dev stage (API Gateway + Lambda)  
   - Commit code + endpoint URL to GitHub, add screenshot to bench log  
 
-- [ ] 3. **Set up SAM CI/CD pipeline** (≈ 1.0 h)  
-  - Create CodeBuild + CodePipeline stack  
-  - Add automated test stage  
-  - Document pipeline steps in README
-
 ## Mon May 19  —  
    - [ ] 1. ✳ **Udemy Section 28 – Step Functions & AppSync** (≈ 2 h deep-study)
    - Message queuing concepts
@@ -206,6 +201,10 @@ Supports DNS record types
    - Review and clean up code
    - Document setup steps
    - Push to GitHub
+- [ ] 4. **Set up SAM CI/CD pipeline** (≈ 1.0 h)  
+  - Run `sam pipeline init --bootstrap`  
+  - Verify CodeBuild & CodePipeline stacks deploy successfully  
+  - Push `pipeline.yaml` and `buildspec.yml` to GitHub
 
 ## Thu May 22  —  Practice & Review  
 - [ ] 1. **Tutorials Dojo Practice Exam #1** (65 Q, 130 m)
