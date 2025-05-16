@@ -118,7 +118,7 @@ Created VPC anki cards
 - [✅] 2. ⏩ **Udemy Section 8 – AWS Fundamentals: RDS + Aurora + ElastiCache** (≈ 0.8 h)  
 
 ## Fri May 9  —  ✳ + ⏩
-- [in progress] 1. ✳ **Udemy Section 21 – AWS Lambda Deep Dive** (≈ 3.1 h)
+- [✅] 1. ✳ ** START: Udemy Section 21 – AWS Lambda Deep Dive** (≈ 3.1 h)
 
 ## Mon May 12  —  ✳ + ⏩  
 - [✅] 1. ⏩ **Udemy Section 9 – Route 53 DNS & Routing** (≈ 1.5 h speed-run)
@@ -134,7 +134,22 @@ Supports DNS record types
 - [✅] 1. **Read Lambda Go runtime docs** (≈ 30 m) — [oai_citation:3‡AWS Documentation](https://docs.aws.amazon.com/lambda/latest/dg/lambda-golang.html?utm_source=chatgpt.com)  
 - [✅] 2. ** AWS Integration & Messaging: SQS, SNS & Kinesis 
 
-## Wed May 14  —  API Completion  
+## Wed May 14  —  S3 Completion
+- [✅] 6. ⏩ Udemy Section 13 – Advanced Amazon S3  (0.4 h)
+- [✅] 7. ✳  Udemy Section 14 – Amazon S3 Security       (1.0 h) 
+
+## Thu May 15  —  Serverless & Integration
+- [✅] 1. ✳  Udemy Section 19 – AWS Integration and Messaging: SQS, SNS & Kinesis (1h 42m) 
+   - Create Anki cards
+   - Review Anki cards
+- [✅] 2. Preview: to know what they are when they come up in the lambda documentation.
+   - CloudFront 
+   - Elastic Beanstalk
+   - CloudFormation 
+   - ECR, ECS, Fargate, Docker
+
+## Fri May 16  —  API Completion  
+- [✅] 1. ✳ ** FINISHED: Udemy Section 21 – AWS Lambda Deep Dive** (≈ 3.1 h)
 - [ ] 1. **Complete "Hello Go" API** (≈ 2.0 h)
    - Add API Gateway integration
    - Implement error handling
@@ -154,14 +169,9 @@ Supports DNS record types
    - Memory allocation
    - Timeout settings
    - Environment variables
-- [ ] 5. ✳ **Udemy Section 22 – AWS Serverless: DynamoDB** (≈ 2.6 h deep-study)
-   - Deep dive into DynamoDB concepts
-   - Create Anki cards for key terms
-- [✅] 6. ⏩ Udemy Section 13 – Advanced Amazon S3  (0.4 h)
-- [✅] 7. ✳  Udemy Section 14 – Amazon S3 Security       (1.0 h) 
 
-## Thu May 15  —  Serverless & Testing  
-- [ ] 1. ✳ **Udemy Section 28 – Step Functions & AppSync** (≈ 2 h deep-study)
+## Mon May 19  —  
+   - [ ] 1. ✳ **Udemy Section 28 – Step Functions & AppSync** (≈ 2 h deep-study)
    - Message queuing concepts
    - Pub/sub patterns
    - Create Anki cards
@@ -175,7 +185,10 @@ Supports DNS record types
    - Fix any issues
    - Buffer time for troubleshooting
 
-## Fri May 16  —  API & Monitoring  
+## Tue May 20  —  
+- [ ] 5. ✳ **Udemy Section 22 – AWS Serverless: DynamoDB** (≈ 2.6 h deep-study)
+   - Deep dive into DynamoDB concepts
+   - Create Anki cards for key terms
 - [ ] 1. ✳ **Udemy Section 23 – API Gateway** (≈ 1.7 h deep-study)
    - REST vs HTTP APIs
    - Integration types
@@ -189,7 +202,7 @@ Supports DNS record types
    - Set up alarms
    - Create dashboards
 
-## Mon May 19  —  CI/CD & Templates  
+## Wed May 21  —  CI/CD & Templates  
 - [ ] 1. **Udemy Section 17 – Developer Tools** (≈ 1.5 h)
    - CodeBuild
    - CodeDeploy
@@ -203,7 +216,7 @@ Supports DNS record types
    - Document setup steps
    - Push to GitHub
 
-## Tue May 20  —  Practice & Review  
+## Thu May 22  —  Practice & Review  
 - [ ] 1. **Tutorials Dojo Practice Exam #1** (65 Q, 130 m)
    - Take exam in exam conditions
    - Mark unsure questions
@@ -216,32 +229,18 @@ Supports DNS record types
    - Update cheat sheets
    - Review weak areas
 
-## Wed May 21  —  Focus Areas  
-- [ ] 1. **Focus on Weak Areas** (≈ 2.0 h)
-   - Review practice exam results
-   - Re-watch relevant lectures
-   - Complete targeted exercises
-- [ ] 2. ✳ **Udemy Section 30 – KMS & Encryption** (≈ 1.5 h deep-study)
+## Thu May 22  —  Focus Areas  
+- [ ] 1. ✳ **Udemy Section 30 – KMS & Encryption** (≈ 1.5 h deep-study)
    - Encryption concepts
    - Key management
    - Best practices
-- [ ] 3. **Udemy Section ? – ECS/ECR** (≈ 1.5 h)
-   - Container concepts
+- [ ] 2. **Focus on Weak Areas** (≈ 2.0 h)
+   - Review practice exam results
+   - Re-watch relevant lectures
+   - Complete targeted exercises
+- [ ] 3. ⏩ **Udemy Section 16 – Docker, ECS, ECR, Fargate** (≈ 1.2 h speed-run)   - Container concepts
    - ECS clusters
    - ECR repositories
-
-## Thu May 22  —  Practice & Review  
-- [ ] 1. **Whizlabs Exam #2** (65 Q, 130 m)
-   - Take exam in exam conditions
-   - Focus on time management
-- [ ] 2. **Deep Review & Note-taking** (≈ 2.0 h)
-   - Compare with first exam
-   - Identify patterns in mistakes
-   - Update study strategy
-- [ ] 3. **Flash-card Update** (≈ 1.0 h)
-   - Add new cards from exam
-   - Review weak areas
-   - Practice recall
 
 ## Fri May 23  —  Hands-on Review  
 - [ ] 1. **Re-watch Weak-topic Lectures** (≈ 2.0 h)
