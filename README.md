@@ -150,11 +150,13 @@ Supports DNS record types
 
 ## Fri May 16  —  API Completion  
 - [✅] 1. ✳ ** FINISHED: Udemy Section 21 – AWS Lambda Deep Dive** (≈ 3.1 h)
-- [ ] 2. **Complete & Deploy "Hello Go" API** (≈ 3.0 h)  
+- [✅] 2. **Complete & Deploy "Hello Go" API** (≈ 3.0 h)  
   - Finalize Go handler (JSON response, error handling, logging)  
   - Build & test locally with AWS SAM  
   - Deploy via SAM CLI → dev stage (API Gateway + Lambda)  
   - Commit code + endpoint URL to GitHub, add screenshot to bench log  
+![hello local](assets/hello-local.png)
+![hello world](assets/hello-world.png)
 
 ## Mon May 19  —  
    - [ ] 1. ✳ **Udemy Section 28 – Step Functions & AppSync** (≈ 2 h deep-study)
