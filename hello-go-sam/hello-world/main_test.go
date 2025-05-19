@@ -1,64 +1,67 @@
 package main
 
 import (
-	"fmt"
-	"net/http"
-	"net/http/httptest"
+	"context"
+	"strings"
 	"testing"
 
 	"github.com/aws/aws-lambda-go/events"
 )
 
 func TestHandler(t *testing.T) {
-	t.Run("Unable to get IP", func(t *testing.T) {
-		DefaultHTTPGetAddress = "http://127.0.0.1:12345"
-
-		_, err := handler(events.APIGatewayProxyRequest{})
-		if err == nil {
-			t.Fatal("Error failed to trigger with an invalid request")
-		}
-	})
-
-	t.Run("Non 200 Response", func(t *testing.T) {
-		ts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-			w.WriteHeader(500)
-		}))
-		defer ts.Close()
-
-		DefaultHTTPGetAddress = ts.URL
-
-		_, err := handler(events.APIGatewayProxyRequest{})
-		if err != nil && err.Error() != ErrNon200Response.Error() {
-			t.Fatalf("Error failed to trigger with an invalid HTTP response: %v", err)
-		}
-	})
-
-	t.Run("Unable decode IP", func(t *testing.T) {
-		ts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-			w.WriteHeader(500)
-		}))
-		defer ts.Close()
-
-		DefaultHTTPGetAddress = ts.URL
-
-		_, err := handler(events.APIGatewayProxyRequest{})
-		if err == nil {
-			t.Fatal("Error failed to trigger with an invalid HTTP response")
-		}
-	})
-
 	t.Run("Successful Request", func(t *testing.T) {
-		ts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-			w.WriteHeader(200)
-			fmt.Fprintf(w, "127.0.0.1")
-		}))
-		defer ts.Close()
+		// Create a test request
+		req := events.APIGatewayV2HTTPRequest{
+			RequestContext: events.APIGatewayV2HTTPRequestContext{
+				RequestID: "test-request-id",
+			},
+		}
 
-		DefaultHTTPGetAddress = ts.URL
-
-		_, err := handler(events.APIGatewayProxyRequest{})
+		// Call the handler
+		resp, err := handler(context.Background(), req)
 		if err != nil {
-			t.Fatal("Everything should be ok")
+			t.Fatal("Handler should not return an error")
+		}
+
+		// Verify response
+		if resp.StatusCode != 200 {
+			t.Errorf("Expected status code 200, got %d", resp.StatusCode)
+		}
+
+		// Check content type
+		if resp.Headers["Content-Type"] != "text/html; charset=utf-8" {
+			t.Errorf("Expected Content-Type text/html; charset=utf-8, got %s", resp.Headers["Content-Type"])
+		}
+
+		// Verify HTML content
+		body := resp.Body
+		if !strings.Contains(body, "<!DOCTYPE html>") {
+			t.Error("Response should contain HTML doctype")
+		}
+		if !strings.Contains(body, "Hello from Lambda!") {
+			t.Error("Response should contain the page title")
+		}
+		if !strings.Contains(body, "test-request-id") {
+			t.Error("Response should contain the request ID")
+		}
+	})
+
+	t.Run("Empty Request Context", func(t *testing.T) {
+		// Test with empty request context
+		req := events.APIGatewayV2HTTPRequest{}
+
+		resp, err := handler(context.Background(), req)
+		if err != nil {
+			t.Fatal("Handler should not return an error with empty context")
+		}
+
+		if resp.StatusCode != 200 {
+			t.Errorf("Expected status code 200, got %d", resp.StatusCode)
+		}
+
+		// Verify HTML content still works
+		if !strings.Contains(resp.Body, "<!DOCTYPE html>") {
+			t.Error("Response should contain HTML doctype even with empty context")
 		}
 	})
 }
