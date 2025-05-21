@@ -1,8 +1,8 @@
 # Nick's Bench Progress
 
-## Progress: 20/56 tasks completed
+## Progress: 23/55 tasks completed
 <!-- Progress bar visual representation -->
-![Progress](https://progress-bar.xyz/36/?scale=100&width=500&color=2EA043&suffix=%25)
+![Progress](https://progress-bar.xyz/40/?scale=100&width=500&color=2EA043&suffix=%25)
 
 ## Progress: Udemy Ultimate AWS Certified Developer Associate 2025 DVA-C02
 <!-- Progress bar visual representation -->
@@ -159,21 +159,19 @@ Supports DNS record types
 ![hello world](assets/hello-world.png)
 
 ## Mon May 19  —  
-   - [ ] 1. ✳ **Udemy Section 28 – Step Functions & AppSync** (≈ 2 h deep-study)
+   - [✅] 1. ✳ **Udemy Section 28 – Step Functions & AppSync** (≈ 2 h deep-study)
    - Message queuing concepts
    - Pub/sub patterns
    - Create Anki cards
-- [ ] 2. ⏩ **Udemy Section 15 – CloudFront** (≈ 0.5 h speed-run)
+
+## Tue May 20  —  
+- [✅] 1. Review all Anki cards
+- [✅] 2. ⏩ **Udemy Section 15 – CloudFront** (≈ 0.5 h speed-run)
    - CDN fundamentals
    - Edge locations
    - Cache behaviors
-- [ ] 3. **API Testing & Debugging** (≈ 1.5 h)
-   - Test all endpoints
-   - Review CloudWatch logs
-   - Fix any issues
-   - Buffer time for troubleshooting
 
-## Tue May 20  —  
+## Wed May 21  —  CI/CD & Templates  
 - [ ] 5. ✳ **Udemy Section 22 – AWS Serverless: DynamoDB** (≈ 2.6 h deep-study)
    - Deep dive into DynamoDB concepts
    - Create Anki cards for key terms
@@ -185,12 +183,7 @@ Supports DNS record types
    - CloudWatch metrics
    - X-Ray tracing
    - Log insights
-- [ ] 3. **CloudWatch Logs Review** (≈ 1.0 h)
-   - Analyze API performance
-   - Set up alarms
-   - Create dashboards
 
-## Wed May 21  —  CI/CD & Templates  
 - [ ] 1. **Udemy Section 17 – Developer Tools** (≈ 1.5 h)
    - CodeBuild
    - CodeDeploy

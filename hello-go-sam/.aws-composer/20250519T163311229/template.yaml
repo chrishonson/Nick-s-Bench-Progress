@@ -1,7 +1,8 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
-Description: |
+Description: >
   hello-go-sam
+  
   Sample SAM Template for hello-go-sam
 
 # More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
@@ -15,7 +16,7 @@ Resources:
     Properties:
       CodeUri: hello-world/
       Handler: hello-world
-      Runtime: provided.al2
+      Runtime: provided.al2 
       Architectures:
         - arm64
       Tracing: Active # https://docs.aws.amazon.com/lambda/latest/dg/lambda-x-ray.html
@@ -25,8 +26,7 @@ Resources:
           Properties:
             Path: /hello
             Method: GET
-      Environment:
-        # More info about Env Vars: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#environment-object
+      Environment: # More info about Env Vars: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#environment-object
         Variables:
           PARAM1: VALUE
     Metadata:
@@ -37,11 +37,11 @@ Outputs:
   # Find out more about other implicit resources you can reference within SAM
   # https://github.com/awslabs/serverless-application-model/blob/master/docs/internals/generated_resources.rst#api
   HelloWorldAPI:
-    Description: API Gateway endpoint URL for Prod environment for First Function
-    Value: !Sub https://${ServerlessHttpApi}.execute-api.${AWS::Region}.amazonaws.com/hello
+    Description: "API Gateway endpoint URL for Prod environment for First Function"
+    Value: !Sub "https://${ServerlessHttpApi}.execute-api.${AWS::Region}.amazonaws.com/hello"
   HelloWorldFunction:
-    Description: First Lambda Function ARN
+    Description: "First Lambda Function ARN"
     Value: !GetAtt HelloWorldFunction.Arn
   HelloWorldFunctionIamRole:
-    Description: Implicit IAM Role created for Hello World function
+    Description: "Implicit IAM Role created for Hello World function"
     Value: !GetAtt HelloWorldFunctionRole.Arn
