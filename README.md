@@ -144,7 +144,7 @@ Supports DNS record types
 
 ## Fri May 16  —  API Completion  
 - [✅] 1. ✳ ** FINISHED: Udemy Section 21 – AWS Lambda Deep Dive** (≈ 3.1 h)
-- [✅] 2. **Complete & Deploy "Hello Go" API** (≈ 3.0 h)  
+- [✅] 2. **Complete & Deploy "Hello Go" API** (≈ 3.0 h)  (Ideally, this should have come after Udemy Section 18 – SAM & CloudFormation)
   - Finalize Go handler (JSON response, error handling, logging)  
   - Build & test locally with AWS SAM  
   - Deploy via SAM CLI → dev stage (API Gateway + Lambda)  
@@ -166,10 +166,35 @@ Supports DNS record types
    - Cache behaviors
 
 ## Wed May 21  —  CI/CD & Templates  
-- [ ] 1. **Udemy Section 18 – SAM & CloudFormation** (≈ 1.5 h)
+- [✅] 1. **Udemy Section 18 – CloudFormation** (≈ 1.5 h)
    - Template structure
    - Best practices
    - Common patterns
+   - Review past material
+
+
+## Thu May 22  —  Practice & Review  
+- [✅] 1. ⏩ **Take a Udemy assessment**
+   Above average result. Following topics need review:
+   - BAA (Business Associate Addendum) & AWS Artifact
+   - AWS SAM & CodeStar
+   - IAM user JSON policies
+   - AWS Amplify & Elasticsearch
+   - AWS DataSync vs EBS
+   - EC2 instance types (d/c series)
+   - Root account usage scenarios
+   - Elastic Beanstalk worker environments
+   - Amazon Connect
+   - Systems Manager capabilities
+   - CloudWatch features
+   - Network Load Balancer UDP support
+   - WAF rule configurations
+   - AWS Organizations vs individual accounts
+   - CloudFormation Fn::ImportValue
+- [✅] 2.⏩ **Udemy Section 12 – AWS CLI, SDK, IAM Roles and Policies** (≈ 30 m)  
+- [ ] 3. ⏩ **Udemy Section 16 – Docker, ECS, ECR, Fargate** (≈ 1.2 h speed-run)   - Container concepts
+   - ECS clusters
+   - ECR repositories
 - [ ] 2. ⏩ **Udemy Section 20 – Monitoring & X-Ray** (≈ 1.0 h speed-run)
    - CloudWatch metrics
    - X-Ray tracing
@@ -185,10 +210,8 @@ Supports DNS record types
    - CodeBuild
    - CodeDeploy
    - CodePipeline
+- [ ] 5. **Udemy Section 25 – SAM** (≈ 1 h)
 
-
-31
-## Thu May 22  —  Practice & Review  
 - [ ] 1. **Tutorials Dojo Practice Exam #1** (65 Q, 130 m)
    - Take exam in exam conditions
    - Mark unsure questions
@@ -214,9 +237,7 @@ Supports DNS record types
    - Review practice exam results
    - Re-watch relevant lectures
    - Complete targeted exercises
-- [ ] 3. ⏩ **Udemy Section 16 – Docker, ECS, ECR, Fargate** (≈ 1.2 h speed-run)   - Container concepts
-   - ECS clusters
-   - ECR repositories
+
 
 ## Tue May 27  —  Hands-on Review  
 - [ ] 1. **Re-watch Weak-topic Lectures** (≈ 2.0 h)
@@ -231,7 +252,7 @@ Supports DNS record types
    - SQS queue fan-out
    - SNS filtering
    - KMS envelope encryption
-40
+
 ## Wed May 28  —  Final Practice  
 - [ ] 1. **AWS Official Sample** (20 Q, 40 m)
    - Take in exam conditions
@@ -286,7 +307,7 @@ Supports DNS record types
    - Quick review of key concepts
    - No new content
    - Early night
-52
+
 ## Tue Jun 3  —  EXAM DAY  
 - [ ] 1. **AWS DVA-C02 Exam** (180 m)
    - Arrive early
