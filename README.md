@@ -173,7 +173,7 @@ Supports DNS record types
    - Review past material
 
 
-## Thu May 22  —  Practice & Review  
+## Thu May 22  —  Practice & Review
 - [✅] 1. ⏩ **Take a Udemy assessment**
    Above average result. Following topics need review:
    - BAA (Business Associate Addendum) & AWS Artifact
@@ -191,41 +191,41 @@ Supports DNS record types
    - WAF rule configurations
    - AWS Organizations vs individual accounts
    - CloudFormation Fn::ImportValue
-- [✅] 2.⏩ **Udemy Section 12 – AWS CLI, SDK, IAM Roles and Policies** (≈ 30 m)  
-- [ ] 3. ⏩ **Udemy Section 16 – Docker, ECS, ECR, Fargate** (≈ 1.2 h speed-run)   - Container concepts
+- [✅] 2. ⏩ **Udemy Section 12 – AWS CLI, SDK, IAM Roles and Policies** (≈ 30 m)
+- [✅] 3. ⏩ **Udemy Section 16 – Docker, ECS, ECR, Fargate** (≈ 1.2 h speed-run)
+   - Container concepts
    - ECS clusters
    - ECR repositories
-- [ ] 2. ⏩ **Udemy Section 20 – Monitoring & X-Ray** (≈ 1.0 h speed-run)
+- [ ] 4. ⏩ **Udemy Section 20 – Monitoring & X-Ray** (≈ 1.0 h speed-run)
    - CloudWatch metrics
    - X-Ray tracing
    - Log insights
-- [ ] 3. ✳ **Udemy Section 22 – AWS Serverless: DynamoDB** (≈ 2.6 h deep-study)
+- [ ] 5. ✳ **Udemy Section 22 – AWS Serverless: DynamoDB** (≈ 2.6 h deep-study)
    - Deep dive into DynamoDB concepts
    - Create Anki cards for key terms
-- [ ] 4. ✳ **Udemy Section 23 – API Gateway** (≈ 1.7 h deep-study)
+- [ ] 6. ✳ **Udemy Section 23 – API Gateway** (≈ 1.7 h deep-study)
    - REST vs HTTP APIs
    - Integration types
    - Authorization
-- [ ] 5. **Udemy Section 24 – Developer Tools** (≈ 1.5 h)
+- [ ] 7. **Udemy Section 24 – Developer Tools** (≈ 1.5 h)
    - CodeBuild
    - CodeDeploy
    - CodePipeline
-- [ ] 5. **Udemy Section 25 – SAM** (≈ 1 h)
-
-- [ ] 1. **Tutorials Dojo Practice Exam #1** (65 Q, 130 m)
+- [ ] 8. **Udemy Section 25 – SAM** (≈ 1 h)
+- [ ] 9. **Tutorials Dojo Practice Exam #1** (65 Q, 130 m)
    - Take exam in exam conditions
    - Mark unsure questions
-- [ ] 2. **Review Answers** (≈ 2.0 h)
+- [ ] 10. **Review Answers** (≈ 2.0 h)
    - Document incorrect answers
    - Research weak areas
    - Update Gap List
-- [ ] 3. **Update Study Materials** (≈ 1.0 h)
+- [ ] 11. **Update Study Materials** (≈ 1.0 h)
    - Add new Anki cards
    - Update cheat sheets
    - Review weak areas
-- [ ] 4. **Set up SAM CI/CD pipeline** (≈ 1.0 h)  
-  - Run `sam pipeline init --bootstrap`  
-  - Verify CodeBuild & CodePipeline stacks deploy successfully  
+- [ ] 12. **Set up SAM CI/CD pipeline** (≈ 1.0 h)
+  - Run `sam pipeline init --bootstrap`
+  - Verify CodeBuild & CodePipeline stacks deploy successfully
   - Push `pipeline.yaml` and `buildspec.yml` to GitHub
 
 ## Fri May 23  —  Focus Areas  
