@@ -48,104 +48,119 @@ def update_readme_progress(file_path="README.md"):
     print(f"Updated progress header to: {current_completed_tasks}/{current_total_tasks} ({percentage_completed}%)")
 
     # --- Update Burndown Chart --- 
-    chart_url_match = re.search(r"(https?://quickchart\.io/chart\?c=([^{]*\{[^}]*\}))(?=\))", readme_content)
+    chart_url_match = re.search(r"(https?://quickchart\.io/chart\?w=\d+&h=\d+&c=(.*))\)", readme_content, re.DOTALL)
     if not chart_url_match:
         print("Warning: Burndown chart URL not found or in unexpected format in README.md. Skipping burndown update.")
     else:
         original_chart_url = chart_url_match.group(1)
         chart_config_str = chart_url_match.group(2) # The part after c=
-        
-        # Extract labels (dates)
-        labels_match = re.search(r"labels:(\[[^\]]*?\])", chart_config_str)
-        if not labels_match:
+        # Extract labels (dates) - using a more direct approach
+        labels_start = chart_config_str.find('labels:[')
+        if labels_start == -1:
             print("Warning: Could not find 'labels' in chart URL. Skipping burndown update.")
         else:
-            labels_str_raw = labels_match.group(1)
-            # Convert URL encoded labels like ['%27Start%27%2C%27May%202%27...] to a Python list of strings
-            labels_list = [urllib.parse.unquote(label.strip("\'")) for label in labels_str_raw.strip("[]").split("%2C")]
-
-            # Extract 'Actual' data series
-            actual_data_match = re.search(r"label:%27Actual%27,data:(\[[^\]]*?\])", chart_config_str)
-            if not actual_data_match:
-                print("Warning: Could not find 'Actual' data in chart URL. Skipping burndown update.")
+            labels_start += len('labels:[')
+            labels_end = chart_config_str.find(']', labels_start)
+            if labels_end == -1:
+                print("Warning: Could not find end of labels array. Skipping burndown update.")
             else:
-                actual_data_str_raw = actual_data_match.group(1)
-                actual_data_list_str = [val for val in actual_data_str_raw.strip("[]").split("%2C")]
-                actual_data_list = [int(x) if x != 'null' and x else None for x in actual_data_list_str]
-
-                if not actual_data_list:
-                    print("Warning: 'Actual' data list is empty. Skipping burndown update.")
+                labels_str_raw = chart_config_str[labels_start:labels_end]
+                # First decode the entire string, then split by commas
+                decoded_labels = urllib.parse.unquote(labels_str_raw)
+                # Remove quotes and split by commas
+                labels_list = [label.strip("'") for label in decoded_labels.split(',')]
+                # Try both encoded and non-encoded Actual data regex
+                actual_data_match = re.search(r"label:%27Actual%27,data:(\[.*?\])", chart_config_str, re.DOTALL)
+                if not actual_data_match:
+                    actual_data_match = re.search(r"label:'Actual',data:(\[.*?\])", chart_config_str, re.DOTALL)
+                if not actual_data_match:
+                    print("Warning: Could not find 'Actual' data in chart URL. Skipping burndown update.")
                 else:
-                    burndown_start_tasks_actual = actual_data_list[0] if actual_data_list[0] is not None else current_total_tasks # Fallback for safety
-                    tasks_remaining_today = burndown_start_tasks_actual - current_completed_tasks
+                    actual_data_str_raw = actual_data_match.group(1)
+                    # Remove brackets and decode URL encoding, then split by comma
+                    actual_data_decoded = urllib.parse.unquote(actual_data_str_raw.strip('[]'))
+                    actual_data_list_str = [val.strip() for val in actual_data_decoded.split(',')]
+                    actual_data_list = [int(x) if x != 'null' and x != '' else None for x in actual_data_list_str]
 
-                    current_dt = datetime.datetime.now()
-                    target_label_str = current_dt.strftime("%b %-d") # e.g., "May 24"
-                    update_index = -1
-
-                    try:
-                        update_index = labels_list.index(target_label_str)
-                    except ValueError:
-                        print(f"Today's exact label '{target_label_str}' not found. Determining best index...")
-                        # Fallback: find the first 'null' index, or the last index if no nulls.
-                        try:
-                            update_index = actual_data_list.index(None) 
-                        except ValueError: # No None found
-                            update_index = len(actual_data_list) - 1 # Update last point if chart is full
-                        
-                        # Try to find the latest past date if the chosen index seems too far ahead
-                        temp_best_fit = -1
-                        for i in range(1, len(labels_list)):
-                            try:
-                                label_dt = datetime.datetime.strptime(f"{labels_list[i]} {current_dt.year}", "%b %d %Y")
-                                if label_dt.date() <= current_dt.date():
-                                    temp_best_fit = i
-                                else: # First future date
-                                    if update_index > i and temp_best_fit != -1 : # If current update_index (e.g. first None) is beyond this first future date.
-                                         pass # Keep first None if it makes sense, or use temp_best_fit
-                                    break 
-                            except ValueError:
-                                continue
-                        if temp_best_fit != -1 and (update_index == -1 or actual_data_list[update_index] is not None or update_index > temp_best_fit ) : # prefer last known date if current is not good
-                           if update_index == -1 or actual_data_list[update_index] is not None or labels_list[update_index] == 'null' : # if update_index is bad
-                                update_index = temp_best_fit
-                           elif datetime.datetime.strptime(f"{labels_list[update_index]} {current_dt.year}", "%b %d %Y") > current_dt : #if first_none is too far in future
-                                update_index = temp_best_fit
-
-                    if update_index == -1 or update_index >= len(actual_data_list) or update_index < 0:
-                        print(f"Error: Determined update_index ({update_index}) is invalid for labels list (len {len(labels_list)}). Skipping burndown update.")
+                    if not actual_data_list:
+                        print("Warning: 'Actual' data list is empty. Skipping burndown update.")
                     else:
-                        print(f"Updating burndown chart for label: '{labels_list[update_index]}' (index {update_index}) with {tasks_remaining_today} tasks remaining.")
-                        
-                        # Fill historical Nones and update today's value
-                        last_known_val = actual_data_list[0] # Start with the initial value
-                        for i in range(1, len(actual_data_list)):
-                            if i < update_index:
-                                if actual_data_list[i] is None:
-                                    actual_data_list[i] = last_known_val
-                                elif actual_data_list[i] is not None:
-                                     last_known_val = actual_data_list[i]
-                            elif i == update_index:
-                                actual_data_list[i] = tasks_remaining_today
-                                last_known_val = tasks_remaining_today # update for future potential Nones if any
-                            elif i > update_index and actual_data_list[i] is None : # future points after today should remain None
-                                 actual_data_list[i] = None # Explicitly ensure future points are None
-                            # If i > update_index and actual_data_list[i] is not None, leave it as is (e.g. manually forecasted)
+                        burndown_start_tasks_actual = actual_data_list[0] if actual_data_list[0] is not None else current_total_tasks # Fallback for safety
+                        tasks_remaining_today = burndown_start_tasks_actual - current_completed_tasks
 
-                        new_actual_data_str_for_url = '%2C'.join([str(x) if x is not None else 'null' for x in actual_data_list])
-                        
-                        # Replace only the data part of the 'Actual' series in the config string
-                        # This is safer than replacing the whole config string if other parts are complex or change.
-                        original_actual_data_segment = f"label:%27Actual%27,data:{actual_data_str_raw}"
-                        new_actual_data_segment = f"label:%27Actual%27,data:[{new_actual_data_str_for_url}]"
-                        
-                        if original_actual_data_segment in chart_config_str:
-                            new_chart_config_str = chart_config_str.replace(original_actual_data_segment, new_actual_data_segment)
-                            new_chart_url = f"https://quickchart.io/chart?c={new_chart_config_str}" 
-                            readme_content = readme_content.replace(original_chart_url, new_chart_url)
-                            print("Burndown chart URL updated.")
+                        current_dt = datetime.datetime.now()
+                        target_label_str = current_dt.strftime("%b %-d") # e.g., "May 24"
+                        update_index = -1
+
+                        try:
+                            update_index = labels_list.index(target_label_str)
+                        except ValueError:
+                            # Fallback: find the first 'null' index, or the last index if no nulls.
+                            try:
+                                update_index = actual_data_list.index(None) 
+                            except ValueError: # No None found
+                                update_index = len(actual_data_list) - 1 # Update last point if chart is full
+                            
+                            # Try to find the latest past date if the chosen index seems too far ahead
+                            temp_best_fit = -1
+                            for i in range(1, len(labels_list)):
+                                try:
+                                    label_dt = datetime.datetime.strptime(f"{labels_list[i]} {current_dt.year}", "%b %d %Y")
+                                    if label_dt.date() <= current_dt.date():
+                                        temp_best_fit = i
+                                    else: # First future date
+                                        if update_index > i and temp_best_fit != -1 : # If current update_index (e.g. first None) is beyond this first future date.
+                                             pass # Keep first None if it makes sense, or use temp_best_fit
+                                        break 
+                                except ValueError:
+                                    continue
+                            if temp_best_fit != -1 and (update_index == -1 or actual_data_list[update_index] is not None or update_index > temp_best_fit ) : # prefer last known date if current is not good
+                               if update_index == -1 or actual_data_list[update_index] is not None or labels_list[update_index] == 'null' : # if update_index is bad
+                                    update_index = temp_best_fit
+                               elif datetime.datetime.strptime(f"{labels_list[update_index]} {current_dt.year}", "%b %d %Y") > current_dt : #if first_none is too far in future
+                                    update_index = temp_best_fit
+
+                        if update_index == -1 or update_index >= len(actual_data_list) or update_index < 0:
+                            print(f"Error: Determined update_index ({update_index}) is invalid for labels list (len {len(labels_list)}). Skipping burndown update.")
                         else:
-                            print("Warning: Could not find the exact original 'Actual' data segment in chart URL for replacement. Burndown chart not updated.")
+                            print(f"Updating burndown chart for '{labels_list[update_index]}' with {tasks_remaining_today} tasks remaining.")
+                            
+                            # Fill historical Nones and update today's value
+                            last_known_val = actual_data_list[0] # Start with the initial value
+                            for i in range(1, len(actual_data_list)):
+                                if i < update_index:
+                                    if actual_data_list[i] is None:
+                                        actual_data_list[i] = last_known_val
+                                    elif actual_data_list[i] is not None:
+                                         last_known_val = actual_data_list[i]
+                                elif i == update_index:
+                                    actual_data_list[i] = tasks_remaining_today
+                                    last_known_val = tasks_remaining_today # update for future potential Nones if any
+                                elif i > update_index and actual_data_list[i] is None : # future points after today should remain None
+                                     actual_data_list[i] = None # Explicitly ensure future points are None
+                                # If i > update_index and actual_data_list[i] is not None, leave it as is (e.g. manually forecasted)
+
+                            new_actual_data_str_for_url = '%2C'.join([str(x) if x is not None else 'null' for x in actual_data_list])
+                            
+                            # Replace only the data part of the 'Actual' series in the config string
+                            # This is safer than replacing the whole config string if other parts are complex or change.
+                            original_actual_data_segment = f"label:%27Actual%27,data:{actual_data_str_raw}"
+                            new_actual_data_segment = f"label:%27Actual%27,data:[{new_actual_data_str_for_url}]"
+                            
+                            if original_actual_data_segment in chart_config_str:
+                                new_chart_config_str = chart_config_str.replace(original_actual_data_segment, new_actual_data_segment)
+                                # Preserve the width and height parameters from the original URL
+                                width_height_match = re.search(r"\?w=(\d+)&h=(\d+)", original_chart_url)
+                                if width_height_match:
+                                    width = width_height_match.group(1)
+                                    height = width_height_match.group(2)
+                                    new_chart_url = f"https://quickchart.io/chart?w={width}&h={height}&c={new_chart_config_str}"
+                                else:
+                                    new_chart_url = f"https://quickchart.io/chart?w=800&h=400&c={new_chart_config_str}"
+                                readme_content = readme_content.replace(original_chart_url, new_chart_url)
+                                print("Burndown chart URL updated.")
+                            else:
+                                print("Warning: Could not find the exact original 'Actual' data segment in chart URL for replacement. Burndown chart not updated.")
 
     try:
         with open(file_path, 'w', encoding='utf-8') as f:
