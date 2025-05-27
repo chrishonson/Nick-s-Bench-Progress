@@ -5,7 +5,7 @@
 ![Progress](https://progress-bar.xyz/49/?scale=100&width=500&color=2EA043&suffix=%25)
 
 ## Progress: Udemy Ultimate AWS Certified Developer Associate 2025 DVA-C02
-<!-- Progress bar visual representation -->
+<!-- Updating manually, no touchy -->
 ![Progress](https://progress-bar.xyz/53/?scale=100&width=500&color=2EA043&suffix=%25)
 
 ## Burndown Chart
@@ -198,10 +198,17 @@ Supports DNS record types
    - ECR repositories
 28
 ## Fri May 23  —  Focus Areas 
-- [ ] 1. ⏩ **Udemy Section 20 – Monitoring & X-Ray** (≈ 1.0 h speed-run)
+- [✅] 1. ⏩ **Udemy Section 17 – Elastic Beanstalk** (≈ 1 h speed-run)
+   - Deployment modes
+      - Blue/Grean is traffic splitting via route 53 DNS
+      - Traffic splitting is traffic splitting via the ALB, to the new ALB
+      - Immutable is just adds all new instances to new Auto Scaling Group and shuts down all old instances after some time
+- [✅] 1. ⏩ **Udemy Section 20 – Monitoring & X-Ray** (≈ 2.0 h speed-run)
    - CloudWatch metrics
    - X-Ray tracing
    - Log insights
+
+## Tue May 27  —  Hands-on Review  
 - [ ] 2. ✳ **Udemy Section 22 – AWS Serverless: DynamoDB** (≈ 2.6 h deep-study)
    - Deep dive into DynamoDB concepts
    - Create Anki cards for key terms
@@ -214,6 +221,8 @@ Supports DNS record types
    - CodeDeploy
    - CodePipeline
 - [ ] 5. **Udemy Section 25 – SAM** (≈ 1 h)
+
+## Wed May 28  —  
 - [ ] 6. **Tutorials Dojo Practice Exam #1** (65 Q, 130 m)
    - Take exam in exam conditions
    - Mark unsure questions
@@ -238,8 +247,6 @@ Supports DNS record types
    - Re-watch relevant lectures
    - Complete targeted exercises
 
-
-## Tue May 27  —  Hands-on Review  
 - [ ] 1. **Re-watch Weak-topic Lectures** (≈ 2.0 h)
    - Focus on most challenging areas
    - Take detailed notes
@@ -253,7 +260,7 @@ Supports DNS record types
    - SNS filtering
    - KMS envelope encryption
 
-## Wed May 28  —  Final Practice  
+## Thu May 29  —  Final Practice  
 - [ ] 1. **AWS Official Sample** (20 Q, 40 m)
    - Take in exam conditions
    - Aim for ≥ 90%
@@ -266,7 +273,7 @@ Supports DNS record types
    - Update Anki deck
    - Review exam tips
 
-## Thu May 29  —  Final Review  
+## Fri May 30  —  Final Review  
 - [ ] 1. **Final Practice Exam** (100 Q, 180 m)
    - Full-length simulation
    - Strict timing
@@ -280,7 +287,6 @@ Supports DNS record types
    - Create quick reference
    - Review exam strategies
 
-## Fri May 30  —  Focus Areas  
 - [ ] 1. **Focus on Top 3 Weak Areas** (≈ 2.0 h)
    - Deep dive into concepts
    - Practice questions
