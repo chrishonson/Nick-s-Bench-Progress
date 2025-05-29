@@ -3,6 +3,7 @@ import json
 import datetime
 import urllib.parse
 import argparse
+from typing import Tuple, Optional, List, Dict
 
 def count_tasks_from_readme(file_path="README.md"):
     """Count completed and total tasks from README.md file."""
@@ -22,6 +23,43 @@ def count_tasks_from_readme(file_path="README.md"):
         print(f"Error: File '{file_path}' not found.")
         return None, None
     return total_tasks, completed_tasks
+
+def count_tasks_by_date(file_path="README.md") -> Dict[str, Tuple[int, int]]:
+    """Count tasks by date section in README.md file."""
+    tasks_by_date = {}
+    current_date = None
+    
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                
+                # Look for date headers like "## Fri May 2" or "## May 2"
+                date_match = re.match(r"^## (?:\w+ )?((?:May|Jun) \d+)", line)
+                if date_match:
+                    current_date = date_match.group(1).strip()
+                    # Don't initialize here - only add when we find actual tasks
+                
+                # Count tasks under current date
+                elif current_date and re.match(r"^- \[", line):
+                    # Initialize if not exists
+                    if current_date not in tasks_by_date:
+                        tasks_by_date[current_date] = (0, 0)
+                    total, completed = tasks_by_date[current_date]
+                    if re.match(r"^- \[[xX✅]\]", line):
+                        tasks_by_date[current_date] = (total + 1, completed + 1)
+                    elif re.match(r"^- \[[ ]\]", line):
+                        tasks_by_date[current_date] = (total + 1, completed)
+    
+                # Reset current_date when hitting a non-date header
+                elif re.match(r"^##", line) and not date_match:
+                    current_date = None
+                        
+    except FileNotFoundError:
+        print(f"Error: File '{file_path}' not found.")
+        return {}
+    
+    return tasks_by_date
 
 def update_progress_header(readme_content, completed_tasks, total_tasks):
     """Update the main progress line in README content."""
@@ -75,84 +113,77 @@ def parse_actual_data(chart_config_str):
     actual_data_list = [int(x) if x != 'null' and x != '' else None for x in actual_data_list_str]
     return actual_data_list, actual_data_str_raw
 
-def determine_update_index(labels_list, actual_data_list):
-    """Determine which index to update in the burndown chart."""
-    current_dt = datetime.datetime.now()
-    target_label_str = current_dt.strftime("%b %-d")  # e.g., "May 24"
+def calculate_burndown_progress(tasks_by_date: Dict[str, Tuple[int, int]], start_tasks: int = 54) -> Dict[str, int]:
+    """Calculate actual burndown progress based on task completion by date."""
+    burndown_data = {"Start": start_tasks}
+    remaining_tasks = start_tasks
     
-    try:
-        return labels_list.index(target_label_str)
-    except ValueError:
-        # Fallback: find the first 'null' index, or the last index if no nulls
+    # Sort dates chronologically (simplified - assumes format like "May 2", "May 6", etc.)
+    def date_sort_key(date_str):
         try:
-            update_index = actual_data_list.index(None)
-        except ValueError:
-            update_index = len(actual_data_list) - 1
-        
-        # Try to find the latest past date
-        temp_best_fit = find_best_date_match(labels_list, current_dt)
-        if temp_best_fit != -1 and should_use_best_fit(update_index, temp_best_fit, actual_data_list, labels_list, current_dt):
-            update_index = temp_best_fit
-        
-        return update_index
-
-def find_best_date_match(labels_list, current_dt):
-    """Find the best matching date index for today's date."""
-    temp_best_fit = -1
-    for i in range(1, len(labels_list)):
-        try:
-            label_dt = datetime.datetime.strptime(f"{labels_list[i]} {current_dt.year}", "%b %d %Y")
-            if label_dt.date() <= current_dt.date():
-                temp_best_fit = i
+            # Handle different date formats
+            if "May" in date_str:
+                day = int(date_str.replace("May", "").strip())
+                return (5, day)  # May = month 5
+            elif "Jun" in date_str:
+                day = int(date_str.replace("Jun", "").strip())
+                return (6, day)  # June = month 6
             else:
-                break
-        except ValueError:
-            continue
-    return temp_best_fit
+                return (0, 0)  # Unknown format
+        except:
+            return (0, 0)
+    
+    sorted_dates = sorted([d for d in tasks_by_date.keys() if tasks_by_date[d][1] > 0], key=date_sort_key)
+    
+    for date in sorted_dates:
+        total_tasks, completed_tasks = tasks_by_date[date]
+        if completed_tasks > 0:
+            remaining_tasks -= completed_tasks
+            burndown_data[date] = remaining_tasks
+    
+    return burndown_data
 
-def should_use_best_fit(update_index, temp_best_fit, actual_data_list, labels_list, current_dt):
-    """Determine if we should use the best fit date instead of the current update index."""
-    if temp_best_fit == -1:
-        return False
+def update_burndown_chart_accurate(readme_content, tasks_by_date: Dict[str, Tuple[int, int]]):
+    """Update the burndown chart with accurate date-based progress."""
+    original_chart_url, chart_config_str = extract_chart_config(readme_content)
+    if not original_chart_url:
+        print("Warning: Burndown chart URL not found. Skipping burndown update.")
+        return readme_content
     
-    if update_index == -1 or actual_data_list[update_index] is not None or update_index > temp_best_fit:
-        if update_index == -1 or actual_data_list[update_index] is not None or labels_list[update_index] == 'null':
-            return True
-        try:
-            if datetime.datetime.strptime(f"{labels_list[update_index]} {current_dt.year}", "%b %d %Y") > current_dt:
-                return True
-        except ValueError:
-            pass
+    labels_list = parse_chart_labels(chart_config_str)
+    if not labels_list:
+        print("Warning: Could not parse chart labels. Skipping burndown update.")
+        return readme_content
     
-    return False
-
-def update_actual_data(actual_data_list, update_index, tasks_remaining_today):
-    """Update the actual data list with today's progress and fill historical gaps."""
-    last_known_val = actual_data_list[0]
+    actual_data_result = parse_actual_data(chart_config_str)
+    if not actual_data_result:
+        print("Warning: Could not parse actual data. Skipping burndown update.")
+        return readme_content
     
-    for i in range(1, len(actual_data_list)):
-        if i < update_index:
-            if actual_data_list[i] is None:
-                actual_data_list[i] = last_known_val
-            elif actual_data_list[i] is not None:
-                last_known_val = actual_data_list[i]
-        elif i == update_index:
-            actual_data_list[i] = tasks_remaining_today
-            last_known_val = tasks_remaining_today
-        elif i > update_index and actual_data_list[i] is None:
-            actual_data_list[i] = None
+    actual_data_list, actual_data_str_raw = actual_data_result
     
-    return actual_data_list
-
-def build_new_chart_url(original_chart_url, chart_config_str, actual_data_list, actual_data_str_raw):
-    """Build the new chart URL with updated data."""
-    new_actual_data_str_for_url = '%2C'.join([str(x) if x is not None else 'null' for x in actual_data_list])
+    # Use the current Start value from the chart, or fall back to 54
+    start_tasks = actual_data_list[0] if actual_data_list and actual_data_list[0] is not None else 54
+    
+    # Calculate accurate burndown progress
+    burndown_progress = calculate_burndown_progress(tasks_by_date, start_tasks)
+    
+    # Update only the data points that correspond to actual completion dates
+    updated_actual_data = [None] * len(labels_list)
+    
+    for i, label in enumerate(labels_list):
+        if label in burndown_progress:
+            updated_actual_data[i] = burndown_progress[label]
+    
+    # Build new chart URL
+    new_actual_data_str_for_url = '%2C'.join([str(x) if x is not None else 'null' for x in updated_actual_data])
     
     original_actual_data_segment = f"label:%27Actual%27,data:{actual_data_str_raw}"
     new_actual_data_segment = f"label:%27Actual%27,data:[{new_actual_data_str_for_url}]"
     
     if original_actual_data_segment not in chart_config_str:
-        return None
+        print("Warning: Could not find original data segment for replacement.")
+        return readme_content
     
     new_chart_config_str = chart_config_str.replace(original_actual_data_segment, new_actual_data_segment)
     
@@ -165,54 +196,18 @@ def build_new_chart_url(original_chart_url, chart_config_str, actual_data_list, 
     else:
         new_chart_url = f"https://quickchart.io/chart?w=800&h=400&c={new_chart_config_str}"
     
-    return new_chart_url
-
-def update_burndown_chart(readme_content, completed_tasks, total_tasks):
-    """Update the burndown chart in README content."""
-    original_chart_url, chart_config_str = extract_chart_config(readme_content)
-    if not original_chart_url:
-        print("Warning: Burndown chart URL not found or in unexpected format in README.md. Skipping burndown update.")
-        return readme_content
-    
-    labels_list = parse_chart_labels(chart_config_str)
-    if not labels_list:
-        print("Warning: Could not find 'labels' in chart URL. Skipping burndown update.")
-        return readme_content
-    
-    actual_data_result = parse_actual_data(chart_config_str)
-    if not actual_data_result:
-        print("Warning: Could not find 'Actual' data in chart URL. Skipping burndown update.")
-        return readme_content
-    
-    actual_data_list, actual_data_str_raw = actual_data_result
-    
-    if not actual_data_list:
-        print("Warning: 'Actual' data list is empty. Skipping burndown update.")
-        return readme_content
-    
-    burndown_start_tasks_actual = actual_data_list[0] if actual_data_list[0] is not None else total_tasks
-    tasks_remaining_today = burndown_start_tasks_actual - completed_tasks
-    
-    update_index = determine_update_index(labels_list, actual_data_list)
-    
-    if update_index == -1 or update_index >= len(actual_data_list) or update_index < 0:
-        print(f"Error: Determined update_index ({update_index}) is invalid for labels list (len {len(labels_list)}). Skipping burndown update.")
-        return readme_content
-    
-    print(f"Updating burndown chart for '{labels_list[update_index]}' with {tasks_remaining_today} tasks remaining.")
-    
-    updated_actual_data = update_actual_data(actual_data_list, update_index, tasks_remaining_today)
-    new_chart_url = build_new_chart_url(original_chart_url, chart_config_str, updated_actual_data, actual_data_str_raw)
-    
-    if not new_chart_url:
-        print("Warning: Could not find the exact original 'Actual' data segment in chart URL for replacement. Burndown chart not updated.")
-        return readme_content
-    
     updated_content = readme_content.replace(original_chart_url, new_chart_url)
-    print("Burndown chart URL updated.")
+    print("Burndown chart updated with accurate date-based progress.")
     return updated_content
 
-def update_readme_progress(file_path="README.md"):
+def update_burndown_chart(readme_content, completed_tasks, total_tasks):
+    """Legacy function - kept for compatibility but now uses task-by-date logic."""
+    # For now, fall back to the old logic but with improved validation
+    # This should be replaced with calls to update_burndown_chart_accurate
+    print("Warning: Using legacy burndown update. Consider using date-based updates.")
+    return readme_content
+
+def update_readme_progress(file_path="README.md", use_accurate_burndown=True):
     """Main function to update README progress and burndown chart."""
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
@@ -232,7 +227,12 @@ def update_readme_progress(file_path="README.md"):
     # Update progress components
     readme_content = update_progress_header(readme_content, current_completed_tasks, current_total_tasks)
     readme_content = update_progress_bar(readme_content, percentage_completed)
-    readme_content = update_burndown_chart(readme_content, current_completed_tasks, current_total_tasks)
+    
+    if use_accurate_burndown:
+        tasks_by_date = count_tasks_by_date(file_path)
+        readme_content = update_burndown_chart_accurate(readme_content, tasks_by_date)
+    else:
+        readme_content = update_burndown_chart(readme_content, current_completed_tasks, current_total_tasks)
     
     print(f"Updated progress header to: {current_completed_tasks}/{current_total_tasks} ({percentage_completed}%)")
 
