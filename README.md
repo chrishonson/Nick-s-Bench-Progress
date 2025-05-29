@@ -9,7 +9,7 @@
 ![Progress](https://progress-bar.xyz/52/?scale=100&width=500&color=2EA043&suffix=%25)
 
 ## Burndown Chart
-![Burndown Chart](https://quickchart.io/chart?w=800&h=400&c={type:%27line%27,data:{labels:[%27Start%27,%27May%202%27,%27May%203%27,%27May%204%27,%27May%205%27,%27May%206%27,%27May%207%27,%27May%208%27,%27May%209%27,%27May%2010%27,%27May%2011%27,%27May%2012%27,%27May%2013%27,%27May%2014%27,%27May%2015%27,%27May%2016%27,%27May%2017%27,%27May%2018%27,%27May%2019%27,%27May%2020%27,%27May%2021%27,%27May%2022%27,%27May%2023%27,%27May%2024%27,%27May%2025%27,%27May%2026%27,%27May%2027%27,%27May%2028%27,%27May%2029%27,%27May%2030%27,%27May%2031%27,%27Jun%201%27,%27Jun%202%27,%27Jun%203%27],datasets:[{label:%27Ideal%27,data:[54,51,51,51,51,48,45,42,39,39,39,36,33,30,27,24,24,24,21,18,15,12,9,9,9,6,4,2,0,0,0,0,0,0],fill:false,borderColor:%27rgb(75,192,192)%27,tension:0.1,pointRadius:2},{label:%27Actual%27,data:[54%2C51%2Cnull%2Cnull%2Cnull%2C47%2C45%2C43%2C42%2Cnull%2Cnull%2C41%2C39%2C37%2C35%2C33%2Cnull%2Cnull%2C32%2C30%2C29%2C26%2C24%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull],fill:false,borderColor:%27rgb(255,99,132)%27,tension:0.1,pointRadius:2}]},options:{title:{display:true,text:%27Task%20Burndown%20(54%20tasks,%2019%20Workdays%20to%20May%2030)%27},scales:{yAxes:[{ticks:{beginAtZero:true,suggestedMax:60},scaleLabel:{display:true,labelString:%27Tasks%20Remaining%27}}],xAxes:[{scaleLabel:{display:true,labelString:%27Date%27}}]}}})
+![Burndown Chart](https://quickchart.io/chart?w=800&h=400&c={type:%27line%27,data:{labels:[%27Start%27,%27May%202%27,%27May%203%27,%27May%204%27,%27May%205%27,%27May%206%27,%27May%207%27,%27May%208%27,%27May%209%27,%27May%2010%27,%27May%2011%27,%27May%2012%27,%27May%2013%27,%27May%2014%27,%27May%2015%27,%27May%2016%27,%27May%2017%27,%27May%2018%27,%27May%2019%27,%27May%2020%27,%27May%2021%27,%27May%2022%27,%27May%2023%27,%27May%2024%27,%27May%2025%27,%27May%2026%27,%27May%2027%27,%27May%2028%27,%27May%2029%27,%27May%2030%27,%27May%2031%27,%27Jun%201%27,%27Jun%202%27,%27Jun%203%27,%27Jun%204%27,%27Jun%205%27,%27Jun%206%27],datasets:[{label:%27Ideal%27,data:[54,51,51,51,51,48,45,42,39,39,39,36,33,30,27,24,24,24,21,18,15,12,9,9,9,6,4,2,0,0,0,0,0,0,0,0,0],fill:false,borderColor:%27rgb(75,192,192)%27,tension:0.1,pointRadius:2},{label:%27Actual%27,data:[54%2C51%2Cnull%2Cnull%2Cnull%2C47%2C45%2C43%2C42%2Cnull%2Cnull%2C41%2C39%2C37%2C35%2C33%2Cnull%2Cnull%2C32%2C30%2C29%2C26%2C24%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull],fill:false,borderColor:%27rgb(255,99,132)%27,tension:0.1,pointRadius:2}]},options:{title:{display:true,text:%27Task%20Burndown%20(54%20tasks,%2021%20Workdays%20to%20Jun%206)%27},scales:{yAxes:[{ticks:{beginAtZero:true,suggestedMax:60},scaleLabel:{display:true,labelString:%27Tasks%20Remaining%27}}],xAxes:[{scaleLabel:{display:true,labelString:%27Date%27}}]}}})
 
 # AWS Developer–Associate 90% Pass Probability Plan  
 *(Workdays-only, starts May 2, preserves nights & weekends)*  
@@ -25,7 +25,7 @@
 - **Daily review** → 15-min review of previous day's concepts
 
 ## Contingency  
-*If any full-length practice score is below 75% by **May 28**, reschedule the exam to the week of **June 3** (voucher reschedule is free).*  
+*If any full-length practice score is below 70% by **May 30**, reschedule the exam to the week of **June 9** (voucher reschedule is free).*  
 
 
 ## After the Exam  
@@ -208,7 +208,23 @@ Supports DNS record types
    - X-Ray tracing
    - Log insights
 
-## Tue May 27  —  Hands-on Review  
+## Tue May 27  —  Android Study (Internal Interview Prep)
+- [✅] 1. **Android Development Study** (≈ 8 h)
+   - Kotlin updates
+   - Android architecture components
+   - Kotlin coding chalenges
+
+Notes: Focused on Android development for internal interview opportunity. 
+AWS study paused for this priority.
+
+## Wed May 28  —  Android Study (Internal Interview Prep)  
+- [✅] 1. **Android Development Study** (≈ 8 h)
+   - Advanced Android topics
+   - Testing frameworks
+   
+Notes: Continued Android study. AWS certification timeline extended by 2 days.
+
+## Thu May 29  —  Resume AWS Study
 - [ ] 1. ✳ **Udemy Section 22 – AWS Serverless: DynamoDB** (≈ 2.6 h deep-study)
    - Deep dive into DynamoDB concepts
    - Create Anki cards for key terms
@@ -222,7 +238,7 @@ Supports DNS record types
    - CodePipeline
 - [ ] 4. **Udemy Section 25 – SAM** (≈ 1 h)
 
-## Wed May 28  —  
+## Fri May 30  —  Practice & Review
 - [ ] 1. **Tutorials Dojo Practice Exam #1** (65 Q, 130 m)
    - Take exam in exam conditions
    - Mark unsure questions
@@ -242,25 +258,26 @@ Supports DNS record types
    - Encryption concepts
    - Key management
    - Best practices
-- [ ] 6. **Focus on Weak Areas** (≈ 2.0 h)
+
+## Mon Jun 2  —  Intensive Review
+- [ ] 1. **Focus on Weak Areas** (≈ 2.0 h)
    - Review practice exam results
    - Re-watch relevant lectures
    - Complete targeted exercises
-
-- [ ] 7. **Re-watch Weak-topic Lectures** (≈ 2.0 h)
+- [ ] 2. **Re-watch Weak-topic Lectures** (≈ 2.0 h)
    - Focus on most challenging areas
    - Take detailed notes
    - Create summary diagrams
-- [ ] 8. **Lab: CodeBuild Pipeline** (≈ 1.5 h)
+- [ ] 3. **Lab: CodeBuild Pipeline** (≈ 1.5 h)
    - Set up CI/CD pipeline
    - Test deployment
    - Document process
-- [ ] 9. **Quick Labs Review** (≈ 1.5 h)
+- [ ] 4. **Quick Labs Review** (≈ 1.5 h)
    - SQS queue fan-out
    - SNS filtering
    - KMS envelope encryption
 
-## Thu May 29  —  Final Practice  
+## Tue Jun 3  —  Final Practice  
 - [ ] 1. **AWS Official Sample** (20 Q, 40 m)
    - Take in exam conditions
    - Aim for ≥ 90%
@@ -273,7 +290,7 @@ Supports DNS record types
    - Update Anki deck
    - Review exam tips
 
-## Fri May 30  —  Final Review  
+## Wed Jun 4  —  Final Review  
 - [ ] 1. **Final Practice Exam** (100 Q, 180 m)
    - Full-length simulation
    - Strict timing
@@ -299,7 +316,7 @@ Supports DNS record types
    - Focus on weak areas
    - Practice recall
 
-## Mon Jun 2  —  Exam Prep  
+## Thu Jun 5  —  Exam Prep  
 - [ ] 1. **Pearson Vue System Test** (≈ 30 m)
    - Verify system requirements
    - Test webcam
@@ -313,7 +330,7 @@ Supports DNS record types
    - No new content
    - Early night
 
-## Tue Jun 3  —  EXAM DAY  
+## Fri Jun 6  —  EXAM DAY  
 - [ ] 1. **AWS DVA-C02 Exam** (180 m)
    - Arrive early
    - Follow exam rules
@@ -327,13 +344,7 @@ Supports DNS record types
    - Update certification plan
    - Begin post-exam projects
 
-## Contingency  
-*If any full-length practice score is below 70 % by **May 22**, reschedule the exam to the week of **June 2** (voucher reschedule is free).*  
 
-## Burnout Safeguards  
-- 5-min walk + hydration every two Pomodoros.  
-- Box-breathing if anxiety spikes.  
-- Friday Loom recap instead of late-night catch-up coding.
 
 ## After the Exam  
 - Migrate first two IoT Cloud Functions from JavaScript to Go during the week of May 19.  
