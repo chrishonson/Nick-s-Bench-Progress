@@ -69,8 +69,8 @@ def update_progress_header(readme_content, completed_tasks, total_tasks):
 
 def update_progress_bar(readme_content, percentage_completed):
     """Update the progress bar URL in README content."""
-    new_progress_bar_url = f"![Progress](https://progress-bar.xyz/{percentage_completed}/?scale=100&width=500&color=2EA043&suffix=%25)"
-    updated_content = re.sub(r"^!\[Progress\]\(https://progress-bar\.xyz/.*?%25\)", new_progress_bar_url, readme_content, flags=re.MULTILINE)
+    new_progress_bar_url = f"![Task Progress](https://progress-bar.xyz/{percentage_completed}/?scale=100&width=500&color=2EA043&suffix=%25)"
+    updated_content = re.sub(r"^!\[Task Progress\]\(https://progress-bar\.xyz/.*?%25\)", new_progress_bar_url, readme_content, flags=re.MULTILINE)
     return updated_content
 
 def extract_chart_config(readme_content):
