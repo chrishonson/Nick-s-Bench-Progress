@@ -9,7 +9,7 @@
 ![Progress](https://progress-bar.xyz/74/?scale=100&width=500&color=2EA043&suffix=%25)
 
 ## Burndown Chart
-![Burndown Chart](https://quickchart.io/chart?w=800&h=400&c={type:%27line%27,data:{labels:[%27Start%27,%27May%202%27,%27May%203%27,%27May%204%27,%27May%205%27,%27May%206%27,%27May%207%27,%27May%208%27,%27May%209%27,%27May%2010%27,%27May%2011%27,%27May%2012%27,%27May%2013%27,%27May%2014%27,%27May%2015%27,%27May%2016%27,%27May%2017%27,%27May%2018%27,%27May%2019%27,%27May%2020%27,%27May%2021%27,%27May%2022%27,%27May%2023%27,%27May%2024%27,%27May%2025%27,%27May%2026%27,%27May%2027%27,%27May%2028%27,%27May%2029%27,%27May%2030%27,%27May%2031%27,%27Jun%201%27,%27Jun%202%27,%27Jun%203%27,%27Jun%204%27,%27Jun%205%27,%27Jun%206%27],datasets:[{label:%27Ideal%27,data:[54,51,51,51,51,48,45,42,39,39,39,36,33,30,27,24,24,24,21,18,15,12,9,9,9,6,4,2,0,0,0,0,0,0,0,0,0],fill:false,borderColor:%27rgb(75,192,192)%27,tension:0.1,pointRadius:2},{label:%27Actual%27,data:[54%2C51%2Cnull%2Cnull%2Cnull%2C47%2C45%2C43%2C42%2Cnull%2Cnull%2C41%2C39%2C37%2C35%2C33%2Cnull%2Cnull%2C32%2C30%2C29%2C26%2C24%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull],fill:false,borderColor:%27rgb(255,99,132)%27,tension:0.1,pointRadius:2}]},options:{title:{display:true,text:%27Task%20Burndown%20(54%20tasks,%2021%20Workdays%20to%20Jun%206)%27},scales:{yAxes:[{ticks:{beginAtZero:true,suggestedMax:60},scaleLabel:{display:true,labelString:%27Tasks%20Remaining%27}}],xAxes:[{scaleLabel:{display:true,labelString:%27Date%27}}]}}})
+![Burndown Chart](https://quickchart.io/chart?w=800&h=400&c={type:%27line%27,data:{labels:[%27Start%27,%27May%202%27,%27May%203%27,%27May%204%27,%27May%205%27,%27May%206%27,%27May%207%27,%27May%208%27,%27May%209%27,%27May%2010%27,%27May%2011%27,%27May%2012%27,%27May%2013%27,%27May%2014%27,%27May%2015%27,%27May%2016%27,%27May%2017%27,%27May%2018%27,%27May%2019%27,%27May%2020%27,%27May%2021%27,%27May%2022%27,%27May%2023%27,%27May%2024%27,%27May%2025%27,%27May%2026%27,%27May%2027%27,%27May%2028%27,%27May%2029%27,%27May%2030%27,%27May%2031%27,%27Jun%201%27,%27Jun%202%27,%27Jun%203%27,%27Jun%204%27,%27Jun%205%27,%27Jun%206%27,%27Jun%207%27,%27Jun%208%27,%27Jun%209%27,%27Jun%2010%27],datasets:[{label:%27Ideal%27,data:[54,51,51,51,51,48,45,42,39,39,39,36,33,30,27,24,24,24,21,18,15,12,9,9,9,6,4,2,0,0,0,0,0,0,0,0,0,0,0,0,0],fill:false,borderColor:%27rgb(75,192,192)%27,tension:0.1,pointRadius:2},{label:%27Actual%27,data:[54%2C51%2Cnull%2Cnull%2Cnull%2C47%2C45%2C43%2C42%2Cnull%2Cnull%2C41%2C39%2C37%2C35%2C33%2Cnull%2Cnull%2C32%2C30%2C29%2C26%2C24%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull],fill:false,borderColor:%27rgb(255,99,132)%27,tension:0.1,pointRadius:2}]},options:{title:{display:true,text:%27Task%20Burndown%20(Updated%20by%20script%20to%20Jun%2010)%27},scales:{yAxes:[{ticks:{beginAtZero:true,suggestedMax:60},scaleLabel:{display:true,labelString:%27Tasks%20Remaining%27}}],xAxes:[{scaleLabel:{display:true,labelString:%27Date%27}}]}}})
 
 # AWS Developer–Associate 90% Pass Probability Plan  
 *(Workdays-only, starts May 2, preserves nights & weekends)*  
@@ -25,7 +25,7 @@
 - **Daily review** → 15-min review of previous day's concepts
 
 ## Contingency  
-*If any full-length practice score is below 70% by **May 30**, reschedule the exam to the week of **June 9** (voucher reschedule is free).*  
+*If any full-length practice score is below 70% by **June 7th**, consider additional focused review before the **June 10th** exam.*  
 
 
 ## After the Exam  
@@ -261,16 +261,19 @@ Notes: Continued Android study. AWS certification timeline extended by 2 days.
 - [✅] Review anki flashcards  
 - [✅] 2. **Tutorials Dojo Review Answers** (≈ 2.0 h)
    - Research weak areas
-- [✅] 5. ✳ **Udemy Section 30 – KMS & Encryption** (≈ 1.5 h deep-study)
+- [✅] 3. ✳ **Udemy Section 30 – KMS & Encryption** (≈ 1.5 h deep-study)
    - Encryption concepts
    - Key management
    - Best practices
-
-## Thu Jun 5  —  Exam Prep  
+- [✅] 4. **Final Exam Prep** (≈ 1.0 h)
+   - Review exam rules
+   - Check required documents
+   - Plan exam day schedule
+## Thu Jun 5  —  Final Push
 - [ ] 1. **AWS Official Sample** (20 Q, 40 m)
    - Take in exam conditions
    - Aim for ≥ 90%
-- [ ] 2. **Review All Weak Areas** (≈ 2.0 h)
+- [ ] 2. **Review All Weak Areas** (≈ 2.0 h) (after sample exam)
    - Focus on top 3 challenging topics
    - Practice questions
    - Review documentation
@@ -278,40 +281,23 @@ Notes: Continued Android study. AWS certification timeline extended by 2 days.
    - Finalize cheat sheets
    - Update Anki deck
    - Review exam tips
+- [ ] 4. **Review anki flashcards** (Flexible, e.g. ≈ 1h)
 
+## Fri Jun 7  —  Final Prep
 - [ ] 1. **Final Practice Exam** (100 Q, 180 m)
    - Full-length simulation
    - Strict timing
    - Mark all unsure questions
-- [ ] 2. **Comprehensive Review** (≈ 2.0 h)
+- [ ] 2. **Comprehensive Review** (≈ 2.0 h) (of Final Practice Exam)
    - Analyze all practice exams
    - Finalize weak areas
    - Update study materials
-- [ ] 4. **Focus on Top 3 Weak Areas** (≈ 2.0 h)
-   - Deep dive into concepts
-   - Practice questions
-   - Review documentation
-- [ ] 5. **Quick Labs Review** (≈ 1.5 h)
-   - Run through key scenarios
-   - Verify understanding
-   - Document solutions
-
-
-- [ ] Review anki flashcards 
-- [ ] 1. **Pearson Vue System Test** (≈ 30 m)
+- [ ] 3. **Pearson Vue System Test** (≈ 30 m)
    - Verify system requirements
    - Test webcam
    - Check internet connection
-- [ ] 2. **Final Exam Prep** (≈ 1.0 h)
-   - Review exam rules
-   - Check required documents
-   - Plan exam day schedule
-- [ ] 3. **Rest & Light Review** (≈ 1.0 h)
-   - Quick review of key concepts
-   - No new content
-   - Early night
 
-## Fri Jun 6  —  EXAM DAY  
+## Mon Jun 10  —  EXAM DAY  
 - [ ] 1. **AWS DVA-C02 Exam** (180 m)
    - Arrive early
    - Follow exam rules
@@ -327,7 +313,7 @@ Notes: Continued Android study. AWS certification timeline extended by 2 days.
 
 
 ## After the Exam  
-- [ ] 4. **Set up SAM CI/CD pipeline** (≈ 1.0 h)
+- **Set up SAM CI/CD pipeline** (≈ 1.0 h)
   - Run `sam pipeline init --bootstrap`
   - Verify CodeBuild & CodePipeline stacks deploy successfully
   - Push `pipeline.yaml` and `buildspec.yml` to GitHub
