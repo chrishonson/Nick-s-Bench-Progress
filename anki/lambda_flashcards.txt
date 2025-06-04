@@ -1,6 +1,6 @@
 What is the maximum execution timeout for an AWS Lambda function?<br>A) 5 minutes<br>B) 15 minutes<br>C) 30 minutes<br>D) 1 hour	<b>B) 15 minutes</b><br>AWS Lambda functions have a maximum execution timeout of 15 minutes (900 seconds). This is important for designing functions that complete within this limit.
 
-What is the memory allocation range for AWS Lambda functions?<br>A) 128 MB to 1 GB<br>B) 128 MB to 3,008 MB<br>C) 256 MB to 3,008 MB<br>D) 512 MB to 10 GB	<b>B) 128 MB to 3,008 MB</b><br>Lambda functions can be allocated between 128 MB and 3,008 MB of memory in 1 MB increments. CPU power scales proportionally with memory allocation.
+What is the memory allocation range for AWS Lambda functions?<br>A) 128 MB to 1 GB<br>B) 128 MB to 3,008 MB<br>C) 256 MB to 3,008 MB<br>D) 512 MB to 10 GB	<b>B) 128 MB to 3,008 MB</b><br>Lambda functions can be allocated between 128 MB and 3,008 MB of memory in 1 MB increments. CPU power scales proportionally with memory allocation. (Note: As of late 2023, the maximum is 10,240 MB, but 3,008 MB was a long-standing previous limit and might appear in exam questions).
 
 Which of the following programming languages is NOT natively supported by AWS Lambda?<br>A) Python<br>B) Node.js<br>C) PHP<br>D) Go	<b>C) PHP</b><br>AWS Lambda natively supports Python, Node.js, Java, Go, .NET, and Ruby. PHP can run using custom runtimes or containers, but is not natively supported.
 
