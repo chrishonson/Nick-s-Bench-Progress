@@ -241,44 +241,32 @@ Notes: Continued Android study. AWS certification timeline extended by 2 days.
 - [✅] 2. **Udemy Section 25 – SAM** (≈ 1 h)
 
 ## Mon Jun 2  —  Intensive Review
-- [ ] 1. **Tutorials Dojo Practice Exam #1** (65 Q, 130 m)
+- [✅] Review anki flashcards 
+- [✅] 1. **Tutorials Dojo Practice Exam #1** (65 Q, 130 m)
    - Take exam in exam conditions
    - Mark unsure questions
-- [ ] 2. **Review Answers** (≈ 2.0 h)
-   - Document incorrect answers
-   - Research weak areas
-   - Update Gap List
-- [ ] 3. **Update Study Materials** (≈ 1.0 h)
+- [✅] 3. **Update Study Materials** (≈ 1.0 h)
    - Add new Anki cards
    - Update cheat sheets
    - Review weak areas
-- [ ] 4. **Set up SAM CI/CD pipeline** (≈ 1.0 h)
-  - Run `sam pipeline init --bootstrap`
-  - Verify CodeBuild & CodePipeline stacks deploy successfully
-  - Push `pipeline.yaml` and `buildspec.yml` to GitHub
-- [ ] 5. ✳ **Udemy Section 30 – KMS & Encryption** (≈ 1.5 h deep-study)
+
+## Tue Jun 3  —  Final Practice  
+- [✅] Review anki flashcards 
+- [✅] 6. **Focus on Weak Areas** (≈ 2.0 h)
+   - Review practice exam results
+   - Re-watch relevant lectures
+   - Complete targeted exercises
+
+## Wed Jun 4  —  Final Review 
+- [✅] Review anki flashcards  
+- [✅] 2. **Tutorials Dojo Review Answers** (≈ 2.0 h)
+   - Research weak areas
+- [✅] 5. ✳ **Udemy Section 30 – KMS & Encryption** (≈ 1.5 h deep-study)
    - Encryption concepts
    - Key management
    - Best practices
 
-- [ ] 6. **Focus on Weak Areas** (≈ 2.0 h)
-   - Review practice exam results
-   - Re-watch relevant lectures
-   - Complete targeted exercises
-- [ ] 7. **Re-watch Weak-topic Lectures** (≈ 2.0 h)
-   - Focus on most challenging areas
-   - Take detailed notes
-   - Create summary diagrams
-- [ ] 8. **Lab: CodeBuild Pipeline** (≈ 1.5 h)
-   - Set up CI/CD pipeline
-   - Test deployment
-   - Document process
-- [ ] 9. **Quick Labs Review** (≈ 1.5 h)
-   - SQS queue fan-out
-   - SNS filtering
-   - KMS envelope encryption
-
-## Tue Jun 3  —  Final Practice  
+## Thu Jun 5  —  Exam Prep  
 - [ ] 1. **AWS Official Sample** (20 Q, 40 m)
    - Take in exam conditions
    - Aim for ≥ 90%
@@ -291,7 +279,6 @@ Notes: Continued Android study. AWS certification timeline extended by 2 days.
    - Update Anki deck
    - Review exam tips
 
-## Wed Jun 4  —  Final Review  
 - [ ] 1. **Final Practice Exam** (100 Q, 180 m)
    - Full-length simulation
    - Strict timing
@@ -300,10 +287,6 @@ Notes: Continued Android study. AWS certification timeline extended by 2 days.
    - Analyze all practice exams
    - Finalize weak areas
    - Update study materials
-- [ ] 3. **Update Cheat Sheets** (≈ 1.0 h)
-   - Consolidate all notes
-   - Create quick reference
-   - Review exam strategies
 - [ ] 4. **Focus on Top 3 Weak Areas** (≈ 2.0 h)
    - Deep dive into concepts
    - Practice questions
@@ -312,12 +295,9 @@ Notes: Continued Android study. AWS certification timeline extended by 2 days.
    - Run through key scenarios
    - Verify understanding
    - Document solutions
-- [ ] 6. **Flash-card Final Run** (≈ 1.0 h)
-   - Review all cards
-   - Focus on weak areas
-   - Practice recall
 
-## Thu Jun 5  —  Exam Prep  
+
+- [ ] Review anki flashcards 
 - [ ] 1. **Pearson Vue System Test** (≈ 30 m)
    - Verify system requirements
    - Test webcam
@@ -346,8 +326,13 @@ Notes: Continued Android study. AWS certification timeline extended by 2 days.
    - Begin post-exam projects
 
 
-
 ## After the Exam  
+- [ ] 4. **Set up SAM CI/CD pipeline** (≈ 1.0 h)
+  - Run `sam pipeline init --bootstrap`
+  - Verify CodeBuild & CodePipeline stacks deploy successfully
+  - Push `pipeline.yaml` and `buildspec.yml` to GitHub
+
+
 - Migrate first two IoT Cloud Functions from JavaScript to Go during the week of May 19.  
 - Begin drafting the **"Kunai Serverless Starter Kit"** repo & Terraform scripts.
 
