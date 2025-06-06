@@ -143,7 +143,7 @@ def calculate_burndown_progress(tasks_by_date: Dict[str, Tuple[int, int]], start
     
     return burndown_data
 
-def update_burndown_chart_accurate(readme_content, tasks_by_date: Dict[str, Tuple[int, int]]):
+def update_burndown_chart_accurate(readme_content, tasks_by_date: Dict[str, Tuple[int, int]], total_tasks: int):
     """Update the burndown chart with accurate date-based progress."""
     original_chart_url, chart_config_str = extract_chart_config(readme_content)
     if not original_chart_url:
@@ -162,8 +162,8 @@ def update_burndown_chart_accurate(readme_content, tasks_by_date: Dict[str, Tupl
     
     actual_data_list, actual_data_str_raw = actual_data_result
     
-    # Use the current Start value from the chart, or fall back to 54
-    start_tasks = actual_data_list[0] if actual_data_list and actual_data_list[0] is not None else 54
+    # Use the total tasks as the starting point for the calculation.
+    start_tasks = total_tasks
     
     # Calculate accurate burndown progress
     burndown_progress = calculate_burndown_progress(tasks_by_date, start_tasks)
@@ -230,7 +230,7 @@ def update_readme_progress(file_path="README.md", use_accurate_burndown=True):
     
     if use_accurate_burndown:
         tasks_by_date = count_tasks_by_date(file_path)
-        readme_content = update_burndown_chart_accurate(readme_content, tasks_by_date)
+        readme_content = update_burndown_chart_accurate(readme_content, tasks_by_date, current_total_tasks)
     else:
         readme_content = update_burndown_chart(readme_content, current_completed_tasks, current_total_tasks)
     
