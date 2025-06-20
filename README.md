@@ -278,55 +278,48 @@ Exam Prep Overview: AWS Certified Developer - Associate (DVA-C02)
 - [✅] 2. ✳ **Udemy Section 27 – Cognito** (≈ 40 m deep-study)
 - [✅] 3. ✳ **Udemy Section 26 – Cloud Development Kit CDK ** (≈ 26 m)
 
-## Fri Jun 7  —  Last Sections and Prep
-- [ ] 1. ✳ **Udemy Section 29 – Advanced Identity ** (≈ 23 m)
-- [ ] 2. ✳ **Udemy Section 31 – Other Services ** (≈ 26 m)
-- [ ] 3. **Update Study Materials** (≈ 1.0 h)
+## Fri Jun 6  —  Last Sections and Prep
+- [✅] 1. ✳ **Udemy Section 29 – Advanced Identity ** (≈ 23 m)
+- [✅] 4. **Review anki flashcards** (Flexible, e.g. ≈ 1h)
+
+## Mon Jun 9  —  Sample Test and Review
+- [✅] 1. ✳ **Udemy Section 31 – Other Services ** (≈ 26 m)
+- [✅] 2. ✳ **Udemy Section 32, 33, 34 – Cleanup and preparing for exam ** (≈ 40 m)
+
+## Tue Jun 10  —  Practice Test and Review
+- [✅] 1. **AWS Official Sample** (20 Q, 40 m)
+   - Take in exam conditions
+   - Aim for ≥ 90%
+- [✅] 2. **Update Study Materials** (≈ 1.0 h)
    - Finalize cheat sheets
    - Update Anki deck
    - Review exam tips
-- [ ] 4. **Review anki flashcards** (Flexible, e.g. ≈ 1h)
 
-- [ ] 5. ✳ **Udemy Section 32, 33, 34 – Cleanup and preparing for exam ** (≈ 40 m)
-
-## Mon Jun 10  —  Sample Test and Review
-
-- [ ] 1. **AWS Official Sample** (20 Q, 40 m)
-   - Take in exam conditions
-   - Aim for ≥ 90%
-- [ ] 2. **Review All Weak Areas** (≈ 2.0 h) (after sample exam)
+## Wed Jun 11 - 
+- [✅] 1. **Review All Weak Areas** (≈ 2.0 h) (after sample exam)
    - Focus on top 3 challenging topics
    - Practice questions
    - Review documentation
 
-## Tue Jun 11  —  Practice Test and Review
-- [ ] 1. **Final Practice Exam** (100 Q, 180 m)
+## Thu Jun 12
+- [ ] 1. ✳ **Use Gemini to generate quiz questions. Explore weak topics
+
+## Fri Jun 13  
+- [ ] 1. ✳ **Use Gemini to generate quiz questions. Explore weak topics
+
+## Mon Jun 16  —  Sample Test and Review
+- [ ] 1. ✳ **Use Gemini to generate quiz questions. Explore weak topics
+
+## Tue Jun 17  —  Practice Test and Review
+- [ ] 1. **Retake Final Practice Exam** (100 Q, 180 m)
    - Full-length simulation
    - Strict timing
    - Mark all unsure questions
-- [ ] 2. **Comprehensive Review** (≈ 2.0 h) (of Final Practice Exam)
-   - Analyze all practice exams
-   - Finalize weak areas
-   - Update study materials
-- [ ] 3. **Pearson Vue System Test** (≈ 30 m)
-   - Verify system requirements
-   - Test webcam
-   - Check internet connection
 
-## Wed Jun 12  —  EXAM DAY  
+## Wed Jun 18 -—  EXAM DAY  
 - [ ] 1. **AWS DVA-C02 Exam** (180 m)
    - Arrive early
-   - Follow exam rules
    - Use all available time
-- [ ] 2. **Write Reflection** (≈ 1.0 h)
-   - Document exam experience
-   - Note challenging areas
-   - Plan next steps
-- [ ] 3. **Plan Next Steps** (≈ 1.0 h)
-   - Review results
-   - Update certification plan
-   - Begin post-exam projects
-
 
 ## After the Exam  
 - **Set up SAM CI/CD pipeline** (≈ 1.0 h)
