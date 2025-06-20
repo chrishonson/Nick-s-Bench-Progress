@@ -1,15 +1,15 @@
 # Nick's Bench Progress
 
-## Progress: 48/61 tasks completed
+## Progress: 60/60 tasks completed
 <!-- Progress bar visual representation -->
-![Progress](https://progress-bar.xyz/79/?scale=100&width=500&color=2EA043&suffix=%25)
+![Progress](https://progress-bar.xyz/100/?scale=100&width=500&color=2EA043&suffix=%25)
 
 ## Progress: Udemy Ultimate AWS Certified Developer Associate 2025 DVA-C02
 <!-- Updating manually, no touchy -->
-![Progress](https://progress-bar.xyz/80/?scale=100&width=500&color=2EA043&suffix=%25)
+![Progress](https://progress-bar.xyz/85/?scale=100&width=500&color=2EA043&suffix=%25)
 
 ## Burndown Chart
-![Burndown Chart](https://quickchart.io/chart?w=800&h=400&c={type:%27line%27,data:{labels:[%27May%202%27,%27May%203%27,%27May%204%27,%27May%205%27,%27May%206%27,%27May%207%27,%27May%208%27,%27May%209%27,%27May%2010%27,%27May%2011%27,%27May%2012%27,%27May%2013%27,%27May%2014%27,%27May%2015%27,%27May%2016%27,%27May%2017%27,%27May%2018%27,%27May%2019%27,%27May%2020%27,%27May%2021%27,%27May%2022%27,%27May%2023%27,%27May%2024%27,%27May%2025%27,%27May%2026%27,%27May%2027%27,%27May%2028%27,%27May%2029%27,%27May%2030%27,%27May%2031%27,%27Jun%201%27,%27Jun%202%27,%27Jun%203%27,%27Jun%204%27,%27Jun%205%27,%27Jun%206%27,%27Jun%207%27,%27Jun%208%27,%27Jun%209%27,%27Jun%2010%27,%27Jun%2011%27,%27Jun%2012%27],datasets:[{label:%27Ideal%27,data:[61,59,59,59,57,55,52,50,48,48,48,46,44,41,39,37,37,37,35,33,31,28,26,26,26,26,24,22,20,17,17,17,15,13,11,9,7,7,7,4,2,0],fill:false,borderColor:%27rgb(75,192,192)%27,tension:0.1,pointRadius:2},{label:%27Actual%27,data:[58%2Cnull%2Cnull%2Cnull%2C54%2C52%2C50%2C49%2Cnull%2Cnull%2C48%2C46%2C44%2C42%2C40%2Cnull%2Cnull%2C39%2C37%2C36%2C33%2C31%2Cnull%2Cnull%2Cnull%2C30%2C29%2C27%2C25%2Cnull%2Cnull%2C22%2C20%2C16%2C13%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull],fill:false,borderColor:%27rgb(255,99,132)%27,tension:0.1,pointRadius:2}]},options:{title:{display:true,text:%27Task%20Burndown%20(61%20tasks,%2029%20Workdays%20to%20Jun%2012)%27},scales:{yAxes:[{ticks:{beginAtZero:true,suggestedMax:65},scaleLabel:{display:true,labelString:%27Tasks%20Remaining%27}}],xAxes:[{scaleLabel:{display:true,labelString:%27Date%27}}]}}})
+![Burndown Chart](https://quickchart.io/chart?w=800&h=400&c={type:%27line%27,data:{labels:[%27May%202%27,%27May%203%27,%27May%204%27,%27May%205%27,%27May%206%27,%27May%207%27,%27May%208%27,%27May%209%27,%27May%2010%27,%27May%2011%27,%27May%2012%27,%27May%2013%27,%27May%2014%27,%27May%2015%27,%27May%2016%27,%27May%2017%27,%27May%2018%27,%27May%2019%27,%27May%2020%27,%27May%2021%27,%27May%2022%27,%27May%2023%27,%27May%2024%27,%27May%2025%27,%27May%2026%27,%27May%2027%27,%27May%2028%27,%27May%2029%27,%27May%2030%27,%27May%2031%27,%27Jun%201%27,%27Jun%202%27,%27Jun%203%27,%27Jun%204%27,%27Jun%205%27,%27Jun%206%27,%27Jun%207%27,%27Jun%208%27,%27Jun%209%27,%27Jun%2010%27,%27Jun%2011%27,%27Jun%2012%27,%27Jun%2013%27,%27Jun%2016%27,%27Jun%2017%27,%27Jun%2018%27],datasets:[{label:%27Ideal%27,data:[60,58,58,58,56,54,51,49,47,47,47,45,43,40,38,36,36,36,34,32,30,27,25,25,25,25,23,21,19,16,16,16,14,12,10,8,6,6,6,3,1,0,0,0,0],fill:false,borderColor:%27rgb(75,192,192)%27,tension:0.1,pointRadius:2},{label:%27Actual%27,data:[57%2Cnull%2Cnull%2Cnull%2C53%2C51%2C49%2C48%2Cnull%2Cnull%2C47%2C45%2C43%2C41%2C39%2Cnull%2Cnull%2C38%2C36%2C35%2C32%2C30%2Cnull%2Cnull%2Cnull%2C29%2C28%2C26%2C24%2Cnull%2Cnull%2C21%2C19%2C15%2C12%2C10%2Cnull%2Cnull%2C8%2C6%2C5%2C4%2C3%2C2%2C1%2C0],fill:false,borderColor:%27rgb(255,99,132)%27,tension:0.1,pointRadius:2}]},options:{title:{display:true,text:%27Task%20Burndown%20(60%20tasks,%20Completed%20Jun%2018)%27},scales:{yAxes:[{ticks:{beginAtZero:true,suggestedMax:65},scaleLabel:{display:true,labelString:%27Tasks%20Remaining%27}}],xAxes:[{scaleLabel:{display:true,labelString:%27Date%27}}]}}})
 
 
 # AWS Developer–Associate 90% Pass Probability Plan  
