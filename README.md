@@ -302,22 +302,22 @@ Exam Prep Overview: AWS Certified Developer - Associate (DVA-C02)
    - Review documentation
 
 ## Thu Jun 12
-- [ ] 1. ✳ **Use Gemini to generate quiz questions. Explore weak topics
+- [✅] 1. ✳ **Use Gemini to generate quiz questions. Explore weak topics
 
 ## Fri Jun 13  
-- [ ] 1. ✳ **Use Gemini to generate quiz questions. Explore weak topics
+- [✅] 1. ✳ **Use Gemini to generate quiz questions. Explore weak topics
 
 ## Mon Jun 16  —  Sample Test and Review
-- [ ] 1. ✳ **Use Gemini to generate quiz questions. Explore weak topics
+- [✅] 1. ✳ **Use Gemini to generate quiz questions. Explore weak topics
 
 ## Tue Jun 17  —  Practice Test and Review
-- [ ] 1. **Retake Final Practice Exam** (100 Q, 180 m)
+- [✅] 1. **Retake Final Practice Exam** (100 Q, 180 m)
    - Full-length simulation
    - Strict timing
    - Mark all unsure questions
 
 ## Wed Jun 18 -—  EXAM DAY  
-- [ ] 1. **AWS DVA-C02 Exam** (180 m)
+- [✅] 1. **AWS DVA-C02 Exam** (180 m)
    - Arrive early
    - Use all available time
 
@@ -326,10 +326,7 @@ Exam Prep Overview: AWS Certified Developer - Associate (DVA-C02)
   - Run `sam pipeline init --bootstrap`
   - Verify CodeBuild & CodePipeline stacks deploy successfully
   - Push `pipeline.yaml` and `buildspec.yml` to GitHub
-
-
-- Migrate first two IoT Cloud Functions from JavaScript to Go during the week of May 19.  
-- Begin drafting the **"Kunai Serverless Starter Kit"** repo & Terraform scripts.
+   - Begin drafting the **"Kunai Serverless Starter Kit"** 
 
 
 ## Simple Example Lambda Arch
