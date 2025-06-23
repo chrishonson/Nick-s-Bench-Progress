@@ -32,7 +32,7 @@
 ---
 
 ## Fri May 2  
-- [✅] 1. **Read the AWS Developer – Associate Exam Guide** — PDF download.  [oai_citation:0‡Amazon Web Services, Inc.](https://aws.amazon.com/certification/certified-developer-associate/?utm_source=chatgpt.com)  
+- [✅] 1. **Read the AWS Developer – Associate Exam Guide** — PDF download. [AWS Certification](https://aws.amazon.com/certification/certified-developer-associate/)  
 - [✅] 2. **Udemy kick-off 20 of 490 completed
 - [✅] 3. Create a **Gap List** page in this repo noting weak domains.
 
@@ -117,7 +117,7 @@ Supports DNS record types
 - NS name servers for the hosted zone. Controls how traffic is routed for a domain
 
 ## Tue May 13  —  Hands-on Focus  
-- [✅] 1. **Read Lambda Go runtime docs**  — [oai_citation:3‡AWS Documentation](https://docs.aws.amazon.com/lambda/latest/dg/lambda-golang.html?utm_source=chatgpt.com)  
+- [✅] 1. **Read Lambda Go runtime docs**  — [AWS Lambda Go Documentation](https://docs.aws.amazon.com/lambda/latest/dg/lambda-golang.html)  
 - [✅] 2. ** AWS Integration & Messaging: SQS, SNS & Kinesis 
 
 ## Wed May 14  —  S3 Completion
@@ -264,8 +264,7 @@ Notes: Continued Android study. AWS certification timeline extended by 2 days.
    - Plan exam day schedule
 ## Thu Jun 5  —  Final Push
 - [✅] 1. Review Exam Prep
-https://skillbuilder.aws/learn/DFQ2XGWFAB/exam-prep-overview-aws-certified-developer--associate-dvac02--english/R4BPSW4M9D
-Exam Prep Overview: AWS Certified Developer - Associate (DVA-C02)
+[Exam Prep Overview: AWS Certified Developer - Associate (DVA-C02)](https://skillbuilder.aws/learn/DFQ2XGWFAB/exam-prep-overview-aws-certified-developer--associate-dvac02--english/R4BPSW4M9D)
 
 - [✅] 2. ✳ **Udemy Section 27 – Cognito** 
 - [✅] 3. ✳ **Udemy Section 26 – Cloud Development Kit CDK ** 
