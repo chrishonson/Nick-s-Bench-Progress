@@ -1,6 +1,6 @@
 # Passing the AWS Certified Developer Exam: A Modern Study Strategy
 
-📊 **[View My Bench Progress →](AWS Certified Developer Associate/Nick-s-Bench-Progress.md)**
+📊 **[View My Bench Progress](AWS Certified Developer Associate/Nick-s-Bench-Progress.md)**
 
 ## Introduction
 
