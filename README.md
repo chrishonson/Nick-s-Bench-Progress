@@ -17,13 +17,9 @@
 
 
 ## Guiding Principles  
-- **Pomodoro 25 / 5 cadence** → sustained concentration without fatigue.  
 - **Visible progress** → log a short note or screenshot at day's end in this doc.  
-- **Spaced repetition, not cramming** → review flash-cards after every module.  
-- **Soft stop 4:30 p.m.** → evenings + weekends are family time.
-- **Using Ankidroid app** → review flash cards during spare cycles on weekends
-- **Buffer time** → 30-min buffer after hands-on sessions for troubleshooting
-- **Daily review** → 15-min review of previous day's concepts
+- **Spaced repetition, not cramming** → review flash-cards every day.  
+- **Using Ankidroid app** → review flash cards during spare cycles on weekends (huge unlock of potential)
 
 ## Contingency  
 *If any full-length practice score is below 70% by **June 7th**, consider additional focused review before the **June 10th** exam.*  
