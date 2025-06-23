@@ -1,6 +1,6 @@
 # Passing the AWS Certified Developer Exam: A Modern Study Strategy
 
-📊 **[View My Bench Progress](AWS Certified Developer Associate/Nick-s-Bench-Progress.md)**
+📊 **[View My Bench Progress](./AWS%20Certified%20Developer%20Associate/Nick-s-Bench-Progress.md)**
 
 ## Introduction
 
@@ -15,7 +15,7 @@ My approach evolved as I discovered what worked best. I treated AI not just as a
 
 ### Step 1: An Evolving Study Plan
 
-I started by asking ChatGPT to make a [study plan](AWS Certified Developer Associate/Nick-s-Bench-Progress.md). The result was laughably ambitious because, as a generalist tool, it didn't appreciate that my extensive client-side experience meant I had foundational gaps in backend networking concepts like subnets and DNS. While I didn't realize just how ambitious the plan was all at once, my understanding evolved more in the later half of the effort, and I updated my plan regularly ("Plans are worthless, but planning is everything" - Dwight D. Eisenhower). 
+I started by asking ChatGPT to make a [study plan](./AWS%20Certified%20Developer%20Associate/Nick-s-Bench-Progress.md). The result was laughably ambitious because, as a generalist tool, it didn't appreciate that my extensive client-side experience meant I had foundational gaps in backend networking concepts like subnets and DNS. While I didn't realize just how ambitious the plan was all at once, my understanding evolved more in the later half of the effort, and I updated my plan regularly ("Plans are worthless, but planning is everything" - Dwight D. Eisenhower). 
 
 I used Cursor (with Gemini 2.5 Pro) to create a dedicated [study repo](https://github.com/chrishonson/Nick-s-Bench-Progress), which became my central hub for tracking progress and organizing. The key first step was providing the AI with my study materials, which included the course slides from Stéphane Maarek's "Ultimate AWS Certified Developer Associate 2025 DVA-C02" on Udemy and the official AWS exam guide. This transformed it from a general tool into a subject matter expert with the exact same context I had.
 
