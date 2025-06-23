@@ -99,19 +99,19 @@ Key terms:
 ---
 
 ## Wed May 7  —  ✳ + ⏩
-- [✅] 1. ✳ **Udemy Section 10 – VPC Fundamentals** (≈ 0.6 h)
-- [✅] 2. ⏩ **Udemy Section 7 – ELB & Auto-Scaling** (≈ 1.2 h)  
+- [✅] 1. ✳ **Udemy Section 10 – VPC Fundamentals** 
+- [✅] 2. ⏩ **Udemy Section 7 – ELB & Auto-Scaling**   
 Created VPC anki cards
 
 ## Thu May 8  —  ✳ + ⏩  
-- [✅] 1. ✳ **Udemy Section 11 – Amazon S3 Intro** (≈ 2.1 h)  
-- [✅] 2. ⏩ **Udemy Section 8 – AWS Fundamentals: RDS + Aurora + ElastiCache** (≈ 0.8 h)  
+- [✅] 1. ✳ **Udemy Section 11 – Amazon S3 Intro**   
+- [✅] 2. ⏩ **Udemy Section 8 – AWS Fundamentals: RDS + Aurora + ElastiCache**   
 
 ## Fri May 9  —  ✳ + ⏩
-- [✅] 1. ✳ ** START: Udemy Section 21 – AWS Lambda Deep Dive** (≈ 3.1 h)
+- [✅] 1. ✳ ** START: Udemy Section 21 – AWS Lambda Deep Dive** 
 
 ## Mon May 12  —  ✳ + ⏩  
-- [✅] 1. ⏩ **Udemy Section 9 – Route 53 DNS & Routing** (≈ 1.5 h speed-run)
+- [✅] 1. ⏩ **Udemy Section 9 – Route 53 DNS & Routing** 
 
 Notes:
 Supports DNS record types 
@@ -121,15 +121,15 @@ Supports DNS record types
 - NS name servers for the hosted zone. Controls how traffic is routed for a domain
 
 ## Tue May 13  —  Hands-on Focus  
-- [✅] 1. **Read Lambda Go runtime docs** (≈ 30 m) — [oai_citation:3‡AWS Documentation](https://docs.aws.amazon.com/lambda/latest/dg/lambda-golang.html?utm_source=chatgpt.com)  
+- [✅] 1. **Read Lambda Go runtime docs**  — [oai_citation:3‡AWS Documentation](https://docs.aws.amazon.com/lambda/latest/dg/lambda-golang.html?utm_source=chatgpt.com)  
 - [✅] 2. ** AWS Integration & Messaging: SQS, SNS & Kinesis 
 
 ## Wed May 14  —  S3 Completion
-- [✅] 6. ⏩ Udemy Section 13 – Advanced Amazon S3  (0.4 h)
-- [✅] 7. ✳  Udemy Section 14 – Amazon S3 Security       (1.0 h) 
+- [✅] 6. ⏩ Udemy Section 13 – Advanced Amazon S3 
+- [✅] 7. ✳  Udemy Section 14 – Amazon S3 Security       
 
 ## Thu May 15  —  Serverless & Integration
-- [✅] 1. ✳  Udemy Section 19 – AWS Integration and Messaging: SQS, SNS & Kinesis (1h 42m) 
+- [✅] 1. ✳  Udemy Section 19 – AWS Integration and Messaging: SQS, SNS & Kinesis 
    - Create Anki cards
    - Review Anki cards
 - [✅] 2. Preview: to know what they are when they come up in the lambda documentation.
@@ -139,8 +139,8 @@ Supports DNS record types
    - ECR, ECS, Fargate, Docker
 
 ## Fri May 16  —  API Completion  
-- [✅] 1. ✳ ** FINISHED: Udemy Section 21 – AWS Lambda Deep Dive** (≈ 3.1 h)
-- [✅] 2. **Complete & Deploy "Hello Go" API** (≈ 3.0 h)  (Ideally, this should have come after Udemy Section 18 – SAM & CloudFormation)
+- [✅] 1. ✳ ** FINISHED: Udemy Section 21 – AWS Lambda Deep Dive** 
+- [✅] 2. **Complete & Deploy "Hello Go" API**   (Ideally, this should have come after Udemy Section 18 – SAM & CloudFormation)
   - Finalize Go handler (JSON response, error handling, logging)  
   - Build & test locally with AWS SAM  
   - Deploy via SAM CLI → dev stage (API Gateway + Lambda)  
@@ -149,20 +149,20 @@ Supports DNS record types
 ![hello world](assets/hello-world.png)
 
 ## Mon May 19  —  
-   - [✅] 1. ✳ **Udemy Section 28 – Step Functions & AppSync** (≈ 2 h deep-study)
+   - [✅] 1. ✳ **Udemy Section 28 – Step Functions & AppSync** 
    - Message queuing concepts
    - Pub/sub patterns
    - Create Anki cards
 
 ## Tue May 20  —  
 - [✅] 1. Review all Anki cards. Deep dive into anything not fully understood
-- [✅] 2. ⏩ **Udemy Section 15 – CloudFront** (≈ 0.5 h speed-run)
+- [✅] 2. ⏩ **Udemy Section 15 – CloudFront** 
    - CDN fundamentals
    - Edge locations
    - Cache behaviors
 
 ## Wed May 21  —  CI/CD & Templates  
-- [✅] 1. **Udemy Section 18 – CloudFormation** (≈ 1.5 h)
+- [✅] 1. **Udemy Section 18 – CloudFormation** 
    - Template structure
    - Best practices
    - Common patterns
@@ -186,25 +186,25 @@ Supports DNS record types
    - WAF rule configurations
    - AWS Organizations vs individual accounts
    - CloudFormation Fn::ImportValue
-- [✅] 2. ⏩ **Udemy Section 12 – AWS CLI, SDK, IAM Roles and Policies** (≈ 30 m)
-- [✅] 3. ⏩ **Udemy Section 16 – Docker, ECS, ECR, Fargate** (≈ 1.2 h speed-run)
+- [✅] 2. ⏩ **Udemy Section 12 – AWS CLI, SDK, IAM Roles and Policies** 
+- [✅] 3. ⏩ **Udemy Section 16 – Docker, ECS, ECR, Fargate** 
    - Container concepts
    - ECS clusters
    - ECR repositories
 28
 ## Fri May 23  —  Focus Areas 
-- [✅] 1. ⏩ **Udemy Section 17 – Elastic Beanstalk** (≈ 1 h speed-run)
+- [✅] 1. ⏩ **Udemy Section 17 – Elastic Beanstalk** 
    - Deployment modes
       - Blue/Grean is traffic splitting via route 53 DNS
       - Traffic splitting is traffic splitting via the ALB, to the new ALB
       - Immutable is just adds all new instances to new Auto Scaling Group and shuts down all old instances after some time
-- [✅] 1. ⏩ **Udemy Section 20 – Monitoring & X-Ray** (≈ 2.0 h speed-run)
+- [✅] 1. ⏩ **Udemy Section 20 – Monitoring & X-Ray** 
    - CloudWatch metrics
    - X-Ray tracing
    - Log insights
 
 ## Tue May 27  —  Android Study (Internal Interview Prep)
-- [✅] 1. **Android Development Study** (≈ 8 h)
+- [✅] 1. **Android Development Study** 
    - Kotlin updates
    - Android architecture components
    - Kotlin coding chalenges
@@ -213,56 +213,56 @@ Notes: Focused on Android development for internal interview opportunity.
 AWS study paused for this priority.
 
 ## Wed May 28  —  Android Study (Internal Interview Prep)  
-- [✅] 1. **Android Development Study** (≈ 8 h)
+- [✅] 1. **Android Development Study** 
    - Advanced Android topics
    - Testing frameworks
    
 Notes: Continued Android study. AWS certification timeline extended by 2 days.
 
 ## Thu May 29  —  Resume AWS Study
-- [✅] 1. ✳ **Udemy Section 22 – AWS Serverless: DynamoDB** (≈ 2.6 h deep-study)
+- [✅] 1. ✳ **Udemy Section 22 – AWS Serverless: DynamoDB** 
    - Deep dive into DynamoDB concepts
    - Create Anki cards for key terms
 
-- [✅] 2. ✳ **Udemy Section 23 – API Gateway** (≈ 1.7 h deep-study)
+- [✅] 2. ✳ **Udemy Section 23 – API Gateway** 
    - REST vs HTTP APIs
    - Integration types
    - Authorization
 
 ## Fri May 30  —  Practice & Review
-- [✅] 1. **Udemy Section 24 – Developer Tools** (≈ 1.5 h)
+- [✅] 1. **Udemy Section 24 – Developer Tools** 
    - CodeBuild
    - CodeDeploy
    - CodePipeline
-- [✅] 2. **Udemy Section 25 – SAM** (≈ 1 h)
+- [✅] 2. **Udemy Section 25 – SAM** 
 
 ## Mon Jun 2  —  Intensive Review
 - [✅] Review anki flashcards 
-- [✅] 1. **Tutorials Dojo Practice Exam #1** (65 Q, 130 m)
+- [✅] 1. **Tutorials Dojo Practice Exam #1**
    - Take exam in exam conditions
    - Mark unsure questions
    - Found that the skipped sections are on the test and cannot be skipped.
-- [✅] 3. **Update Study Materials** (≈ 1.0 h)
+- [✅] 3. **Update Study Materials** 
    - Add new Anki cards
    - Update cheat sheets
    - Review weak areas
 
 ## Tue Jun 3  —  Final Practice  
 - [✅] Review anki flashcards 
-- [✅] 6. **Focus on Weak Areas** (≈ 2.0 h)
+- [✅] 6. **Focus on Weak Areas** 
    - Review practice exam results
    - Re-watch relevant lectures
    - Complete targeted exercises
 
 ## Wed Jun 4  —  Final Review 
 - [✅] Review anki flashcards  
-- [✅] 2. **Tutorials Dojo Review Answers** (≈ 2.0 h)
+- [✅] 2. **Tutorials Dojo Review Answers** 
    - Research weak areas
-- [✅] 3. ✳ **Udemy Section 30 – KMS & Encryption** (≈ 1.5 h deep-study)
+- [✅] 3. ✳ **Udemy Section 30 – KMS & Encryption** 
    - Encryption concepts
    - Key management
    - Best practices
-- [✅] 4. **Final Exam Prep** (≈ 1.0 h)
+- [✅] 4. **Final Exam Prep** 
    - Review exam rules
    - Check required documents
    - Plan exam day schedule
@@ -271,28 +271,28 @@ Notes: Continued Android study. AWS certification timeline extended by 2 days.
 https://skillbuilder.aws/learn/DFQ2XGWFAB/exam-prep-overview-aws-certified-developer--associate-dvac02--english/R4BPSW4M9D
 Exam Prep Overview: AWS Certified Developer - Associate (DVA-C02)
 
-- [✅] 2. ✳ **Udemy Section 27 – Cognito** (≈ 40 m deep-study)
-- [✅] 3. ✳ **Udemy Section 26 – Cloud Development Kit CDK ** (≈ 26 m)
+- [✅] 2. ✳ **Udemy Section 27 – Cognito** 
+- [✅] 3. ✳ **Udemy Section 26 – Cloud Development Kit CDK ** 
 
 ## Fri Jun 6  —  Last Sections and Prep
-- [✅] 1. ✳ **Udemy Section 29 – Advanced Identity ** (≈ 23 m)
-- [✅] 4. **Review anki flashcards** (Flexible, e.g. ≈ 1h)
+- [✅] 1. ✳ **Udemy Section 29 – Advanced Identity ** 
+- [✅] 4. **Review anki flashcards**
 
 ## Mon Jun 9  —  Sample Test and Review
-- [✅] 1. ✳ **Udemy Section 31 – Other Services ** (≈ 26 m)
-- [✅] 2. ✳ **Udemy Section 32, 33, 34 – Cleanup and preparing for exam ** (≈ 40 m)
+- [✅] 1. ✳ **Udemy Section 31 – Other Services ** 
+- [✅] 2. ✳ **Udemy Section 32, 33, 34 – Cleanup and preparing for exam ** 
 
 ## Tue Jun 10  —  Practice Test and Review
-- [✅] 1. **AWS Official Sample** (20 Q, 40 m)
+- [✅] 1. **AWS Official Sample**
    - Take in exam conditions
    - Aim for ≥ 90%
-- [✅] 2. **Update Study Materials** (≈ 1.0 h)
+- [✅] 2. **Update Study Materials** 
    - Finalize cheat sheets
    - Update Anki deck
    - Review exam tips
 
 ## Wed Jun 11 - 
-- [✅] 1. **Review All Weak Areas** (≈ 2.0 h) (after sample exam)
+- [✅] 1. **Review All Weak Areas**  (after sample exam)
    - Focus on top 3 challenging topics
    - Practice questions
    - Review documentation
@@ -307,18 +307,18 @@ Exam Prep Overview: AWS Certified Developer - Associate (DVA-C02)
 - [✅] 1. ✳ **Use Gemini to generate quiz questions. Explore weak topics
 
 ## Tue Jun 17  —  Practice Test and Review
-- [✅] 1. **Retake Final Practice Exam** (100 Q, 180 m)
+- [✅] 1. **Retake Final Practice Exam**
    - Full-length simulation
    - Strict timing
    - Mark all unsure questions
 
 ## Wed Jun 18 -—  EXAM DAY  
-- [✅] 1. **AWS DVA-C02 Exam** (180 m)
+- [✅] 1. **AWS DVA-C02 Exam**
    - Arrive early
    - Use all available time
 
 ## After the Exam  
-- **Set up SAM CI/CD pipeline** (≈ 1.0 h)
+- **Set up SAM CI/CD pipeline** 
   - Run `sam pipeline init --bootstrap`
   - Verify CodeBuild & CodePipeline stacks deploy successfully
   - Push `pipeline.yaml` and `buildspec.yml` to GitHub
