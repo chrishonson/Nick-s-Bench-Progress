@@ -1,321 +1,57 @@
-# Nick's Bench Progress
+Passing the AWS Certified Developer Exam: A Modern Study Strategy
+Hi Team,
 
-## Progress: 60/60 tasks completed
-<!-- Progress bar visual representation -->
-![Progress](https://progress-bar.xyz/100/?scale=100&width=500&color=2EA043&suffix=%25)
+I recently passed the AWS Certified Developer - Associate (DVA-C02) exam. Finding myself with some downtime on the bench, I decided to focus on professional development and tackle this certification. Juggling this with family life required a focused and efficient approach, so I leaned heavily on a few AI tools to act as a dynamic study partner.
 
-## Progress: Udemy Ultimate AWS Certified Developer Associate 2025 DVA-C02
-<!-- Updating manually, no touchy -->
-![Progress](https://progress-bar.xyz/85/?scale=100&width=500&color=2EA043&suffix=%25)
+The strategy I landed on was a game-changer for me, and I wanted to share it for anyone else pursuing this or other certifications.
 
-## Burndown Chart
-![Burndown Chart](https://quickchart.io/chart?w=800&h=400&c={type:%27line%27,data:{labels:[%27May%202%27,%27May%203%27,%27May%204%27,%27May%205%27,%27May%206%27,%27May%207%27,%27May%208%27,%27May%209%27,%27May%2010%27,%27May%2011%27,%27May%2012%27,%27May%2013%27,%27May%2014%27,%27May%2015%27,%27May%2016%27,%27May%2017%27,%27May%2018%27,%27May%2019%27,%27May%2020%27,%27May%2021%27,%27May%2022%27,%27May%2023%27,%27May%2024%27,%27May%2025%27,%27May%2026%27,%27May%2027%27,%27May%2028%27,%27May%2029%27,%27May%2030%27,%27May%2031%27,%27Jun%201%27,%27Jun%202%27,%27Jun%203%27,%27Jun%204%27,%27Jun%205%27,%27Jun%206%27,%27Jun%207%27,%27Jun%208%27,%27Jun%209%27,%27Jun%2010%27,%27Jun%2011%27,%27Jun%2012%27,%27Jun%2013%27,%27Jun%2016%27,%27Jun%2017%27,%27Jun%2018%27],datasets:[{label:%27Ideal%27,data:[60,58,58,58,56,54,51,49,47,47,47,45,43,40,38,36,36,36,34,32,30,27,25,25,25,25,23,21,19,16,16,16,14,12,10,8,6,6,6,3,1,0,0,0,0],fill:false,borderColor:%27rgb(75,192,192)%27,tension:0.1,pointRadius:2},{label:%27Actual%27,data:[57%2Cnull%2Cnull%2Cnull%2C53%2C51%2C49%2C48%2Cnull%2Cnull%2C47%2C45%2C43%2C41%2C39%2Cnull%2Cnull%2C38%2C36%2C35%2C32%2C30%2Cnull%2Cnull%2Cnull%2C29%2C28%2C26%2C24%2Cnull%2Cnull%2C21%2C19%2C15%2C12%2C10%2Cnull%2Cnull%2C8%2C6%2C5%2C4%2C3%2C2%2C1%2C0],fill:false,borderColor:%27rgb(255,99,132)%27,tension:0.1,pointRadius:2}]},options:{title:{display:true,text:%27Task%20Burndown%20(60%20tasks,%20Completed%20Jun%2018)%27},scales:{yAxes:[{ticks:{beginAtZero:true,suggestedMax:65},scaleLabel:{display:true,labelString:%27Tasks%20Remaining%27}}],xAxes:[{scaleLabel:{display:true,labelString:%27Date%27}}]}}})
+My AI-Powered Study Framework
+My approach evolved as I discovered what worked best. I treated AI not just as a search engine, but as an on-demand tutor, a flashcard creator, and an interactive quiz master that I trained on my specific course materials.
 
+Step 1: An Evolving Study Plan
+I started by asking ChatGPT to make a study plan. The result was laughably ambitious because, as a generalist tool, it didn't appreciate that my extensive client-side experience meant I had foundational gaps in backend networking concepts like subnets and DNS. While I didn't realize just how ambitious the plan was all at once, my understanding evolved more in the later half of the effort, and I updated my plan regularly(“Plans are worthless, but planning is everything” - Dwight D. Eisenhower). I used Cursor (with Gemini 2.5 Pro) to create a dedicated study repo, which became my central hub for tracking progress and organizing my notes. The key first step was providing the AI with my study materials, which included the course slides from Stéphane Maarek's "Ultimate AWS Certified Developer Associate 2025 DVA-C02" on Udemy and the official AWS exam guide. This transformed it from a general tool into a subject matter expert with the exact same context I had.
 
-# AWS Developer–Associate 90% Pass Probability Plan  
-*(Workdays-only, starts May 2, preserves nights & weekends)*  
+Step 2: Active Recall and Deep-Dive Clarification
+Instead of just passively reading, I used the AI to actively engage with the material. A notable advantage here was using ChatGPT's voice mode. There's something about verbally asking questions and listening to a subject matter expert that really pulls you into the material. I highly recommend using this if you feel you are in a study slump.
 
+Action: After reviewing a topic, I'd ask specific, open-ended questions like, "Explain the difference between Cognito User Pools and Identity Pools," or "Why exactly can't you use a CNAME at the zone apex?"
 
-## Guiding Principles  
-- **Visible progress** → log a short note or screenshot at day's end in this doc.  
-- **Spaced repetition, not cramming** → review flash-cards every day.  
-- **Using Ankidroid app** → review flash cards during spare cycles on weekends (huge unlock of potential)
+Result: This forced me to articulate what I didn't understand and get immediate, detailed answers. We dove deep into the nuances of an IAM Policy vs. a Resource-Based Policy and why a GSI's throttling behavior can impact a base table—complex topics that are hard to grasp from static material alone.
 
-## Contingency  
-*If any full-length practice score is below 70% by **June 7th**, consider additional focused review before the **June 10th** exam.*  
+Step 3: Memorization with AI-Generated Flashcards
+This was a major game-changer for me. Rote memorization is tough (especially for me), but critical for the exam.
 
+Action: I used Cursor (with Gemini 1.5 Pro) continuously throughout my studies to create digital flashcards for Anki, a popular spaced-repetition flashcard app.
 
-## After the Exam  
-- Migrate first two IoT Cloud Functions from JavaScript to Go during the week of June 3.  
-- Begin drafting the **"Kunai Serverless Starter Kit"** repo & Terraform scripts.
+Result: This was incredibly effective for memorizing key concepts, the differences between services (like Aurora vs. DynamoDB), service options, default values, limits, and other specific values that frequently appear on the exam.
 
----
+Step 4: Interactive Quizzing and Targeted Feedback
+For practice quizzes, I found that different models performed differently. I ultimately settled on using Gemini 1.5 Pro directly, as I felt its quiz generation was better than chatGPT.
 
-## Fri May 2  
-- [✅] 1. **Read the AWS Developer – Associate Exam Guide** — PDF download.  [oai_citation:0‡Amazon Web Services, Inc.](https://aws.amazon.com/certification/certified-developer-associate/?utm_source=chatgpt.com)  
-- [✅] 2. **Udemy kick-off 20 of 490 completed
-- [✅] 3. Create a **Gap List** page in this repo noting weak domains.
+Action: I would complete a quiz and feed my answers back into the chat.
 
-Notes: IAM-Identity and Access Management is a global service 
+Result: The AI provided a detailed breakdown of my strengths and areas for improvement with clear rationale. This created a dynamic, personalized study plan focused on my weak spots.
 
-Gaps: Since I prevously was taking the course for practitioner, there is overlap, but not the 
-depth required for my role. The developer content already feels much more apropriate. 
+Step 5: Practical Application and Code Generation
+To bridge theory and practice, I used the AI to help with hands-on tasks.
 
-Projected course days remaining: 24 days. Expecting following days to pick up the pace
-since I started the courses mid day. 
+Action: I asked it to "Automate the creation of an ECS cluster... using a CloudFormation template." We then refined this template iteratively, discussing specific details like the need for an IamInstanceProfile.
 
-## Mon May 5  
-*Vacation Day (Volunteered) *
+Result: This solidified my understanding of Infrastructure as Code (IaC) and the practical details of service configuration, which is essential for this developer-focused exam.
 
-## Tue May 6 
-- [✅] 1. Udemy Section 4 – IAM & CLI 1 h 28 m 
-- [✅] 2. Udemy Section 5 - EC2 Storage fundamentals. 2x speed review 
-- [✅] 3. Udemy Section 6 – EC2 Storage 1 h 5 m
-- [✅] 4. Complete the section quizzes and jot **key takeaways** for IAM and EC2 in your bench log. 
+Key Takeaways for Your Own Study
+Recognize AI's Limitations: An AI won't know your personal knowledge gaps initially. Use its first plan as a starting point, but be ready to adapt as you identify your weaknesses.
 
-Key terms:
+Use the Right Tool for the Job: I found a mix of tools worked best: Cursor for repo management and flashcard creation, ChatGPT for engaging voice conversations, and Gemini 1.5 Pro for high-quality Q&A and quizzes.
 
-- Subnet: A contiguous range of IP addresses within a VPC
-- VPC: Virtual Private Cloud - Isolated network environment in AWS
-- Security groups: Virtual firewall that controls inbound and outbound traffic for AWS resources
-- IAM: Identity and Access Management - AWS service for managing user access and permissions
-- CLI: Command Line Interface - Tool for interacting with AWS services via command line
-- EC2: Elastic Compute Cloud - Virtual servers in the cloud
-- S3: Simple Storage Service - Object storage service for storing and retrieving data
-- Classic ports to know: 22 SSH and secure FTP, 21 FTP, 80 HTTP, 443 HTTPS, 3389 RDP (Remote Desktop Protocol for Windows)
-- IPAM: IP Address Manager - Helps to plan, track and manage IP addresses for workloads and on-prem networks
-- Local EC2 Instance Store: High performance temporary block-level storage
-- IOPS: Input/Output Operations Per Second - Measure of storage performance
-- EBS: Elastic Block Storage - Persistent block storage volumes for EC2 instances
-    - gp2 General Purpose SSD (older generation)
-        - Baseline of 3 IOPS/GiB, up to 16,000 IOPS per volume
-        - Volume size 1 GiB to 16 TiB
-        - Burst up to 3,000 IOPS
-        - Good for boot volumes, dev/test environments
-    - gp3 General Purpose SSD (current generation)
-        - Baseline 3,000 IOPS and 125 MiB/s throughput
-        - Can increase up to 16,000 IOPS and 1,000 MiB/s throughput
-        - Independent scaling of IOPS and throughput
-        - 20% cheaper than gp2
-    - io1/io2 Provisioned IOPS SSD
-        - Highest performance SSD volume
-        - Up to 64,000 IOPS per volume
-        - io2 is more durable and more IOPS per GiB
-    - st1 Throughput Optimized HDD
-        - Low-cost HDD volume
-        - Baseline throughput of 40 MB/s per TB
-        - Burst up to 250 MB/s per TB
-        - Good for big data, data warehouses, log processing
-    - sc1 Cold HDD
-        - Lowest cost HDD volume
-        - Base 12 MB/s per TB
-        - Burst up to 80 MB/s per TB
-        - Good for infrequently accessed data
-- EFS: Elastic File System - Scalable, fully managed NFS file system
----
+Embrace Spaced Repetition: Creating Anki flashcards with AI is incredibly efficient and was a game-changer for memorization.
 
-## Wed May 7  —  ✳ + ⏩
-- [✅] 1. ✳ **Udemy Section 10 – VPC Fundamentals** 
-- [✅] 2. ⏩ **Udemy Section 7 – ELB & Auto-Scaling**   
-Created VPC anki cards
+Leverage the Feedback Loop: Don't just take quizzes. Analyze the results with the AI to find and fix your knowledge gaps.
 
-## Thu May 8  —  ✳ + ⏩  
-- [✅] 1. ✳ **Udemy Section 11 – Amazon S3 Intro**   
-- [✅] 2. ⏩ **Udemy Section 8 – AWS Fundamentals: RDS + Aurora + ElastiCache**   
+This approach made studying feel more like an interactive, one-on-one tutoring session and allowed me to make the most of my time.
 
-## Fri May 9  —  ✳ + ⏩
-- [✅] 1. ✳ ** START: Udemy Section 21 – AWS Lambda Deep Dive** 
+Hope this helps you in your own certification journey. Good luck!
 
-## Mon May 12  —  ✳ + ⏩  
-- [✅] 1. ⏩ **Udemy Section 9 – Route 53 DNS & Routing** 
+Best,
 
-Notes:
-Supports DNS record types 
-- A maps a hostname to IPV4
-- AAAA maps a hostname to IPV6
-- CNAME maps a hostname to another hostname
-- NS name servers for the hosted zone. Controls how traffic is routed for a domain
-
-## Tue May 13  —  Hands-on Focus  
-- [✅] 1. **Read Lambda Go runtime docs**  — [oai_citation:3‡AWS Documentation](https://docs.aws.amazon.com/lambda/latest/dg/lambda-golang.html?utm_source=chatgpt.com)  
-- [✅] 2. ** AWS Integration & Messaging: SQS, SNS & Kinesis 
-
-## Wed May 14  —  S3 Completion
-- [✅] 6. ⏩ Udemy Section 13 – Advanced Amazon S3 
-- [✅] 7. ✳  Udemy Section 14 – Amazon S3 Security       
-
-## Thu May 15  —  Serverless & Integration
-- [✅] 1. ✳  Udemy Section 19 – AWS Integration and Messaging: SQS, SNS & Kinesis 
-   - Create Anki cards
-   - Review Anki cards
-- [✅] 2. Preview: to know what they are when they come up in the lambda documentation.
-   - CloudFront 
-   - Elastic Beanstalk
-   - CloudFormation 
-   - ECR, ECS, Fargate, Docker
-
-## Fri May 16  —  API Completion  
-- [✅] 1. ✳ ** FINISHED: Udemy Section 21 – AWS Lambda Deep Dive** 
-- [✅] 2. **Complete & Deploy "Hello Go" API**   (Ideally, this should have come after Udemy Section 18 – SAM & CloudFormation)
-  - Finalize Go handler (JSON response, error handling, logging)  
-  - Build & test locally with AWS SAM  
-  - Deploy via SAM CLI → dev stage (API Gateway + Lambda)  
-  - Commit code + endpoint URL to GitHub, add screenshot to bench log  
-![hello local](assets/hello-local.png)
-![hello world](assets/hello-world.png)
-
-## Mon May 19  —  
-   - [✅] 1. ✳ **Udemy Section 28 – Step Functions & AppSync** 
-   - Message queuing concepts
-   - Pub/sub patterns
-   - Create Anki cards
-
-## Tue May 20  —  
-- [✅] 1. Review all Anki cards. Deep dive into anything not fully understood
-- [✅] 2. ⏩ **Udemy Section 15 – CloudFront** 
-   - CDN fundamentals
-   - Edge locations
-   - Cache behaviors
-
-## Wed May 21  —  CI/CD & Templates  
-- [✅] 1. **Udemy Section 18 – CloudFormation** 
-   - Template structure
-   - Best practices
-   - Common patterns
-   - Review past material
-
-## Thu May 22  —  Practice & Review
-- [✅] 1. ⏩ **Take a Udemy assessment**
-   Above average result. Following topics need review:
-   - BAA (Business Associate Addendum) & AWS Artifact
-   - AWS SAM & CodeStar
-   - IAM user JSON policies
-   - AWS Amplify & Elasticsearch
-   - AWS DataSync vs EBS
-   - EC2 instance types (d/c series)
-   - Root account usage scenarios
-   - Elastic Beanstalk worker environments
-   - Amazon Connect
-   - Systems Manager capabilities
-   - CloudWatch features
-   - Network Load Balancer UDP support
-   - WAF rule configurations
-   - AWS Organizations vs individual accounts
-   - CloudFormation Fn::ImportValue
-- [✅] 2. ⏩ **Udemy Section 12 – AWS CLI, SDK, IAM Roles and Policies** 
-- [✅] 3. ⏩ **Udemy Section 16 – Docker, ECS, ECR, Fargate** 
-   - Container concepts
-   - ECS clusters
-   - ECR repositories
-28
-## Fri May 23  —  Focus Areas 
-- [✅] 1. ⏩ **Udemy Section 17 – Elastic Beanstalk** 
-   - Deployment modes
-      - Blue/Grean is traffic splitting via route 53 DNS
-      - Traffic splitting is traffic splitting via the ALB, to the new ALB
-      - Immutable is just adds all new instances to new Auto Scaling Group and shuts down all old instances after some time
-- [✅] 1. ⏩ **Udemy Section 20 – Monitoring & X-Ray** 
-   - CloudWatch metrics
-   - X-Ray tracing
-   - Log insights
-
-## Tue May 27  —  Android Study (Internal Interview Prep)
-- [✅] 1. **Android Development Study** 
-   - Kotlin updates
-   - Android architecture components
-   - Kotlin coding chalenges
-
-Notes: Focused on Android development for internal interview opportunity. 
-AWS study paused for this priority.
-
-## Wed May 28  —  Android Study (Internal Interview Prep)  
-- [✅] 1. **Android Development Study** 
-   - Advanced Android topics
-   - Testing frameworks
-   
-Notes: Continued Android study. AWS certification timeline extended by 2 days.
-
-## Thu May 29  —  Resume AWS Study
-- [✅] 1. ✳ **Udemy Section 22 – AWS Serverless: DynamoDB** 
-   - Deep dive into DynamoDB concepts
-   - Create Anki cards for key terms
-
-- [✅] 2. ✳ **Udemy Section 23 – API Gateway** 
-   - REST vs HTTP APIs
-   - Integration types
-   - Authorization
-
-## Fri May 30  —  Practice & Review
-- [✅] 1. **Udemy Section 24 – Developer Tools** 
-   - CodeBuild
-   - CodeDeploy
-   - CodePipeline
-- [✅] 2. **Udemy Section 25 – SAM** 
-
-## Mon Jun 2  —  Intensive Review
-- [✅] Review anki flashcards 
-- [✅] 1. **Tutorials Dojo Practice Exam #1**
-   - Take exam in exam conditions
-   - Mark unsure questions
-   - Found that the skipped sections are on the test and cannot be skipped.
-- [✅] 3. **Update Study Materials** 
-   - Add new Anki cards
-   - Update cheat sheets
-   - Review weak areas
-
-## Tue Jun 3  —  Final Practice  
-- [✅] Review anki flashcards 
-- [✅] 6. **Focus on Weak Areas** 
-   - Review practice exam results
-   - Re-watch relevant lectures
-   - Complete targeted exercises
-
-## Wed Jun 4  —  Final Review 
-- [✅] Review anki flashcards  
-- [✅] 2. **Tutorials Dojo Review Answers** 
-   - Research weak areas
-- [✅] 3. ✳ **Udemy Section 30 – KMS & Encryption** 
-   - Encryption concepts
-   - Key management
-   - Best practices
-- [✅] 4. **Final Exam Prep** 
-   - Review exam rules
-   - Check required documents
-   - Plan exam day schedule
-## Thu Jun 5  —  Final Push
-- [✅] 1. Review Exam Prep
-https://skillbuilder.aws/learn/DFQ2XGWFAB/exam-prep-overview-aws-certified-developer--associate-dvac02--english/R4BPSW4M9D
-Exam Prep Overview: AWS Certified Developer - Associate (DVA-C02)
-
-- [✅] 2. ✳ **Udemy Section 27 – Cognito** 
-- [✅] 3. ✳ **Udemy Section 26 – Cloud Development Kit CDK ** 
-
-## Fri Jun 6  —  Last Sections and Prep
-- [✅] 1. ✳ **Udemy Section 29 – Advanced Identity ** 
-- [✅] 4. **Review anki flashcards**
-
-## Mon Jun 9  —  Sample Test and Review
-- [✅] 1. ✳ **Udemy Section 31 – Other Services ** 
-- [✅] 2. ✳ **Udemy Section 32, 33, 34 – Cleanup and preparing for exam ** 
-
-## Tue Jun 10  —  Practice Test and Review
-- [✅] 1. **AWS Official Sample**
-   - Take in exam conditions
-   - Aim for ≥ 90%
-- [✅] 2. **Update Study Materials** 
-   - Finalize cheat sheets
-   - Update Anki deck
-   - Review exam tips
-
-## Wed Jun 11 - 
-- [✅] 1. **Review All Weak Areas**  (after sample exam)
-   - Focus on top 3 challenging topics
-   - Practice questions
-   - Review documentation
-
-## Thu Jun 12
-- [✅] 1. ✳ **Use Gemini to generate quiz questions. Explore weak topics
-
-## Fri Jun 13  
-- [✅] 1. ✳ **Use Gemini to generate quiz questions. Explore weak topics
-
-## Mon Jun 16  —  Sample Test and Review
-- [✅] 1. ✳ **Use Gemini to generate quiz questions. Explore weak topics
-
-## Tue Jun 17  —  Practice Test and Review
-- [✅] 1. **Retake Final Practice Exam**
-   - Full-length simulation
-   - Strict timing
-   - Mark all unsure questions
-
-## Wed Jun 18 -—  EXAM DAY  
-- [✅] 1. **AWS DVA-C02 Exam**
-   - Arrive early
-   - Use all available time
-
-## After the Exam  
-- **Set up SAM CI/CD pipeline** 
-  - Run `sam pipeline init --bootstrap`
-  - Verify CodeBuild & CodePipeline stacks deploy successfully
-  - Push `pipeline.yaml` and `buildspec.yml` to GitHub
-   - Begin drafting the **"Kunai Serverless Starter Kit"** 
+Chris Honson
