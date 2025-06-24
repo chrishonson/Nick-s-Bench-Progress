@@ -1,0 +1,40 @@
+What are three common ways AI/ML can provide value to a business?	Assisting human decision-making, enabling solution scalability, and automating repetitive tasks.	Domain 1 - Task 1.2
+When might AI/ML NOT be an appropriate solution?	When the cost outweighs the potential benefit or when a deterministic, specific outcome is required instead of a probabilistic prediction.	Domain 1 - Task 1.2
+Which ML technique is best for predicting a continuous numeric value (e.g., house price)?	Regression.	Domain 1 - Task 1.2
+Which ML technique groups unlabeled data into similar categories?	Clustering (unsupervised learning).	Domain 1 - Task 1.2
+Which ML technique is typically used for binary fraud detection?	Classification.	Domain 1 - Task 1.2
+Give two examples of computer vision applications.	Image recognition and object detection (also acceptable: facial recognition, image classification, etc.).	Domain 1 - Task 1.2
+Give two examples of NLP applications.	Sentiment analysis and machine translation (also acceptable: chatbots, text summarization, etc.).	Domain 1 - Task 1.2
+Which AWS service lets you build, train, and deploy ML models at scale?	Amazon SageMaker.	Domain 1 - Task 1.2
+Which AWS service converts speech to text?	Amazon Transcribe.	Domain 1 - Task 1.2
+Which AWS service converts text to lifelike speech?	Amazon Polly.	Domain 1 - Task 1.2
+Which AWS service provides real-time language translation?	Amazon Translate.	Domain 1 - Task 1.2
+Which AWS service extracts sentiment, entities, and key phrases from text?	Amazon Comprehend.	Domain 1 - Task 1.2
+Which AWS service is used to build conversational chatbots?	Amazon Lex.	Domain 1 - Task 1.2
+Forecasting future product demand is an example of which ML technique?	Time-series regression/forecasting.	Domain 1 - Task 1.2
+Recommending products to users is an example of what kind of AI application?	Recommendation system.	Domain 1 - Task 1.2
+What is a key benefit of using AWS managed AI services instead of building models from scratch?	They reduce development time and complexity by providing pre-built, scalable, and maintenance-free ML capabilities.	Domain 1 - Task 1.2
+Provide an example where a cost-benefit analysis might suggest NOT using AI/ML.	If the dataset is small and simple rules can achieve the goal more cheaply than training and hosting a model.	Domain 1 - Task 1.2
+What type of AI application helps detect fraudulent transactions in real time?	Fraud detection using classification models.	Domain 1 - Task 1.2
+In what scenario is scalability a significant advantage of AI/ML solutions?	When the volume of data or number of user requests exceeds what humans can process manually.	Domain 1 - Task 1.2
+Which SageMaker feature lets you quickly start with pre-trained models and solution templates?	Amazon SageMaker JumpStart.	Domain 1 - Task 1.2
+[MC] Which AWS service lets you build, train, and deploy machine learning models at scale?\nA) Amazon Comprehend\nB) Amazon SageMaker\nC) Amazon Polly\nD) Amazon Lex	B) Amazon SageMaker	Domain 1 - Task 1.2
+[MC] Which ML technique is best suited for predicting housing prices?\nA) Classification\nB) Clustering\nC) Regression\nD) Reinforcement learning	C) Regression	Domain 1 - Task 1.2
+[MC] Which of the following is a primary reason AI/ML adds business value?\nA) Minimizes data collection\nB) Enables solution scalability\nC) Guarantees 100% accuracy\nD) Eliminates all compliance effort	B) Enables solution scalability	Domain 1 - Task 1.2
+[MC] Which AWS service converts text into lifelike speech?\nA) Amazon Transcribe\nB) Amazon Lex\nC) Amazon Polly\nD) Amazon Translate	C) Amazon Polly	Domain 1 - Task 1.2
+[MC] Which AWS service is purpose-built to extract key phrases and sentiment from text?\nA) Amazon Comprehend\nB) Amazon Bedrock\nC) Amazon Transcribe\nD) Amazon Polly	A) Amazon Comprehend	Domain 1 - Task 1.2
+[MC] Detecting fraudulent credit-card transactions in real time typically uses which ML technique?\nA) Clustering\nB) Classification\nC) Regression\nD) Reinforcement learning	B) Classification	Domain 1 - Task 1.2
+[MC] What is a common limitation of using AI/ML when performing a cost-benefit analysis?\nA) AI/ML models never scale\nB) Training and hosting can be expensive\nC) AI/ML eliminates the need for human expertise\nD) AI/ML always requires reinforcement learning	B) Training and hosting can be expensive	Domain 1 - Task 1.2
+[MC] Which AWS service provides real-time, automatic speech recognition?\nA) Amazon Translate\nB) Amazon Transcribe\nC) Amazon Lex\nD) Amazon Q	B) Amazon Transcribe	Domain 1 - Task 1.2
+[MC] Product recommendation engines most commonly rely on which type of AI application?\nA) Computer vision\nB) Speech recognition\nC) Recommendation systems\nD) Time-series forecasting	C) Recommendation systems	Domain 1 - Task 1.2
+[MC] Time-series regression is MOST useful for which business scenario?\nA) Grouping customers by behavior\nB) Forecasting monthly sales demand\nC) Translating user reviews\nD) Converting speech to text	B) Forecasting monthly sales demand	Domain 1 - Task 1.2
+[MR] Which TWO AWS services are directly used to create conversational chatbots?\nA) Amazon Lex\nB) Amazon Polly\nC) Amazon Transcribe\nD) Amazon Comprehend\nE) Amazon SageMaker	A) Amazon Lex; C) Amazon Transcribe	Domain 1 - Task 1.2
+[MR] Which THREE characteristics often make AI/ML valuable over manual processes?\nA) Ability to automate at scale\nB) Deterministic rule enforcement\nC) Faster decision-making\nD) Lower operational costs over time\nE) Guaranteed regulatory compliance	A) Ability to automate at scale; C) Faster decision-making; D) Lower operational costs over time	Domain 1 - Task 1.2
+[MR] Which TWO situations indicate AI/ML is NOT the right approach?\nA) Small, static dataset with clear rules\nB) Need for deterministic output\nC) Large, complex data requiring pattern discovery\nD) High variability in input data\nE) Requirement for rapid scalability	A) Small, static dataset with clear rules; B) Need for deterministic output	Domain 1 - Task 1.2
+[ORDER] Place the steps for evaluating AI feasibility in the correct order:\n1) Estimate business impact\n2) Identify the problem\n3) Assess data availability\n4) Perform cost-benefit analysis	2 > 3 > 4 > 1	Domain 1 - Task 1.2
+[ORDER] Arrange the following AWS managed AI services from data input to user output for a speech translation workflow:\n1) Amazon Transcribe\n2) Amazon Translate\n3) Amazon Polly	1 > 2 > 3	Domain 1 - Task 1.2
+[MATCH] Match each AWS service with its primary capability:\nAmazon Translate\tSpeech-to-text\nAmazon Transcribe\tText-to-speech\nAmazon Polly\tLanguage translation	Amazon Translate ➔ Language translation; Amazon Transcribe ➔ Speech-to-text; Amazon Polly ➔ Text-to-speech	Domain 1 - Task 1.2
+[MATCH] Match each ML technique to a use case:\nClassification\tGroup products by similarity\nClustering\tPredict customer churn probability\nRegression\tDetect spam emails	Classification ➔ Detect spam emails; Clustering ➔ Group products by similarity; Regression ➔ Predict customer churn probability	Domain 1 - Task 1.2
+[CASE] Case Study: A retailer wants to send personalized product recommendations by email. The company has years of purchase history stored in Amazon S3 and wants a quick solution without ML expertise. Which AWS service should they choose?\nA) Amazon SageMaker\nB) Amazon Personalize\nC) Amazon Bedrock\nD) Amazon OpenSearch Service	B) Amazon Personalize	Domain 1 - Task 1.2
+[CASE] Case Study: A mobile app must provide real-time language translation for global users. The team needs minimal infrastructure management. Which combination of AWS services fulfills this requirement?\nA) Amazon Translate only\nB) Amazon Transcribe + Amazon Translate + Amazon Polly\nC) Amazon SageMaker + custom model\nD) Amazon Bedrock + Amazon Q	B) Amazon Transcribe + Amazon Translate + Amazon Polly	Domain 1 - Task 1.2
+[MC] What SageMaker feature provides pre-built solution templates and models to accelerate AI adoption?\nA) SageMaker Clarify\nB) SageMaker JumpStart\nC) SageMaker Model Monitor\nD) SageMaker Pipelines	B) SageMaker JumpStart	Domain 1 - Task 1.2 
