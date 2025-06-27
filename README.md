@@ -28,6 +28,7 @@ Instead of just passively reading, I used the AI to actively engage with the mat
 **Result:** This forced me to articulate what I didn't understand and get immediate, detailed answers. We dove deep into the nuances of an IAM Policy vs. a Resource-Based Policy and why a GSI's throttling behavior can impact a base table—complex topics that are hard to grasp from static material alone.
 
 ### Step 3: Memorization with AI-Generated Flashcards
+![Study Progress Screenshot](./Screenshot%202025-06-27%20at%2010.29.31%20AM.png)
 
 This was a major game-changer for me. Rote memorization is tough (especially for me), but critical for the exam.
 
@@ -36,6 +37,7 @@ This was a major game-changer for me. Rote memorization is tough (especially for
 **Result:** This was incredibly effective for memorizing key concepts, the differences between services (like Aurora vs. DynamoDB), service options, default values, limits, and other specific values that frequently appear on the exam.
 
 ### Step 4: Interactive Quizzing and Targeted Feedback
+![Study Progress Screenshot](./Screenshot%202025-06-27%20at%2010.46.35%20AM.png)
 
 For practice quizzes, I found that different models performed differently. I ultimately settled on using Gemini 2.5 Pro directly, as I felt its quiz generation capabilities were better than chatGPT.
 
