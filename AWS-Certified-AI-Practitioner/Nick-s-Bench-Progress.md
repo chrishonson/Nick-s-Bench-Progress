@@ -33,8 +33,6 @@
 - [ ] **Install/verify Anki** on desktop + mobile, sync account.  
 - [ ] Import **20 flashcards** .  
 
-![Setup screenshot](assets/screenshot-2025-06-27-10.29.31am.png)
-
 ### Wed Jun 25 – Domain 1 • Task 1.1 (AI Concepts & Terminologies)  
 - [ ] Watch corresponding lecture section.  
 - [ ] Summarize key terms in notes.  
