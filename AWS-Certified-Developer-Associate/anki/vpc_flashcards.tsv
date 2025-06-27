@@ -1,0 +1,15 @@
+What is an Amazon VPC?	A logically-isolated virtual network in the AWS Cloud that you configure with your own CIDR block, subnets, route tables, and gateways.	VPC
+Which resource lets instances reach the wider internet?	An **Internet Gateway (IGW)** attached to the VPC and referenced in a subnet’s route table.	VPC
+What is the allowed CIDR range for a VPC?	You can choose any /16 to /28 block (65 536 – 16 IPs).	VPC
+How many Availability Zones can a single subnet span?	Exactly **one**; a subnet is always confined to a single AZ.	VPC
+Why can subnets in the same VPC route to each other automatically?	Every VPC’s main route table includes an implicit “local” route for the entire CIDR.	VPC
+Security Group vs. Network ACL in one sentence?	SGs are **stateful** and attach to ENIs; NACLs are **stateless** and apply to subnets.	VPC
+Default limit: how many security groups per ENI?	**5** (soft limit; can be raised).	VPC
+What limitation exists with VPC peering?	No **transitive routing** — you must peer each VPC pair directly.	VPC
+Which Route 53 record type maps a root domain to an ALB or S3 site?	An **Alias A/AAAA** record.	VPC
+List the four components that come with a default VPC.	One VPC, a public subnet in every AZ, an Internet Gateway, and a main route table with 0.0.0.0/0 to the IGW.	VPC
+What subnet-level feature filters traffic, separate from SGs?	**Network ACLs** with ordered, stateless rules.	VPC
+What built-in DNS resolver exists at the .2 address?	**AmazonProvidedDNS** (Route 53 Resolver in each subnet).	VPC
+How do you privately access S3 without using the internet?	Create a **Gateway VPC endpoint** for S3 and update route tables.	VPC
+When would you use a NAT Gateway instead of an IGW?	For private-subnet instances that need outbound internet access without exposing inbound ports.	VPC
+Where do you place an Application Load Balancer?	In **public subnets**; its targets can live in private or public subnets.	VPC
