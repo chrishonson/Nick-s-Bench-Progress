@@ -1,0 +1,28 @@
+# Folders to exclude from Gemini Code Assist indexing
+# See https://cloud.google.com/vertex-ai/docs/generative-ai/code/code-assistance-set-up#exclude-files
+**/node_modules/**
+**/vendor/**
+**/build/**
+**/dist/**
+**/out/**
+**/.git/**
+**/.hg/**
+**/.svn/**
+**/.vscode/**
+**/.idea/**
+**/__pycache__/**
+**/*.log
+**/*.tmp
+**/*.bak
+**/*.swp
+**/android/**
+**/ios/**
+**/build/
+**/dist/
+**/node_modules/
+**/.gradle/
+**/app/build/
+**/target/
+**/bin/
+**/obj/
+**/.*
