@@ -5,9 +5,9 @@
 ## Introduction
 
 
-I recently passed the AWS Certified Developer - Associate (DVA-C02) exam. Finding myself with some downtime on the bench, I decided to focus on professional development and tackle this certification. Juggling this with family life required a focused and efficient approach, so I leaned heavily on a few AI tools to act as a dynamic study partner.
+I recently passed the AWS Certified Developer - Associate (DVA-C02) exam. The strategy I landed on was a game-changer for me, and I wanted to share it for anyone else pursuing this or other certifications.
+Finding myself with some downtime on the bench, I decided to focus on professional development and tackle this certification. I leaned heavily on a few AI tools to act as a dynamic study partner.
 
-The strategy I landed on was a game-changer for me, and I wanted to share it for anyone else pursuing this or other certifications.
 
 ## My AI-Powered Study Framework
 
@@ -17,7 +17,7 @@ My approach evolved as I discovered what worked best. I treated AI not just as a
 
 I started by asking ChatGPT to make a [study plan](./AWS%20Certified%20Developer%20Associate/Nick-s-Bench-Progress.md). The result was laughably ambitious because, as a generalist tool, it didn't appreciate that my extensive client-side experience meant I had foundational gaps in backend networking concepts like subnets and DNS. While I didn't realize just how ambitious the plan was all at once, my understanding evolved more in the later half of the effort, and I updated my plan regularly ("Plans are worthless, but planning is everything" - Dwight D. Eisenhower). 
 
-I used Cursor (with Gemini 2.5 Pro) to create a dedicated [study repo](https://github.com/chrishonson/Nick-s-Bench-Progress), which became my central hub for tracking progress and organizing. The key first step was providing the AI with my study materials, which included the course slides from Stéphane Maarek's "Ultimate AWS Certified Developer Associate 2025 DVA-C02" on Udemy and the official AWS exam guide. This transformed it from a general tool into a subject matter expert with the exact same context I had.
+I used Cursor (with Gemini 2.5 Pro) to create a dedicated [study repo](https://github.com/chrishonson/Nick-s-Bench-Progress), which became my central hub for tracking progress and organizing artifacts of my studies. The key first step was providing the AI with my study materials, which included the course slides from Stéphane Maarek's "Ultimate AWS Certified Developer Associate 2025 DVA-C02" on Udemy and the official AWS exam guide. This transformed it from a general tool into a subject matter expert with the exact same context I had.
 
 ### Step 2: Active Recall and Deep-Dive Clarification
 
@@ -25,7 +25,7 @@ Instead of just passively reading, I used the AI to actively engage with the mat
 
 **Action:** After reviewing a topic, I'd ask specific, open-ended questions like, "Explain the difference between Cognito User Pools and Identity Pools," or "Why exactly can't you use a CNAME at the root domain?"
 
-**Result:** This forced me to articulate what I didn't understand and get immediate, detailed answers. We dove deep into the nuances of an IAM Policy vs. a Resource-Based Policy and why a GSI's throttling behavior can impact a base table—complex topics that are hard to grasp from static material alone.
+**Result:** This ***forced me to articulate*** what I didn't understand and get immediate, detailed answers. We dove deep into the nuances of an IAM Policy vs. a Resource-Based Policy and why a GSI's throttling behavior can impact a base table—complex topics that are hard to grasp from static material alone.
 
 ### Step 3: Memorization with AI-Generated Flashcards
 ![Anki](./AWS-Certified-AI-Practitioner/assets/screenshot-2025-06-27-10.29.31am.png)
@@ -39,7 +39,7 @@ This was a major game-changer for me. Rote memorization is tough (especially for
 ### Step 4: Interactive Quizzing and Targeted Feedback
 ![Quiz](./AWS-Certified-AI-Practitioner/assets/screenshot-2025-06-27-10.46.35am.png)
 
-For practice quizzes, I found that different models performed differently. I ultimately settled on using Gemini 2.5 Pro directly, as I felt its quiz generation capabilities were better than chatGPT.
+For practice quizzes, I found that different models performed differently. I ultimately settled on using Gemini 2.5 Pro directly, as I felt its quiz generation capabilities were better than chatGPT. It can create the above, functional quiz just by asking it.
 
 **Action:** I would complete a quiz and review errors in a separate chat.
 
