@@ -38,7 +38,7 @@ This was a major game-changer for me. Rote memorization is tough (especially for
 
 ### Step 4: Interactive Quizzing and Targeted Feedback
 ![Quiz](./AWS-Certified-AI-Practitioner/assets/screenshot-2025-06-27-10.46.35am.png)
-
+[Quiz](https://g.co/gemini/share/cca34894495e)
 For practice quizzes, I found that different models performed differently. I ultimately settled on using Gemini 2.5 Pro directly, as I felt its quiz generation capabilities were better than chatGPT. It can create the above, functional quiz just by asking it.
 
 **Action:** I would complete a quiz and review errors in a separate chat.
