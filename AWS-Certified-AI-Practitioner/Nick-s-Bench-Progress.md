@@ -116,5 +116,27 @@
 If practice-exam score < 70 % on Day 14, add 2-day intensive review focusing on weakest domains before booking the actual exam.
 
 ---
-
-*Generated on {{DATE}} – update daily!* 
+come back to these ml terms
+GPT
+BERT
+RNN
+ResNet
+SVM
+WaveNet
+GAN
+Bias
+Variance
+regularization l1/l2 
+dropout
+confusion matrix metrics
+    - precision
+    - recall
+    - f1 score
+    - accuracy
+AUC-ROC for binary classification
+model evaluation - regression metrics
+KNN algorithms
+Principal component analysis PCA 
+K-means
+anomoly detection
+sagemaker pipelines
