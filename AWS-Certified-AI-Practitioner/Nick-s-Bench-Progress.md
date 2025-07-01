@@ -140,3 +140,4 @@ Principal component analysis PCA
 K-means
 anomoly detection
 sagemaker pipelines
+sagemaker services in general need flash cards
