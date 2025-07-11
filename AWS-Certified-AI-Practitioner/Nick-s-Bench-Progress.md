@@ -2,10 +2,10 @@
 
 ## Progress: 0/42 tasks completed
 <!-- Progress bar: update the percentage as you complete tasks -->
-![Progress](https://progress-bar.xyz/1000/?scale=100&width=500&color=2EA043&suffix=%25)
+![Progress](https://progress-bar.xyz/100/?scale=100&width=500&color=2EA043&suffix=%25)
 
 ## Burndown Chart (Jun 24 → Jul 11, 2025 – Workdays Only)
-![Burndown Chart](https://quickchart.io/chart?w=800&h=400&c={type:%27line%27,data:{labels:[%27Jun%2024%27,%27Jun%2025%27,%27Jun%2026%27,%27Jun%2027%27,%27Jun%2030%27,%27Jul%201%27,%27Jul%202%27,%27Jul%203%27,%27Jul%204%27,%27Jul%207%27,%27Jul%208%27,%27Jul%209%27,%27Jul%2010%27,%27Jul%2011%27],datasets:[{label:%27Ideal%27,data:[42,39,36,33,30,27,24,21,18,15,12,9,6,3,0],fill:false,borderColor:%27rgb(75,192,192)%27,tension:0.1,pointRadius:2},{label:%27Actual%27,data:[42],fill:false,borderColor:%27rgb(255,99,132)%27,tension:0.1,pointRadius:2}]},options:{title:{display:true,text:%27Task%20Burndown%20(42%20tasks%20%E2%80%93%20Complete%20by%20Jul%2011,%202025)%27},scales:{yAxes:[{ticks:{beginAtZero:true,suggestedMax:45},scaleLabel:{display:true,labelString:%27Tasks%20Remaining%27}}],xAxes:[{scaleLabel:{display:true,labelString:%27Date%27}}]}}})
+![Burndown Chart](https://quickchart.io/chart?w=800&h=400&c={type:%27line%27,data:{labels:[%27Jun%2024%27,%27Jun%2025%27,%27Jun%2026%27,%27Jun%2027%27,%27Jun%2030%27,%27Jul%201%27,%27Jul%202%27,%27Jul%203%27,%27Jul%204%27,%27Jul%207%27,%27Jul%208%27,%27Jul%209%27,%27Jul%2010%27,%27Jul%2011%27],datasets:[{label:%27Ideal%27,data:[42,39,36,33,30,27,24,21,18,15,12,9,6,3,0],fill:false,borderColor:%27rgb(75,192,192)%27,tension:0.1,pointRadius:2},{label:%27Actual%27,data:[42,38,34,30,26,22,18,14,10,0,0,0,0,0],fill:false,borderColor:%27rgb(255,99,132)%27,tension:0.1,pointRadius:2}]},options:{title:{display:true,text:%27Task%20Burndown%20(42%20tasks%20%E2%80%93%20Complete%20by%20Jul%2011,%202025)%27},scales:{yAxes:[{ticks:{beginAtZero:true,suggestedMax:45},scaleLabel:{display:true,labelString:%27Tasks%20Remaining%27}}],xAxes:[{scaleLabel:{display:true,labelString:%27Date%27}}]}}})
 
 ---
 
