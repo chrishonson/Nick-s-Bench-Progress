@@ -1,0 +1,15 @@
+# agents/sre-assistant/spec.yaml
+
+# Version of the spec format
+apiVersion: factory.agent.v1
+
+# Metadata for the agent
+metadata:
+  name: sre-assistant
+  description: "An agent to help SREs with initial diagnostics."
+
+# Bedrock Agent configuration
+spec:
+  foundationModelId: "anthropic.claude-3-sonnet-20240229-v1:0" # The FM to use
+  # For V1, the action group is not defined here. The factory will automatically
+  # attach a default "hello-world" action group to every new agent.
