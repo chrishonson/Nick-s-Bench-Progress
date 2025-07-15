@@ -1,4 +1,3 @@
-
 import yaml
 from aws_cdk import (
     Stack,
@@ -6,6 +5,7 @@ from aws_cdk import (
     aws_bedrock as bedrock,
     aws_lambda as _lambda,
 )
+from aws_cdk.aws_lambda_go_alpha import GoFunction
 from constructs import Construct
 
 class IacStack(Stack):
@@ -29,13 +29,22 @@ class IacStack(Stack):
             ],
         )
 
-        # Create the Lambda function for the Action Group
-        action_group_lambda = _lambda.Function(
-            self, "ActionGroupLambda",
-            runtime=_lambda.Runtime.GO_1_X,
-            handler="main",
-            code=_lambda.Code.from_asset("../src/hello-world"),
-        )
+        # Conditionally create the Lambda function for the Action Group using GoFunction
+        # This allows unit tests to run without Docker.
+        if not self.node.try_get_context("test_mode"):
+            action_group_lambda = GoFunction(
+                self, "ActionGroupLambda",
+                entry="../src/hello-world",  # Path to your Go Lambda source directory
+                runtime=_lambda.Runtime.GO_1_X, # Use GO_1_X for Go runtimes
+            )
+        else:
+            # Create a dummy Lambda function for testing purposes
+            action_group_lambda = _lambda.Function(
+                self, "ActionGroupLambda",
+                runtime=_lambda.Runtime.PYTHON_3_9, # Dummy runtime
+                handler="index.handler", # Dummy handler
+                code=_lambda.Code.from_inline("def handler(event, context): pass"), # Dummy code
+            )
 
         # Create the Bedrock Agent Action Group
         action_group = bedrock.CfnAgent.AgentActionGroupProperty(
